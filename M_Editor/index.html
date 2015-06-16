@@ -1,0 +1,32 @@
+<html>
+<head>
+<!-- Load jQuery  -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+<!-- Load WysiBB JS and Theme -->
+<script src="js/jquery.wysibb.js"></script>
+<link rel="stylesheet" href="css/default/wbbtheme.css" />
+
+<!-- Init WysiBB BBCode editor -->
+<script>
+$(function() {
+$("#editor").wysibb();
+})
+</script>
+</head>
+
+<body>
+<div id="quickreply">
+	<form action="/post" class="frm-form" method="post" name="post" id="quick_reply">
+		<textarea id="editor" name="message"></textarea>
+			<div class="frm-buttons">
+				<input type="hidden" name="mode" value="reply" />
+				<input type="hidden" name="t" value="{TOPIC_ID}" />
+				<input type="hidden" name="notify" value="1" />
+				<input type="submit" name="preview" value="Xem trước" />&nbsp;&nbsp;&nbsp;
+				<input type="submit" name="post" value="Gửi bài" />
+			</div>
+		</div>
+	</form>
+</body>
+</html>
