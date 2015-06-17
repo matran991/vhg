@@ -210,9 +210,6 @@ wbbdebug=true;
 					title: 'Up Ảnh',
 					buttonHTML: '<span class="fonticon ve-tlb-img1" onclick="upload()">\uE006</span>',
 					hotkey: 'ctrl+shift+5',
-						transform : { 
-						' ':" "
-					}
 				},
 				bullist : {
 					title: CURLANG.bullist,
