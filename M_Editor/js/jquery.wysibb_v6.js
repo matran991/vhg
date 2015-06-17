@@ -190,7 +190,7 @@ wbbdebug=true;
 					addWrap: true,
     				  modal: { //Description of modal window
 						title: CURLANG.modal_img_title,
-    				    width: "800px",
+    				    width: "540px",
     				    tabs: [
     				      { //First tab
     				        title: "Chèn Link Ảnh",
@@ -200,7 +200,7 @@ wbbdebug=true;
     				      },
     				      { //The second tab
     				        title: "Up Ảnh",
-    				        html:'<iframe src="/h5-" scrolling="no" id="Upload" style="width: 530px;height: 249px;"></iframe>'
+    				        html:'<iframe src="/h5-" scrolling="no" id="upload" style="width: 530px;height: 249px;"></iframe>'
     				      },
     				    ],
 						onLoad: this.imgLoadModal
