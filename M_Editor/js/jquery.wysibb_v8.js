@@ -30,7 +30,7 @@ WBBLANG['vi'] = CURLANG = {
     fs_big: "Lớn",
     fs_verybig: "Rất lớn",
     smilebox: "Box Smile",
-    video: "Hình ảnh",
+    video: "Youtube",
     removeFormat:"Xỏa định dạng",
     modal_link_title: "Chèn Link vào bài viết",
     modal_link_text: "Text hiển thị",
@@ -210,6 +210,9 @@ wbbdebug=true;
 					title: 'Up Ảnh',
 					buttonHTML: '<span class="fonticon ve-tlb-img1" onclick="upload()">\uE006</span>',
 					hotkey: 'ctrl+shift+5',
+						transform : { 
+						'':""
+					}
 				},
 				bullist : {
 					title: CURLANG.bullist,
@@ -229,6 +232,14 @@ wbbdebug=true;
 						'<li>{SELTEXT}</li>':"[*]{SELTEXT}[/*]"
 					}
 				},
+				quote: {
+					title: CURLANG.quote,
+					buttonHTML: '<span class="fonticon ve-tlb-quote1">\uE00c</span>',
+					hotkey: 'ctrl+shift+3',
+				      	transform: {
+				        	'<div class="quote"><cite>{AUTHOR} đã viết:</cite>{SELTEXT}</div>':'[quote={AUTHOR}]{SELTEXT}[/quote]'
+				      	}
+				}
 				quote : {
 					title: CURLANG.quote,
 					buttonHTML: '<span class="fonticon ve-tlb-quote1">\uE00c</span>',
