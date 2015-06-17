@@ -196,12 +196,11 @@ wbbdebug=true;
     				        title: "Chèn Link Ảnh",
 					input: [
 						{param: "SRC",title:CURLANG.modal_imgsrc_text,validation: '^http(s)?://.*?\.(jpg|png|gif|jpeg)$'}
-					],
-					html:'<iframe src="/h5-" scrolling="no" id="Upload" style="width: 530px;height: 249px;"></iframe>'
+					]
     				      },
     				      { //The second tab
     				        title: "Up Ảnh",
-    				        html: "<p>Perhaps the task tab contents through a variable <b>html</b></p>"
+    				        html:'<iframe src="/h5-" scrolling="no" id="Upload" style="width: 530px;height: 249px;"></iframe>'
     				      },
     				    ],
 						onLoad: this.imgLoadModal
