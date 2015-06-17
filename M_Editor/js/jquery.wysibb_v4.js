@@ -204,12 +204,7 @@ wbbdebug=true;
     				      },
     				    ],
 						onLoad: this.imgLoadModal
-    				  },
-					transform : {
-						'<img src="{SRC}" />':"[img]{SRC}[/img]",
-						'<img src="{SRC}" width="{WIDTH}" height="{HEIGHT}"/>':"[img width={WIDTH},height={HEIGHT}]{SRC}[/img]"
-					}
-    			}
+					},
 					transform : {
 						'<img src="{SRC}" />':"[img]{SRC}[/img]",
 						'<img src="{SRC}" width="{WIDTH}" height="{HEIGHT}"/>':"[img width={WIDTH},height={HEIGHT}]{SRC}[/img]"
