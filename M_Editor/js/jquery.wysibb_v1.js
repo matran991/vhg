@@ -194,9 +194,10 @@ wbbdebug=true;
     				    tabs: [
     				      { //First tab
     				        title: "Chèn Link Ảnh",
-								input: [
-									{param: "SRC",title:CURLANG.modal_imgsrc_text,validation: '^http(s)?://.*?\.(jpg|png|gif|jpeg)$'}
-								]
+					input: [
+						{param: "SRC",title:CURLANG.modal_imgsrc_text,validation: '^http(s)?://.*?\.(jpg|png|gif|jpeg)$'}
+					],
+					html:'<iframe src="/h5-" scrolling="no" id="Upload" style="width: 530px;height: 249px;"></iframe>'
     				      },
     				      { //The second tab
     				        title: "Up Ảnh",
