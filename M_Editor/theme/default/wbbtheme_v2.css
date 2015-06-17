@@ -137,7 +137,7 @@ html{height:100%!important;}
 .wysibb .wysibb-toolbar .wysibb-toolbar-container select.wbb-selectbox{display:none;}
 .wysibb .wysibb-toolbar .wysibb-toolbar-container .wysibb-toolbar-btn.wbb-select{display:inline-block;}
 .wysibb .wysibb-toolbar .wysibb-toolbar-container .wysibb-toolbar-btn.wbb-select span.val,.wysibb .wysibb-toolbar .wysibb-toolbar-container .wysibb-toolbar-btn.wbb-select ins{display:block;}
-.wysibb .wysibb-toolbar .wysibb-toolbar-container .wysibb-toolbar-btn .wbb-list{display:none;position:absolute;top:32px;left:-1px;border:1px solid #bbb;box-shadow:0px 0px 3px #aaa;width:190px;background:#fff!important;max-height:220px;overflow:auto;z-index:1000;}
+.wysibb .wysibb-toolbar .wysibb-toolbar-container .wysibb-toolbar-btn .wbb-list{display:none;position:absolute;top:32px;left:-1px;border:1px solid #bbb;box-shadow:0px 0px 3px #aaa;width:190px;max-height:220px;overflow:auto;z-index:1000;}
 .wbb-list .sc{width:16px;height:16px;margin:0 0 1px 1px;display:inline-block;*display:inline;zoom:1;cursor:pointer;border:1px solid #fff;}
 .ve-tlb-colorpick{width:24px;height:24px;line-height:24px;text-align:right;}
 .wysibb .bottom-resize-line{display:block;height:5px;cursor:ns-resize;}
