@@ -232,14 +232,13 @@ wbbdebug=true;
 						'<li>{SELTEXT}</li>':"[*]{SELTEXT}[/*]"
 					}
 				},
-				quote : {
+				quote: {
 					title: CURLANG.quote,
 					buttonHTML: '<span class="fonticon ve-tlb-quote1">\uE00c</span>',
 					hotkey: 'ctrl+shift+3',
-					//subInsert: true,
-					transform : { 
-						'<blockquote>{SELTEXT}</blockquote>':"[quote]{SELTEXT}[/quote]"
-					}
+				      	transform: {
+				        	'<div class="quote"><cite>{SELTEXT} đã viết:</cite>{SELTEXT}</div>':'[quote={SELTEXT}]{SELTEXT}[/quote]'
+				      	}
 				},
 				code : {
 					title: CURLANG.code,
