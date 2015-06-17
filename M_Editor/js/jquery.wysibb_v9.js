@@ -232,14 +232,6 @@ wbbdebug=true;
 						'<li>{SELTEXT}</li>':"[*]{SELTEXT}[/*]"
 					}
 				},
-				quote: {
-					title: CURLANG.quote,
-					buttonHTML: '<span class="fonticon ve-tlb-quote1">\uE00c</span>',
-					hotkey: 'ctrl+shift+3',
-				      	transform: {
-				        	'<div class="quote"><cite>{AUTHOR} đã viết:</cite>{SELTEXT}</div>':'[quote={AUTHOR}]{SELTEXT}[/quote]'
-				      	}
-				}
 				quote : {
 					title: CURLANG.quote,
 					buttonHTML: '<span class="fonticon ve-tlb-quote1">\uE00c</span>',
