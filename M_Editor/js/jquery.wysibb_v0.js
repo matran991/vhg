@@ -106,7 +106,7 @@ wbbdebug=true;
 			smileConversion:	true,
 
 			//END img upload config 
-			buttons: 			"bold,italic,underline,strike,|,img,video,link,|,bullist,numlist,|,fontcolor,fontsize,fontfamily,|,justifyleft,justifycenter,justifyright,|,quote,code,table,removeFormat",
+			buttons: 			"bold,italic,underline,strike,|,img,upimg,video,link,|,bullist,numlist,|,fontcolor,fontsize,fontfamily,|,justifyleft,justifycenter,justifyright,|,quote,code,table,removeFormat",
 			allButtons: {
 				bold : {
 					title: CURLANG.bold,
@@ -183,32 +183,33 @@ wbbdebug=true;
 						'<a href="{URL}">{URL}</a>':"[url]{URL}[/url]"
 					}
 				},
-				img: {
+				img : {
 					title: CURLANG.img,
 					buttonHTML: '<span class="fonticon ve-tlb-img1">\uE006</span>',
 					hotkey: 'ctrl+shift+1',
 					addWrap: true,
-    				  modal: { //Description of modal window
+					modal: {
 						title: CURLANG.modal_img_title,
-    				    width: "540px",
-    				    tabs: [
-    				      { //First tab
-    				        title: "Chèn Link Ảnh",
-					input: [
-						{param: "SRC",title:CURLANG.modal_imgsrc_text,validation: '^http(s)?://.*?\.(jpg|png|gif|jpeg)$'}
-					]
-    				      },
-    				      { //The second tab
-    				        title: "Up Ảnh",
-    				        html:'<iframe src="/h5-" scrolling="no" id="upload" style="width: 530px;height: 249px;"></iframe>'
-    				      },
-    				    ],
+						width: "600px",
+						tabs: [
+							{
+								title: CURLANG.modal_img_tab1,
+								input: [
+									{param: "SRC",title:CURLANG.modal_imgsrc_text,validation: '^http(s)?://.*?\.(jpg|png|gif|jpeg)$'}
+								]
+							}
+						],
 						onLoad: this.imgLoadModal
 					},
 					transform : {
 						'<img src="{SRC}" />':"[img]{SRC}[/img]",
 						'<img src="{SRC}" width="{WIDTH}" height="{HEIGHT}"/>':"[img width={WIDTH},height={HEIGHT}]{SRC}[/img]"
 					}
+				},
+				upimg : {
+					title: 'Up Ảnh',
+					buttonHTML: '<span class="fonticon ve-tlb-img1" onclick="upload()">\uE006</span>',
+					hotkey: 'ctrl+shift+5',
 				},
 				bullist : {
 					title: CURLANG.bullist,
