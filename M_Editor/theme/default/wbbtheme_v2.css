@@ -137,10 +137,17 @@ html{height:100%!important;}
 .wysibb .wysibb-toolbar .wysibb-toolbar-container select.wbb-selectbox{display:none;}
 .wysibb .wysibb-toolbar .wysibb-toolbar-container .wysibb-toolbar-btn.wbb-select{display:inline-block;}
 .wysibb .wysibb-toolbar .wysibb-toolbar-container .wysibb-toolbar-btn.wbb-select span.val,.wysibb .wysibb-toolbar .wysibb-toolbar-container .wysibb-toolbar-btn.wbb-select ins{display:block;}
-.wysibb .wysibb-toolbar .wysibb-toolbar-container .wysibb-toolbar-btn .wbb-list{display:none;position:absolute;top:32px;left:-1px;border:1px solid #bbb;box-shadow:0px 0px 3px #aaa;width:190px;background:#fff;max-height:220px;overflow:auto;z-index:1000;}
+.wysibb .wysibb-toolbar .wysibb-toolbar-container .wysibb-toolbar-btn .wbb-list{display:none;position:absolute;top:32px;left:-1px;border:1px solid #bbb;box-shadow:0px 0px 3px #aaa;width:190px;background:#fff!important;max-height:220px;overflow:auto;z-index:1000;}
 .wbb-list .sc{width:16px;height:16px;margin:0 0 1px 1px;display:inline-block;*display:inline;zoom:1;cursor:pointer;border:1px solid #fff;}
 .ve-tlb-colorpick{width:24px;height:24px;line-height:24px;text-align:right;}
 .wysibb .bottom-resize-line{display:block;height:5px;cursor:ns-resize;}
 }
 .wysibb-toolbar-btn.mswitch.on .btn-inner.modesw:before {content: "WYSIWYG ";font-size: 12px;}
 .wysibb-toolbar-btn.mswitch.on .btn-inner.modesw {font-size: 0px;}
+.wysibb-text-editor.wysibb-body code:before {content: "Code";background: rgb(0, 90, 255);display: block;margin: -10px;margin-bottom: 10px;padding: 5px;}
+.wysibb-text-editor.wysibb-body code {background: rgb(180, 177, 182);display: block;padding: 10px;margin: 10px;font-size: 14px;position: relative;}
+.wysibb-text-editor.wysibb-body code:after,dl.codebox dt:after {display: inline-block;font: FontAwesome;text-rendering: auto;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;transform: translate(0, 0);content: "\f121";position: absolute;top: 7px;right: 7px;}
+.wysibb-toolbar-btn.wbb-select.wbb-fontsize, .wysibb-toolbar-btn.wbb-select.wbb-fontfamily {color: white;border-left: 1px solid white!Important;}
+.wysibb-toolbar-btn.wbb-code,.wysibb-text-editor.wysibb-body {color: white;}
+.wysibb-toolbar-container.modeSwitch:hover {color: black;}
+.wysibb-toolbar-container.modeSwitch {color: white;}
