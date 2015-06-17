@@ -211,7 +211,7 @@ wbbdebug=true;
 					buttonHTML: '<span class="fonticon ve-tlb-img1" onclick="upload()">\uE006</span>',
 					hotkey: 'ctrl+shift+5',
 						transform : { 
-						'':""
+						' ':" "
 					}
 				},
 				bullist : {
@@ -232,13 +232,14 @@ wbbdebug=true;
 						'<li>{SELTEXT}</li>':"[*]{SELTEXT}[/*]"
 					}
 				},
-				quote: {
+				quote : {
 					title: CURLANG.quote,
 					buttonHTML: '<span class="fonticon ve-tlb-quote1">\uE00c</span>',
 					hotkey: 'ctrl+shift+3',
-				      	transform: {
-				        	'<div class="quote"><cite>{SELTEXT} đã viết:</cite>{SELTEXT}</div>':'[quote={SELTEXT}]{SELTEXT}[/quote]'
-				      	}
+					//subInsert: true,
+					transform : { 
+						'<blockquote>{SELTEXT}</blockquote>':"[quote]{SELTEXT}[/quote]"
+					}
 				},
 				code : {
 					title: CURLANG.code,
