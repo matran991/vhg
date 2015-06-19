@@ -150,3 +150,11 @@ html{height:100%!important;}
 .wysibb-toolbar-btn.wbb-code,.wysibb-text-editor.wysibb-body {color: white;}
 .wysibb-toolbar-container.modeSwitch:hover {color: black;}
 .wysibb-toolbar-container.modeSwitch {color: white;}
+.butedit{color: white;font-size: 18px!important;height: 26px;min-width: 26px;margin: 2px;line-height: 28px!important;text-align: center}
+.wysibb-toolbar-btn.wbb-select .val .fa {font-size: 18px;}
+.wysibb-toolbar-btn.wbb-select .val .titbut {font-size: 0;}
+.wysibb .wysibb-toolbar .wysibb-toolbar-container .wysibb-toolbar-btn.wbb-select, .wysibb .wysibb-toolbar .wysibb-toolbar-container .wysibb-toolbar-btn.wbb-select.dis:hover, .wysibb .wysibb-toolbar .wysibb-toolbar-container .wysibb-toolbar-btn.wbb-select:active {width: 60px!important;}
+.ve-tlb-colorpick .cp-line {background: white!important;}
+.wysibb-toolbar-btn.wbb-select.wbb-header {border-right: 1px solid white!important;}
+ins.fonticon.sar,.wysibb-toolbar-btn:hover .btn-tooltip .butedit {color: white;}
+.wysibb-toolbar-btn.wbb-select:hover .val .butedit,.wysibb-toolbar-btn:hover .butedit,.wysibb-toolbar-btn:hover .val {color: black}
