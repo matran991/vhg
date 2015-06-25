@@ -1,0 +1,192 @@
+@keyframes loading {from {transform:rotate(0deg);-moz-transform:rotate(0deg)-webkit-transform: rotate(0deg)-o-transform:rotate(0deg) -ms-transform:rotate(7deg)}  to {transform:rotate(360deg);-moz-transform:rotate(360deg)-webkit-transform: rotate(360deg)-o-transform:rotate(360deg) -ms-transform:rotate(360deg)}}
+@-webkit-keyframes loading {from {transform:rotate(0deg);-moz-transform:rotate(0deg)-webkit-transform: rotate(0deg)-o-transform:rotate(0deg) -ms-transform:rotate(7deg)}  to {transform:rotate(360deg);-moz-transform:rotate(360deg)-webkit-transform: rotate(360deg)-o-transform:rotate(360deg) -ms-transform:rotate(360deg)}}
+@-o-keyframes loading {from {transform:rotate(0deg);-moz-transform:rotate(0deg)-webkit-transform: rotate(0deg)-o-transform:rotate(0deg) -ms-transform:rotate(7deg)}  to {transform:rotate(360deg);-moz-transform:rotate(360deg)-webkit-transform: rotate(360deg)-o-transform:rotate(360deg) -ms-transform:rotate(360deg)}}
+@-moz-keyframes loading {from {transform:rotate(0deg);-moz-transform:rotate(0deg)-webkit-transform: rotate(0deg)-o-transform:rotate(0deg) -ms-transform:rotate(7deg)}  to {transform:rotate(360deg);-moz-transform:rotate(360deg)-webkit-transform: rotate(360deg)-o-transform:rotate(360deg) -ms-transform:rotate(360deg)}}
+a{color:coral}
+a:hover{color:white}
+#recent {margin-top: 2px;background: black;color: white;}
+.head_recent {padding: 5px;background: darkgreen;font-size: 16px;}
+.chbv.dataf {padding: 5px;border-bottom: 1px solid white;counter-increment: Zzindex;position: relative;}
+.content_recent li a {color: coral;margin-left: 25px;}
+.chbv.dataf:before {content: counter(Zzindex);background: darkgreen;position: absolute;width: 20px;text-align: center;line-height: 20px;font-size: 12px;top: 3px;left: 3px;z-index: 1;}
+.chbv.dataf:after {content: " ";background: darkgreen;display: block;width: 6px;height: 6px;position: absolute;top: 10px;left: 20px;transform: rotate(45deg);-ms-transform: rotate(45deg);-webkit-transform: rotate(45deg);  z-index: 0;}
+.mobile_set {background: darkgreen;padding: 5px;display: block;font-size: 16px;}
+.content_recent li:last-child {border: 0;}
+.mobile_item_content[data="folder_global"]:before,a.mobile_item_content[data="folder_announce"]:before,a.mobile_item_content[data="folder_sticky"]:before,.mobile_item_content[data="folder_no_new"]:before,.mobile_item_content[data="folder_new"]:before,.mobile_item_content[data="folder_locked"]:before,.mobile_item_content[data="folder_locked_new"]:before,.mobile_item_content[data="cat_locked"]:before,.vforum[data="forum_locked"]:before,.vforum[data="cat_new"]:before,.vforum[data="cat_no_new"]:before,.vforum[data="forum_no_new"]:before,.vforum[data="forum_new"]:before,.mobile_item_content[data="folder_hot"]:before{position: absolute;font-size: 30px;top: 5px;left: 7px;color:white}
+.mobile_item {background: black;border: 0;border-bottom: 1px solid white;}
+.mobile_item_link_content {background: none;}
+.mobile_subtitle,.mobile_comment {color: white;font-size: 12px;}
+#mpage-body {color:white;background: black;font-family: Tahoma,FontAwesome;}
+.mobile_title.application_header {background: darkgreen;border: 0;font-size: 27px;}
+.mobile_item_content,.vforum {position: relative;}
+.vforum[data="cat_new"]:before,.vforum[data="cat_no_new"]:before,.vforum[data="forum_no_new"]:before,.vforum[data="forum_new"]:before{content: "\f115";}
+.mobile_item_content[data="folder_global"]:before {content: "\f0a1";color: darkorange!important;}
+.mobile_item_content[data="folder_announce"]:before {content: "\f0a2";color: cyan!important;}
+.mobile_item_content[data="folder_sticky"]:before{content: "\f071";color:red!important}
+.mobile_item_content[data="folder_no_new"]:before,.mobile_item_content[data="folder_new"]:before{content: "\f0e5";}
+.mobile_item_content[data="folder_hot"]:before {content: "\f006";color: yellow!important;}
+.mobile_item_content[data="folder_new"]:before,.mobile_item_content[data="folder_locked_new"]:before,.vforum[data="cat_new"]:before,.vforum[data="forum_new"]:before{color:red!important}
+.mobile_item_content[data="folder_locked"]:before,.mobile_item_content[data="folder_locked_new"]:before,.mobile_item_content[data="cat_locked"]:before,.mobile_item_content[data="forum_locked"]:before{content: "\f023";color:white}
+.mobile_prev_button {position: relative;background: blueviolet;border-radius: 0;left: 0;}
+.mobile_prev_button p {background: none;padding: 0;font-size: 0;}
+.mobile_prev_button p:before {content: "\f0a8  Trang Trước";font-size: 14px;}
+.load_page {padding: 5px;display: block;background: darkmagenta;text-align: center;}
+.next_page .mobile_title {background: black;border: 0;}
+.next_page .mobile_title .mobile_title_content {display: none}
+.next_page .mobile_title .mobile_next_button.block {right: 0;position: absolute;background: blueviolet;border-radius: 0;}
+.next_page .mobile_title .mobile_next_button.block p,#mobileActionBar .mobileActionLabel {background: none;padding: 0;font-size: 0;}
+.next_page .mobile_title .mobile_next_button.block p:after {content: "Trang Sau \f0a9";font-size: 14px;}
+#mobileActionBar {background: darkgreen}
+#mobileActionBar .mobileActionLabel:before {content: "\f044  Viết Bài Mới";font-size: 14px;}
+.mobile_item:hover {background: none;}
+#logo_forum h1.mobile_title_content {margin-left: 45px;display: block;position: relative;left: 0;right: 0;background: rgb(16, 83, 171);}
+.postbody .post_header {background: darkgreen;}
+.postbody:after {display: none;}
+.post {background: black;padding:0}
+.mobile_item:hover {background: none;}
+#logo_forum h1.mobile_title_content {display: block;position: relative;left: 0;right: 0;background: midnightblue;}
+.postbody .post_header {background: darkgreen;}
+.postbody:after {display: none;}
+.post {background: black;}
+.wysibb-text-editor.wysibb-body {max-height: 200px!Important;min-height: 200px!important;}
+.wysibb .wysibb-toolbar {max-height: 220px!Important;min-height: 220px!important;width: 60px;}
+.wysibb-text-editor.wysibb-body, textarea#editor {line-height: 20px;margin: 10px!important;max-width: 100%;margin-left: 0!important;}
+input[type="submit"] {background: darkgreen;color: white;font-family: Tahoma,FontAwesome;border: 0;padding: 5px;font-size: 16px;font-weight: bold;}
+.wysibb .wysibb-toolbar .wysibb-toolbar-container .wysibb-toolbar-btn {text-align: center;}
+#editor {background: black;color: white;}
+input.inputTxt {color: white!Important;background: black;border: 1px solid white!Important;padding: 5px;min-width: 96%!Important;}
+.inputTxtContainer {background: black;border: 0;}
+img,iframe,embed {max-width: 100%;}
+blockquote {background: teal;border: 0;border-radius: 0;display: block;}
+blockquote span.quote_content {background: black;padding: 5px;max-width: 100%;word-wrap: normal;white-space: normal;word-break: break-all;}
+span.open_quote,span.close_quote {display: none;}
+blockquote cite {background: none;padding: 5px;width: 96%;margin-bottom: 0;position: relative;}
+blockquote cite:before {content: "\f10d";margin-right: 5px;}
+blockquote cite:after {content: "\f10e";position: absolute;right: 0;}
+.spoiler {background: darkmagenta;border-radius: 0;position: relative;}
+.spoiler_title {background: none;border-radius: 0;padding: 0;max-width: 70%;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+.spoiler_content {background: black;padding: 5px;border-radius: 0;}
+.spoiler:after {content: "Ấn để hiện \f078";position: absolute;top: 6px;right: 10px;}
+.codebox {background: brown;}
+.codebox p {padding: 5px;margin: -5px;margin-bottom: 0;}
+.codebox code {background: black;color: coral;padding: 5px;}
+#login_register,#login_ajax {padding: 5px;}
+.warning,.warning_2 {font-size: 12px;padding: 5px;border: 1px dashed red;margin: 5px;position: relative}
+.warning .fa,.warning_2 .fa {color: red;font-size: 28px;vertical-align: middle;}
+.warning_content,.warning_content_2 {width: 85%;line-height: 15px;}
+#login_register input,#login_ajax input {padding: 5px;margin: 5px;background: black;color: white;width: 92%;border: 1px solid white;}
+::-webkit-input-placeholder {color: white;}
+.button2 {width: inherit!important;padding: 5px;font-size: 16px;font-weight: bold;margin: 5px;font-family: Tahoma,FontAwesome;}
+input.button[type="reset"] {background: red!important;}
+input.button2[type="reset"] {color: red!important;border-color: red!important;}
+input.button2[type="submit"] {color: coral!important;border-color: coral!important;}
+.warning_content .fa,.warning_content_2 .fa,.load_content .fa,.tab_load .fa,.load .fa {color: cyan;animation: loading 0.5s infinite;-moz-animation: loading 0.5s infinite;-webkit-animation: loading 0.5s infinite;-o-animation: loading 0.5s infinite;transform: rotate(0deg);}
+.warning_2 .fa.fa-spinner,.warning .fa.fa-spinner {font-size: 20px;}
+.result .warning {text-align: center}
+.tab {position: relative;background: black;right: 0;top: 0;}
+.tab_open.active {color: coral;background: rgb(33, 74, 103);}
+.tab_open {background: rgb(32, 110, 158);position: absolute;top: -33px;left: 0px;font-size: 26px;color: white;padding: 4px 10px 4px 10px;}
+#logo_forum .mobile_prev_button {display: none}
+.click_tab {position: absolute;left: 0;z-index: 999;width: 100%}
+.content_tab li {position: relative;}
+.btt {padding: 5px;}
+.ds_chuyen_muc {padding: 5px;}
+.ds_chuyen_muc {display: none;}
+.logout a,.desktop a,.getback a {color: white;padding: 5px;}
+ul.content_profile {text-align: center;}
+.banniere,#mToggleContainer {width: 77%!important;display:none!important;}
+.tab_hide {background: black;display: none;border-top: 1px solid #ccc}
+.message_text {background:rgb(165, 37, 37)padding: 5px;text-align: center;}
+.message_die .message_title {background: darkgreen;padding: 5px;}
+.message_die {width: 100%;}
+.post_avata {float: left;width: 40%;text-align: center;}
+.post_avata img {width: 80px;height:80px;padding: 5px;border: 1px solid white;border-radius: 3px;}
+.post_profile {font-size: 10px;padding: 5px;min-height: 100px;border-bottom: 1px solid white;}
+.post_right {float: right;width: 60%;}
+.thongtinct {display: block;}
+.post_info {position: relative;padding: 5px;margin: 5px;}
+.btt.file_info:before {content: " Hiện thông tin";border: 1px solid;padding: 2px 5px;}
+.btt.file_info {padding: 0;}
+.post_rank,.post_name {padding: 5px;}
+.info_type {position: absolute;z-index: 999;padding: 5px;border: 1px solid;left:0px;min-width: 120px;max-width: 100%;top: 42px;border-radius: 3px;}
+.info_type:before {content: " ";position: absolute;left: 20px;display: block;line-height: 0px;top: -38px;width: 0;height: 0;z-index: 999;border-right: 10px solid transparent;border-bottom: 20px solid black;border-left: 10px solid transparent;border-top: 20px solid transparent;}
+.info_type:after {content: '';position: absolute;left: 20px;display: block;line-height: 0px;top: -31px;margin-top: -10px;width: 0;height: 0;border-right: 10px solid transparent;border-bottom: 20px solid white;border-left: 10px solid transparent;border-top: 20px solid transparent;}
+.btt.file_info.show:before {content: " Ẩn thông tin";}
+.postbody .content {line-height: 20px;clear: both;padding: 5px;}
+.fottertopic {border-top: 1px solid white;padding-top: 13px;min-height: 27px;text-align: center;}
+.edittopic a:before {content: "";}
+.edittopic a:before,.quotetopic,.deletetopic a:before,.votetopic a:before{padding: 3px 7px;font-size: 24px;background: darkviolet;color: white;margin-right: 20px;}
+.deletetopic a:before {content: "";}
+.votetopic a:before {content: "";}
+.votetopic .davote:before {color: black}
+.author {background: darkgreen;padding: 5px;}
+.box_thank {border: 1px dashed;margin-bottom: 10px;font-size: 10px;border-radius: 3px;margin: 10px;}
+.note_thank.pad5 {padding: 5px;border-bottom: 1px dashed;}
+.show_thanker {padding: 5px;}
+.show_thanker a:after {content: " , ";}
+.show_thanker a:last-child:after,.dhide {display: none;}
+.zzBoxes_overlay {z-index: 999;width: 100%;position: fixed;background: rgba(0, 0, 0, 0.26);height: 100%;top: 0;}
+.load_content {z-index: 9999;position: fixed;top: 50%;text-align: center;display: block;width: 100%;padding: 5px 0;font-size: 20px;}
+.post_name {font-size: 16px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+.checker {background: black;border: 1px solid white;min-width: 140px;position: absolute;text-align: center;z-index: 100;padding: 7px 13px;}
+.deletetopic {position: relative;}
+.checker_content {border-bottom: 1px solid white;color: white;margin-bottom: 7px;padding-bottom: 5px;}
+.checker_choice div {background: #004FBC;color: #FFF;display:inline-block;margin-left: 10%;padding: 5px;min-width: 41px;}
+.checker_cancel {background: red!important;}
+.checker_yes {margin-left: 0!important;}
+.checker_bottom:before {content: " ";position: absolute;right: 10px;display: block;line-height: 0px;top: 67px;width: 0;height: 0;z-index: 999;border-right: 10px solid transparent;border-top: 20px solid black;border-left: 10px solid transparent;border-bottom: 20px solid transparent;}
+.checker_bottom:after {position: absolute;display: block;width: 0;height: 0;border-color: transparent;border-style: solid;content: "";border-width: 10px;}
+.checker_bottom:after {content: " ";position: absolute;right: 10px;display: block;line-height: 0px;top: 69px;width: 0;height: 0;border-right: 10px solid transparent;border-top: 20px solid white;border-left: 10px solid transparent;border-bottom: 20px solid transparent}
+.content_tab .btt,.desktop a,.logout a {display: block;padding: 5px;}
+.content_tab li {border-bottom: 1px solid #ccc;}
+.content_tab {background: rgb(33, 77, 108);z-index: 9999;position: relative;}
+.content_tab li:last-child,.content_tab li ul li {border: 0;}
+.content_profile,.content_profile li {padding: 5px;}
+.profile_avata img {width: 150px;height: 150px;}
+.ds_chuyen_muc a {padding: 5px;display: block;position: relative;}
+.ds_chuyen_muc a:after {content: "";position: absolute;right: 0;color: white;font-size: 20px;top: 1px;}
+.ds_chuyen_muc li:last-child {border-bottom: 0!important;}
+.ds_chuyen_muc li {border-bottom: 1px dashed #ccc!important;}
+.ds_chuyen_muc a:hover {background: blueviolet;}
+.profile_avata img {border: 1px solid;padding: 5px;border-radius: 3px;}
+.recent_tab {padding: 5px;display: block;}
+.content_tab .fa {width: 20px}
+.tab_home a, .recent_tab, .tab_profile,.tab_cm,.logout a,.desktop a {position: relative;}
+.tab_profile:after, .tab_cm:after,.recent_tab:after {content: "";right: 13px!important;font-size: 24px!important;top: 0px!important;}
+.tab_profile:after, .tab_cm:after, .recent_tab:after, .tab_register:after, .tab_login:after{content: "";}
+.tab_home a:after, .logout a:after, .desktop a:after{content: "";}
+.tab_home a:after, .logout a:after, .desktop a:after, .tab_profile:after, .tab_cm:after, .recent_tab:after, .tab_register:after, .tab_login:after{position: absolute;right: 12px;font-size: 18px;top: 4px;}
+.content_laster a {padding: 5px;}
+.content_laster .chbv.dataf {padding: 0}
+.baivietlast {margin-left: 27px;display: block;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+.tab_home a {display: block;padding: 5px;color:white;}
+.atv:after {content: "\f0d8"!important;}
+.getback a {display: block;}
+.tab_home a:hover, .recent_tab:hover, .tab_profile:hover, .tab_cm:hover, .logout a:hover, .desktop a:hover,.atv {background: darkred;}
+.message_text {padding: 0;line-height: 20px;border-bottom: 1px solid;font-size: 0;}
+.message_text br {display: none;}
+.message_text {padding: 5px;}
+.message_text a[href*="viewtopic"]:before,.message_text a[href*="forum"]:before {font-size: 12px;padding: 5px;display: inline-block;color: white;margin: 0 10px;}
+.message_text a[href*="viewtopic"]:before {content: " Xem Bài Viết";background: blue;}
+.message_text a[href*="forum"]:before {content: " Quay Lại";background: red;}
+.tab_fixes {position: fixed;width: 100%;height: 100%;background: rgba(136, 129, 129, 0.49);}
+.chbv.dataf:nth-child(1):before,.chbv.dataf:nth-child(1):after{background:red}
+.chbv.dataf:nth-child(2):before,.chbv.dataf:nth-child(2):after{background:#d47a2a}
+.chbv.dataf:nth-child(3):before,.chbv.dataf:nth-child(3):after{background:#b9ba45}
+.chbv.dataf:nth-child(4):before,.chbv.dataf:nth-child(4):after{background:#aad655}
+.chbv.dataf:nth-child(5):before,.chbv.dataf:nth-child(5):after{background:#55e7aa}
+.mobile_comment {white-space: normal;}
+.mobile_item:last-child {border: 0;}
+#mobileActionBar a.navbar {width: 100%;}
+.copyright {background: rgb(182, 8, 8);padding: 5px;text-align: center;}
+.application_footer_spacer {height: 30px;}
+input {font-family: Tahoma,FontAwesome;}
+#text {padding: 5px;width: 63%;background: black;border: 1px solid white;color:white}
+#Cboxvhg input[type="submit"] {background: darkmagenta;color: white;border: 0;font-size: 15px;padding: 5px;vertical-align: middle;margin-left: 20px;}
+.content_btt {text-align: center;padding: 5px;}
+.result {height: 250px;overflow: scroll;border-top: 1px solid white;padding: 5px;line-height: 20px;}
+.result.noatv{border:0;height: inherit}
+.chat_content {max-width: 80%;word-wrap: break-word;display: inline-flex;word-break: break-word;}
+.result p{padding: 5px;}
+.result img,.result iframe {max-height: 160px;}
+.warning_2 span, .warning span {margin-left: 20px;}
