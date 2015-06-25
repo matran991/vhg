@@ -175,7 +175,7 @@ ul.content_profile{text-align: center}
 .mobile_comment{white-space: normal}
 .mobile_item:last-child{border: 0}
 #mobileActionBar a.navbar{width: 100%}
-.copyright{background: rgb(182,8,8);padding: 5px;text-align: center}
+.copyright{background: rgb(182,8,8);padding: 5px;text-align: center;margin-top:10px}
 .application_footer_spacer{height: 30px}
 input{font-family: Tahoma,FontAwesome}
 #text{padding: 5px;width: 63%;background: black;border: 1px solid white;color:white}
@@ -188,3 +188,7 @@ input{font-family: Tahoma,FontAwesome}
 .result img,.result iframe{max-height: 160px}
 .warning_2 span,.warning span{margin-left: 20px}
 #guest .warning {text-align: center;}
+.zzBoxes_inner {background: black;color: white;font-size: 14px;font-weight: bold;z-index: 999;position: fixed;left: 1px;-webkit-transition: margin .3s;transition: margin .3s;}
+.zzBoxes_content {margin: 0;border: 1px solid white;padding: 2px;position: relative;}
+.zzBoxes_close {position: absolute;right: 15px;top: 7px;background: red;color: white;padding: 5px;font-family: FontAwesome;}
+.post_info:hover .info_type {display: block!important;}
