@@ -67,7 +67,7 @@
 .navvhg li.tkiol.pad5.file_user:hover,#main-content > div[style="overflow:visible"],select,input[type="text"],input[type="password"],#searchajax,.forabg,.listboxcon,.breadcrumb,.row .pagination a:hover,.postprofile_new,#quickreply,#profile-advanced-details .avatar,.module .inner,table.forumline,.zzBoxes_button,.zzBoxes_inner,.zzBoxes_inner,blockquote ,code,dl.codebox ,.wysibb,.wysibb .wysibb-toolbar .wysibb-toolbar-container .wysibb-toolbar-btn span.btn-tooltip,.wysibb .wysibb-toolbar .wysibb-toolbar-container .wysibb-toolbar-btn .wbb-list,.ve-tlb-colorpick .cp-line,#wbbmodal .wbbm,.nav_drop li,.nav_profile:hover li,.nav_drop_priv,.nav_drop_note,.changeLast,.fbt.actv ,.selop,#tooltip,.bde{background:black}
 
 /* Font */
-#cont_pwd .pwd_img,#phpbb,#wrap,.right-box a,a.button1.cgu-buttons[href*="register"],a.button2.cgu-buttons[href="/"] ,input,.wysibb-text-editor.wysibb-body code:after,dl.codebox dt:after,.button2[href="/register"]:before{font-family:Tahoma,Verdana,Arial,Helvetica,sans-serif,FontAwesome}
+blockquote cite:after,#cont_pwd .pwd_img,#phpbb,#wrap,.right-box a,a.button1.cgu-buttons[href*="register"],a.button2.cgu-buttons[href="/"] ,input,.wysibb-text-editor.wysibb-body code:after,dl.codebox dt:after,.button2[href="/register"]:before{font-family:Tahoma,Verdana,Arial,Helvetica,sans-serif,FontAwesome}
 a:hover {text-decoration:none!important;}
 input[type="text"],input[type="password"] {border: 2px solid;border-color:white;cursor:text;color:white;font-weight:bold;border-radius:3px;}
 .knl {display:block;width:100%;height:18px;padding:6px 12px;font-size:14px;line-height:1.42857143;color:#555;background-color:#fff;background-image:none;border:1px solid #ccc;border-radius:4px;-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075);box-shadow:inset 0 1px 1px rgba(0,0,0,.075);-webkit-transition:border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;-o-transition:border-color ease-in-out .15s,box-shadow ease-in-out .15s;transition:border-color ease-in-out .15s,box-shadow ease-in-out .15s;}
@@ -317,21 +317,31 @@ p.poll_w {max-width:560px;}
 .zzBoxes_mess .thongtinct span {display:initial;padding:0;border:0;}
 /* Quote */
 blockquote div {font-family:Tahoma;font-weight:bold;width:97%;margin-left:18px;display:inline-block;padding:6px;font-size:14px;}
-blockquote {font-size:16px;-moz-osx-font-smoothing:grayscale;padding:0;margin-left:0;}
-blockquote cite {width:100%;display:block;padding:10px;background:darkviolet;margin-left:-25px;margin-top:-6px;font-size:16px;margin-bottom:10px;padding-right:22px;color:darkorange;}
+blockquote {font-size:16px;-moz-osx-font-smoothing:grayscale;padding:0;margin: 5%;border: 2px solid darkturquoise;}
+blockquote cite {width:100%;display:block;padding:10px;background: darkturquoise;margin-left:-25px;margin-top:-6px;font-size:16px;margin-bottom:10px;padding-right:22px;color: white;}
+blockquote blockquote div cite {background: rgb(173, 97, 10);}
+blockquote blockquote {background: black;position: relative;left: -18px;border-color: rgb(173, 97, 10);}
+blockquote blockquote cite {background: chartreuse!important;}
+blockquote cite a {color: white!Important;}
+blockquote cite:after {content: "\f176";padding-left: 10px;}
 blockquote .box_download,blockquote .box_thanker, blockquote div .head_download,blockquote div .head_thanker {width:initial;margin-left:0;}
 blockquote .nd_download,blockquote .nd_thanker {width:inherit;margin-left:0;display:block;}
 /* Spoiler */
-.wysibb-text-editor.wysibb-body .codebox.spoiler:after, .codebox.spoiler dt:after,.wysibb-text-editor.wysibb-body code:after, dl.codebox dt:after {display:inline-block;font-family:FontAwesome;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;transform:translate(0, 0);content:"\f03c";position:absolute;top:7px;right:7px;font-size:20px;}
-.wysibb-text-editor.wysibb-body .codebox.spoiler:after, .codebox.spoiler dt:after{content:"\f03c"}
-.codebox.spoiler dt {background:darkgreen;color:magenta;}
-.spoiler_content.hidden {padding:10px}
+
+.wysibb-text-editor.wysibb-body .codebox.spoiler:after, .codebox.spoiler dt:after{content: "";}
+.codebox.spoiler dt {background: rgb(22, 169, 22);color: white;}
+.spoiler_content.hidden {padding:10px;height: inherit!Important;font-size: 12px!important;}
 /* Code */
 .wysibb-text-editor.wysibb-body code:after, dl.codebox dt:after{content:"\f121";top:3px;}
-code:before {border-bottom:1px solid;}
-dl.codebox {margin:5px;}
-dl.codebox code {color:chartreuse;}
-dl.codebox dt {background:rgb(0, 90, 255);margin:-3px;position:relative;font-size:14px;}
+.codebox {margin: 5%;border: 2px solid rgb(100, 103, 103);}
+.codebox.spoiler {border: 2px solid rgb(22, 169, 22);position: relative;}
+.codebox.spoiler .spoiler_content {display: block!Important;height: 0;font-size: 0;}
+.wysibb-text-editor.wysibb-body .codebox.spoiler .spoiler_content:before {top: 0px;}
+.codebox.spoiler .spoiler_content:before {content: "\f150  Hiện nội dung";}
+.codebox.spoiler .spoiler_content.hidden:before {content: "\f151  Ẩn nội dung";}
+.codebox.spoiler .spoiler_content.hidden:before,.codebox.spoiler .spoiler_content:before {position: absolute;top: 4px;font-family: Tahoma,FontAwesome;font-weight: 100;font-size: 20px;right: 5px;}
+dl.codebox code {color: rgb(219, 219, 219);}
+dl.codebox dt {background: rgb(100, 103, 103);margin:-3px;position:relative;font-size:14px;border: 0;}
 
 /* Download & Thanker */
 .box_download,.box_thanker {background:royalblue;}
@@ -521,8 +531,8 @@ html{height:100%!important;}
 .wysibb .bottom-resize-line{display:block;height:5px;cursor:ns-resize;}
 .wysibb-toolbar-btn.mswitch.on .btn-inner.modesw:before {content:"WYSIWYG ";font-size:12px;}
 .wysibb-toolbar-btn.mswitch.on .btn-inner.modesw {font-size:0px;}
-.wysibb-text-editor.wysibb-body code:before {content:"Code";background:rgb(0, 90, 255);display:block;margin:-10px;margin-bottom:10px;padding:5px;}
-.wysibb-text-editor.wysibb-body code {background:rgb(180, 177, 182);display:block;padding:10px;margin:10px;font-size:14px;position:relative;}
+.wysibb-text-editor.wysibb-body code:before {content:"Code";background: rgb(100, 103, 103);display:block;margin:-10px;margin-bottom:10px;padding:5px;}
+.wysibb-text-editor.wysibb-body code {background: black;display:block;padding:10px;margin: 5%;font-size:14px;position:relative;color: white;border: 2px solid rgb(100, 103, 103);}
 .wysibb-text-editor.wysibb-body code:after,dl.codebox dt:after {display:inline-block;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;transform:translate(0, 0);content:"\f121";position:absolute;top:7px;right:7px;}
 .wysibb-toolbar-container.modeSwitch:hover {color: white;}
 .butedit{font-size:18px!important;height:26px;min-width:26px;margin:2px;line-height:28px!important;text-align:center}
