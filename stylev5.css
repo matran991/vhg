@@ -94,7 +94,15 @@ input {outline:none!important}
 #wrap {font-weight:bold;background-color:black;min-width:inherit;padding:0;margin:0;width:100%;max-width:100%;overflow:hidden}
 /* Header */
 .headerbar {background-image:none;}
-#logo {float:left;padding:0;width:100%;background:rgb(23, 96, 147);height:80px;}
+#logo{height: 141px!important;overflow: hidden;background: black!important;}
+#logo img {max-width: 100%;}
+#searchajax {left: 0!important;top: 37px;}
+#phpbb {padding: 0;background-color: black;}
+#wrap{border:0!important}
+img,iframe {max-width: 100%;}
+.tppost-icon a {color: white}
+.listboxcon {margin-top:0!Important;min-width: 103px!Important;top: 22px;}
+.ttboxct {position: relative;}
 .navtk {position:relative;}
 #searchajax {z-index:999;width:300px;font-weight:bold;position:absolute;border:5px solid rgb(30, 61, 182);left:12px;}
 #searchajax .knl {width:88%}
