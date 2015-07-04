@@ -644,6 +644,8 @@ ul.nav_drop_priv .nav_tnr a:first-child:before {content:" được gửi bởi "
 .changeLast {border:1px solid #DDD;font-weight:bold;}
 th.th.top {width:25%;}
 .tkbv li{position:relative;width:96%;list-style-type:none;line-height:24px;border-bottom:1px dashed #CCC;counter-increment:Zzindex}
+li.chbv .nguoigui span {width: 32%;display: inline-block;text-align: center;}
+li.chbv .nguoigui {width: 43%;}
 .tkbv li:before{content:counter(Zzindex);display:inline-block;height:16px;background:#98D0FF;margin-right:10px;left:-23px;font-size:11px;top:5px;border-radius:2px;text-align:center;width:18px;color:#FFF;line-height:16px}
 .tkbv li:after{content:" ";background:#98D0FF;display:block;width:6px;height:6px;position:absolute;top:10px;left:15px;transform:rotate(45deg);-ms-transform:rotate(45deg);-webkit-transform:rotate(45deg)}
 .tkbv li:nth-child(1):before,#left li:nth-child(1):after{background:red}
@@ -651,16 +653,21 @@ th.th.top {width:25%;}
 .tkbv li:nth-child(3):before,#left li:nth-child(3):after{background:#b9ba45}
 .tkbv li:nth-child(4):before,#left li:nth-child(4):after{background:#aad655}
 .tkbv li:nth-child(5):before,#left li:nth-child(5):after{background:#55e7aa}
-.baivietlast,.cdlx {max-width:70%;display:inline-block;vertical-align:bottom;}
+.baivietlast,.cdlx {max-width: 50%;display:inline-block;vertical-align:bottom;}
 ul.cubv {padding-right:10px;height:252px;overflow:hidden;}
 ul.cubv:hover {overflow-y:scroll;}
 .nguoigui a {max-width:100%;display:inline-block;vertical-align:bottom}
-.th.bv {width:75%;text-align:left;}
+.th.bv {width: 80%;text-align:left;position: relative;}
+.th_right {position: absolute;right: 45px;width: 40%;top: 14px;z-index: 99999;display: block;}
+.th_right span {width: 32%;display: inline-block;text-align: center;}
 .topp .hide a {vertical-align:bottom;display:inline-block;}
-.topActive,.data_f0 {display:block;}
+.topActive,.data_f0 {display:block;position: relative;}
 #content-container div#left{float:none;width:98%;margin:10px;}
 #left td{vertical-align:top}
+td.topp li:after,td.topp li:before {display: none;}
 #left a{ text-decoration:none,vertical-align:bottom;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;height:inherit}
+b.m_get a {display: inline-block;}
+b.m_get {display: block;padding: 3px;font-size: 11px;}
 .lastRight,.nguoigui {float:right;}
 .fbt{padding:12px;cursor:pointer;}
 #tkbv {border:2px solid #C72525;border-radius:3px;}
