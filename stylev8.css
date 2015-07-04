@@ -658,7 +658,7 @@ ul.cubv {padding-right:10px;height:252px;overflow:hidden;}
 ul.cubv:hover {overflow-y:scroll;}
 .nguoigui a {max-width:100%;display:inline-block;vertical-align:bottom}
 .th.bv {width: 80%;text-align:left;position: relative;}
-.th_right {position: absolute;right: 45px;width: 40%;top: 14px;z-index: 99999;display: block;}
+.th_right {position: absolute;right: 48px;width: 41%;top: 14px;z-index: 99999;display: block;}
 .th_right span {width: 32%;display: inline-block;text-align: center;}
 .topp .hide a {vertical-align:bottom;display:inline-block;}
 .topActive,.data_f0 {display:block;position: relative;}
