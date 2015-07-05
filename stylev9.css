@@ -6,6 +6,10 @@
 @-webkit-keyframes loading2 {from {width:265px}  to {width:244px}}
 @-o-keyframes loading2 {from {width:265px}  to {width:244px}}
 @-moz-keyframes loading2 {from {width:265px}  to {width:244px}}
+@keyframes color {0% {background: darkcyan; }25% {background: darkmagenta;}50% {background: darkblue; }75% {background: darkviolet; }100% {background: purple;}}
+@-webkit-keyframes color {0% {background: darkcyan; }25% {background: darkmagenta;}50% {background: darkblue; }75% {background: darkviolet; }100% {background: purple;}}
+@-o-keyframes color {0% {background: darkcyan; }25% {background: darkmagenta;}50% {background: darkblue; }75% {background: darkviolet; }100% {background: purple;}}
+@-moz-keyframes color {0% {background: darkcyan; }25% {background: darkmagenta;}50% {background: darkblue; }75% {background: darkviolet; }100% {background: purple;}}
 .load .fa {animation: loading 0.5s infinite;-moz-animation: loading 0.5s infinite;-webkit-animation: loading 0.5s infinite;-o-animation: loading 0.5s infinite;transform: rotate(-360deg);}
 /* css defaul */
 .pmlist li.row,.pmlist li.row:last-child {border:0;}
@@ -58,7 +62,7 @@
 .m_tb.m_content,.search .postbody .postprofile li,#form_confirm .inner .fields2,#profile-advanced-details .avatar img,.module .inner div[style="text-align:center;"],.new-message.bottom,input[type="text"],input[type="password"],select,.ctfr a, .ctfr span strong ,.imgavata img,.postbody_new .author,.content.clearfix,.pad5,.listboxcon a,.topiclist.topics.bg_none .row,.profile-icons a,.prev, .sbpost,#cp-main h1,.panel .message-block .message-text,#profile-advanced-left .panel,h1.page-title.wall,.new-message.bottom a,#cp-main .panel ol li,.forumline .thHead,#poll_ballot a[href*="mode=close"],#poll_result a[href*="mode=close"],a.view_vote,.zzBoxes_mess .lh_member a,.tt_mem span,dl.codebox dt,dl.codebox code,.error.dndk,.type_topic[title*="Global announcement"],.type_topic[title*="Chú ý"],.type_topic[title*="Bầu chọn"],.type_topic[title*="Thông báo"],.right-box a,.file_avata img,.file_info_2 span,input[name="password"],.nav_drop_priv,.nav_drop_priv .nav_tnr,.note_content,#cont_pwd .pwd_img,.tkbv td,.changeLast,.selop,#tooltip p,.thongtinlast,.module .inner div[style="text-align:center;"] img,#profile-advanced-details .message-footer li a,.zzBoxes_mess .thongtinct ,.zzBoxes_mess .lh_member,.wysibb .wysibb-text{padding:5px}
 
 /* Border red */
-#post_topic,.m_tb.inner,.m_cof.inner,.boxbt .lastpost,.post,.topiclist.topics.search,.breadcrumb,.postprofile_new,.imgavata img,#form_confirm .inner,#memberlist,form[action="/memberlist"] .inner,.panel .message-block,#profile-advanced-details .avatar,#cp-main,.module .inner,#tabs a,#profile-advanced-layout #tabs #new-message-link a,form[action="/search?mode=results"] .inner,#tooltip,#Chatboxvhg{border:2px solid rgb(199, 37, 37)}
+#post_topic,.m_tb.inner,.m_cof.inner,.post,.topiclist.topics.search,.breadcrumb,.postprofile_new,.imgavata img,#form_confirm .inner,#memberlist,form[action="/memberlist"] .inner,.panel .message-block,#profile-advanced-details .avatar,#cp-main,.module .inner,#tabs a,#profile-advanced-layout #tabs #new-message-link a,form[action="/search?mode=results"] .inner,#tooltip,#Chatboxvhg{border:2px solid rgb(199, 37, 37)}
 
 /* background red */
 .m_tb.page-title,h1.m_cof.page-title.corphin,#Chatboxvhg .khungtk,.header .icon,.topiclist.topics .header,.postbody_new .author,.prev, .sbpost,#form_confirm .inner .page-title,#memberlist thead,.panel .message-block:before,.h3,#cp-main h1,#tabs a,#tabs .activetab a,#tabs .activetab a:hover,.new-message.bottom a,#profile-advanced-layout #tabs #new-message-link a,#profile-advanced-details .message-footer li a,form[action="/search?mode=results"] .inner .h3,#pwd_bad,.thongtinlast{background:rgb(199, 37, 37)}
@@ -102,7 +106,8 @@ input {outline:none!important}
 img,iframe {max-width: 100%;}
 .tppost-icon a {color: white}
 .listboxcon {margin-top:0!Important;min-width: 103px!Important;top: 22px;}
-.ttboxct {position: relative;}
+.ttboxct {position: relative;font-size: 0;}
+.ttboxct a:first-child:before {content: "Box con:";font-size: 14px;color: white;display: block;padding: 5px;}
 .navtk {position:relative;}
 #searchajax {z-index:999;width:300px;font-weight:bold;position:absolute;border:5px solid rgb(30, 61, 182);left:12px;}
 #searchajax .knl {width:88%}
@@ -119,19 +124,33 @@ table th.thCornerR, table th.thTop, table.forumline th.thCornerL {background:bro
 .boxvhg {width:68%;margin-left:10px;}
 .boxhead {background:#c72525;}
 .boxhead h2, .titlebox {color:#48CDAA;margin:0;font-size:25px;display:inline-block;}
-.boxbt .title {margin:0}
-.boxbt a.forumtitle {color:coral;font-size:20px}
+.boxbt .title {margin:0;overflow: hidden;max-width: 100%;position: relative;z-index: 9;}
+.boxbt a.forumtitle {color:coral;font-size: 12px;text-align: center;}
+.boxbt a.forumtitle .box_icont, .boxbt .forum_box_name {display: block;padding: 10px;}
+.box_hide {position: absolute;top: -1px;background: black;z-index: 999;left: 0;border: 2px solid rgb(199, 37, 37);width: 0;border-radius: 3px;word-wrap: break-word;max-width: 185px;  visibility: hidden;height: 0;transition: all 0.5s;  -moz-transition: all 0.5s;  -webkit-transition: all 0.5s;  -o-transition: all 0.5s;min-height: 157px;min-width: 185px;}
+li.khungbox:hover .box_hide {left: 214px;visibility: visible;}
+li.khungbox:last-child:hover .box_hide {left: -217px;visibility: visible;}
+.box_hide div {position: relative;z-index: 9;}
+.box_hide:after {content: "";background: rgb(0, 0, 0);position: absolute;width: 30px;height: 30px;left: -13px;top: 40%;transform: rotate(135deg);}
+.box_hide:before {content: "";background: rgb(199, 37, 37);position: absolute;width: 30px;height: 30px;left: -16px;top: 40%;transform: rotate(135deg);}
+li.khungbox:last-child .box_hide:after {left: 168px;}
+li.khungbox:last-child .box_hide:before {left: 171px;}
+.box_hide .gensmall {display: block;font-size: 12px;padding: 5px;}
+.forum_box_name {background: rgb(199, 37, 37);color: white;font-size: 12px;}
+.boxbt a.forumtitle .box_icont[data*="unread"] {animation: color 3s infinite;-moz-animation: color 3s infinite;-webkit-animation: color 3s infinite;-o-animation: color 3s infinite;}
+.boxbt a.forumtitle .box_icont[data*="unread"]:before {content: "Có bài mới";background: red;padding: 5px;color: white;transform: rotate(314deg);display: block;position: absolute;left: -41px;top: 24px;z-index: 9;width: 139px;}
+.boxbt a.forumtitle .fa {font-size: 90px;color: white;display: block;}
+.boxvhg1 {width: 68%;}
 .boxbt a.forumtitle:hover {text-decoration:none}
-.boxbt .lastpost {min-width:200px;float:right;padding:10px}
-.boxbt .ttboxbv {width:98%;margin-left:10px;}
+.boxbt .lastpost {/* min-width:200px; */padding:10px;min-height: 81px;}
+.boxbt .ttboxbv {width: 100%;}
 .boxcon:hover .tdboxcon {background:#d2691e;}
 .boxcon:hover .listboxcon {display:block}
 .listboxcon a {font-size:14px;color:coral;border-bottom:1px solid white;display:block}
 .listboxcon a:hover {background:cadetblue}
 .listboxcon {z-index:999;font-size:0;position:absolute;min-width:97px;margin-top:5px}
 .boxbt .lastpost a[title=""]:before {content:"Chưa có bài viết"}
-.listforum .khungbox:last-child {border:none}
-.listforum .khungbox {border-bottom:2px solid rgb(199, 37, 37);}
+.listforum .khungbox {display: inline-block;width: 28%;text-align: center;border: 2px solid rgb(199, 37, 37);border-radius: 5px 5px 0 0;margin: 0 2%;position: relative;}
 .btkcfr {width:28%;margin-right:10px;}
 ul.topics dd.dterm, ul.topics dt {padding-left:5px;padding-right:0;border:0}
 ul.topiclist dd,li.row {border:0}
@@ -390,7 +409,6 @@ h4,.h4,.wysibb-text-editor.wysibb-body h2,h2.post-content 4 {font-size:16px!impo
 .wysibb-text-editor.wysibb-body h4,h4.post-content {color:violet;font-size:18px;text-transform:uppercase;font-family:Trebuchet MS,FontAwesome;padding:5px;margin:10px;margin-left:60px;border-bottom:1px dashed;}
 .inner .h3 {font-size:initial!important;padding-bottom:10px;border:0;margin-top:0;}
 .titlebox h2 {font-size:initial!important}
-  
 /* Wisybb */
 @font-face{font-family:'WysiBBiconFont';src:url('../fonts/wysibbiconfont-wb.eot');}
 @font-face{font-family:'WysiBBiconFont';src:url(data:application/x-font-woff;charset=utf-8;base64,d09GRgABAAAAABJ8ABEAAAAAGmAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABGRlRNAAABgAAAABoAAAAcZibEWkdERUYAAAGcAAAAHQAAACAASwAET1MvMgAAAbwAAABGAAAAVmNj7eZjbWFwAAACBAAAAE0AAAFaADXUDGN2dCAAAAJUAAAAAgAAAAIAAAAAZnBnbQAAAlgAAAGxAAACZVO0L6dnYXNwAAAEDAAAAAgAAAAIAAAAEGdseWYAAAQUAAAL7AAAELBUmhy9aGVhZAAAEAAAAAAvAAAANgEcbE1oaGVhAAAQMAAAACAAAAAkDtEAaGhtdHgAABBQAAAATwAAAHjV7x9TbG9jYQAAEKAAAAA+AAAAPj+yO3JtYXhwAAAQ4AAAACAAAAAgATwBHG5hbWUAABEAAAAAvwAAAYodoTk9cG9zdAAAEcAAAACEAAABNtL4DyxwcmVwAAASRAAAAC4AAAAusPIrFHdlYmYAABJ0AAAABgAAAAbgW1DOeNpjYGBgZACCM7aLzoPpLxM2QumbAFW5CKYAAHjaY2BkYGDgA2IJBhBgYmAEQlkgZgHzGAAFiQBQAAAAeNpjYGS/zTiBgZWBhVWfdToDA6MchGa+xpDMJMDAwMTAyswABwIIJkNAmmsKgwMD7wcGtnP/zjEAScaoBqABIDkAv14LkQAAeNpjYGBgZoBgGQZGBhAIAfIYwXwWBgsgzcXAwcAEhAwMvA8kPjD8/w9WxfuAAcL+/02BRUAWqhcKGNkY4AKMTFDzURQwDHsAAJNvCw4AAAAAAAAAeNpdUbtOW0EQ3Q0PA4HE2CA52hSzmZDGe6EFCcTVjWJkO4XlCGk3cpGLcQEfQIFEDdqvGaChpEibBiEXSHxCPiESM2uIojQ7O7NzzpkzS8qRqnfpa89T5ySQwt0GzTb9Tki1swD3pOvrjYy0gwdabGb0ynX7/gsGm9GUO2oA5T1vKQ8ZTTuBWrSn/tH8Cob7/B/zOxi0NNP01DoJ6SEE5ptxS4PvGc26yw/6gtXhYjAwpJim4i4/plL+tzTnasuwtZHRvIMzEfnJNEBTa20Emv7UIdXzcRRLkMumsTaYmLL+JBPBhcl0VVO1zPjawV2ys+hggyrNgQfYw1Z5DB4ODyYU0rckyiwNEfZiq8QIEZMcCjnl3Mn+pED5SBLGvElKO+OGtQbGkdfAoDZPs/88m01tbx3C+FkcwXe/GUs6+MiG2hgRYjtiKYAJREJGVfmGGs+9LAbkUvvPQJSA5fGPf50ItO7YRDyXtXUOMVYIen7b3PLLirtWuc6LQndvqmqo0inN+17OvscDnh4Lw0FjwZvP+/5Kgfo8LK40aA4EQ3o3ev+iteqIq7wXPrIn07+xWgAAAAABAAH//wAPeNq9V39sG9d9f9873lE8/TgeeSR1lkj57iSeFEk+6yiSVik7DBzFLZNFdk2jUZsImzkkCuq0sIE6g6khPxZ5gFPM66BglVEYqQ00GVYP7+hu+SMuJgORBqg4N0VbIW5WF2mwzFvQFuiP2I3E530f5bpeWnTbPxP0eO993yPf9+fn8z0C5K6/MUIA3iU1+aAkkiGSIXTIpVJATY92ubQnR+MB0HtcfxiGyc6x/uy9UCiBVyhCITsMFq5yQ+AlVZBxFQYZ91TQ7SGA6xEpIqmV2YIBGTVjzRmSIhlQgwdUFWd65ZjDfuw8W9XliMGeYbQmKY46Mi0OlT11RFEUSz2+uX5ct1RCBDh2KyS/gfqJ5OPkWdJAtYepGNDdLk0HdJ/b6BrwcrkcDQd02AP6CZfuXad60ND3KsMXy3pHZLixV+fTvWJkmIY8qkd9C4bpRNCYsLh8QkC56zWsCb6yBiPDfgWGfUvXYjQzQfx9aS3W6CnunZiY2DkmmQlTy49zu9Ogc7NlfMb1VEYs5LxiwRGztmPthvGcmbtzIhENy2HZsZyskxW1cZTBMemTH/6DDkXQVbU8K0lKSR8tOdPKyGQNJLUwpijwgK8rpSlVkvR6/XrjyFLZgcKMmrkmXXEUZUQpOxeemrlFZsq6IUnSaHVBODQloVy11LJxg30w9+7sLDils1W85LkqxrmBcX4B/Xgvhp0aLvqIbvdoxKXDOTqJcS67/n0YZz+Chl8kYq7Qn5qgkxrdg2aD3AdoXRHDr6EHkuEkDznax8108twkZ1LIm3lTy3mpDKSSuaLnZF3I2iY6ABqSYivS2JGpCwZ7AyZR4cF0WVFBvaFDV7kEMMneGF0pOQ8qipRGk5NJSdn4jiLZ4svoG6WW1tlfXV7RM9Z0WlWs6bJhHB+7DMcy6sOGis740t8YxgWeK6u3nghvSG2knWwnB0ijl+fK9oD2uDQa0JhLEwFmAFDTpR3rDbkt5nke7Q1ob9SPYkp0BzTt8eQgfk+vFvMlcWLCj0VxJgs8+BEhFYFiBJyIMAn5XN7euRvMtDAMiVwaTFiFF9mJFTgJJ9dYHRbW2Al2QvzO5iacmT27yR4P7WFf4PsLrL62degEnNz4nDGYnp8+ePhCfa4yTVo2kLnwhnwv2mCRhwjtcGlfQDMu1QIad1FHoLZLO7n6ca4+bvZFfQ3V7+EB9fu5+n0dqHQbQfW1DM7aIx9RX7utfx6fdyz4wwb8XvUZhaju2PWKVFZrr942gYTIU0QKr0l/gjUbJh0kQQYITfAYAE26tGudxgLa4fkprmo0cUfBoqmZKRyoYxHIeMFLJnTZeir82M3zS3L219eKMA/VTWiwE0+fP3r0vCQ9en7jZwWxn8Xfbb4nPH/u6aenq8fxfpEcIyvhldDLeLNBXPIYoaJLR3K0LaDbPK5CKqCqS60cL4IsJsROl8I6bQ9oe9TPoCvvCfwxxIBMuxb7x3A02b3NxmIgfrINdYV70K1qCmdkiGsdi8ZyJoKiaWWx7gs5cwdg0qNfExKKUYQ1sAfwSCwq4Eb22OITcKhSzzR/ZRcKttCeqVfY389BQmyyutBuF4pW81cog+rc4uIc+3plXnyeHWbvLM6XBj9wJuuLza9dvXr09pz9uLXF84bUCQl/WXqcpEiaaKQRx9wHzBu/rwXe8UIRleiXvGQqJnZB2DK32zvAEaQCZPudujJoHK4JN4XE8WPds7PG0eM2yzeHK3O1dEUMz8JyjS1Vxb98daE2LUmzx5nJsvUZSaoeAf3cFBQrmyUed5mM3HoF4/5oK+7tRCVx1KZMKMF6y1EIaKdHQ5gHOU4ymkfbEIVyNBLQBMag26Vk3Q+1YU6LgS8rnucbLdVTmqnB7RG/az4C97F/3ho3pMc/PLM1ZrhE2AVT7HWsUpxvfPGjki1dK+zD8JocR6SYJNPkIPkU+Qy5RGjURdaj+116IKCCd7H7wP62VmkdiHIkqbr0EPLj9nWN7gou9h+q4mYxoIeidITLnIA+4tJyjs4E9OGATnn0QZd+HNP+UZea6xeJNvSJ/pSHX6X7Aror6us8yQbQ4o6gIY99DOu5oXe0eGsb0tBjuLvLRPbp7tmN7EN17WKq96E/wlT0O/Zh/kXun8CkPLAfiSqCiVgYRwJOIiiH+QcHaBTkxx2bP73dYIt5LrCt/Din8VTrqMxr39Nt0JO5Vrramm3pCPO2BXf5umJcNxzDGOy+bhgrxhMG/q8Y5bMrCL/fc3TDMKxTK4bB3lIVUFWlcs0wDh82hG2/DctCzU4/7Ri6U8/YtdIYHPYckL89MzemWrphPTtiGLXDwmU9jc0BvFRjVzaGfjdqErl062C4jjELY24ZxMSeZbFV22rA0wdRBZF9MMcbg36PtrvYFPD+hdc2Jlkk6vdgbW8Bpo0zjJYT9TtxJgW8x/F7IujVaAxd3ad9Iyyo3Qr3tWNrsW/IYleqnTNip+bHE9zvsW7kyVBbJ/AzaQzTRYl0RHDBIQGz6q4h6nlTz+uh7f0xjmoIav23n5fghvAm3GRtzZ3sBWgIf4ro9nDzK774L+w9doT9e7pan5mpw+bM/MGD86EePNUGN/k3Nj73m7PsYWEbSBKcXl0R+uar1fmZmdYn55IzZEF+PPR51MEkZMCEvMbRyJITmp5E1v0dwRnQwbYMdtCwbeN1ePHO0rKM1xfgF3H4O8Oyu9mnDIvl/9uStHD3NBkLvyKNY9Vb5GPkS4Rj7a4cD0/Wo9ZvmAyrSWnhcSigHlZ+iVc+7QwanYTnfmc8wj/D2JZ1Rv1uDI+JFN1iOjPqD+G6EDSGCvzokM2PDrlYLJMYv+5OjJ+iIj6bhMejPTvKQzak+c4IhgwZRhtPmV44oaPNKU0vmrxHa6G1luedHQ4JuzvTc7RxFLf6OC+s8SOnM8KTKsTZOxl0ypRuNF/ICH8u9LG/hSdxeDo8qEI3+6GuCk9mIN38C6Mcel8B6YiibiZ1UGsKwDI8d/kye2b5Rk1VxZ+qyhEpspHAHleCOezNrmBvprUYK92KFrZWZi6v7RbNtKilPop/cw14lf9/eOYsvMl2wpunth61FbBXN9Tr19WNVfbDMaiyr8P3ocyW2XBr/gMosRUeK/gWGZM/K33lNlb3E47MCMuI1QjUiMwRrB1sPto4L/IiQfdxUruDCt8KvbzxS/HPmr3CfmHXBx80fw2X2P3iQ0Jf851WH/MS2nRO4r+uoEVUxp8KGm0yD1sbRJCb2l2/o/WzA5iIpmOG46YIL8ElWIRvsmcm2eHSKZAWanjNHy8vw2W4wHMMhB0wKEdCe5DxCH5P2CG+zWKhPZv/iXcKO245ckT+Au5JfDcibm2zOPwEfipMbr4fmhATm+/zHgV9rshXQu/c4ap+ctv2LT+0PMAd0Il+iLq8w+Kqcg/cPeZ+C3F8KCsrMLO6Cp9eW4PZ1dU/eE/rt2/f07rzf3HPxr5Qx2an+DbeE9JWV9m5tTX2tf/hnv+7PeLbmwOhzo1f/D/Y80u0Z+D32AMwx96Tr8jPk1GykwDd0cIIvAWifi9CAEKKGvXjOEsGNBn1wzjLBr67lae5qBQa6DdgfAd0Ace2Ql7LaXoX7OCIt0fICCgU5FB/VoC5RRgEGQDUpatXl1ZWF/96be300deuXXvt6NLP2VvsrZ8vYV987sX6wmnYLzRPLY+OLp9qpupzT8wL+5v02dcGB//pOeE/Tl87WiwevXa6KV5i312amlqC0RYmwo9IRX5E6iUOyZP7yUyrE/YCbgDinh1QO0oFdNUU+m2dDga04NHBKDeEbgtomXcVfYH/AKJbeRCJ3pugruanezkDlTwEuW3poUKLdEAv5rC7Q1aPhrsA2T+VwNez7dj25aMD+f7iOL5+DqEUNHxDE7Cztq0swt54cbzIX9kS2As48KOuyYKDr1xSerCsQ1xIwOjJcpV9FRQ4NXMdvfGvKsDl09VSyTtZny5J0wslR39kqhH6NxXsqerVNfbKfSMZ1TLKmbMVgIPS9Nr5ygiom58BO22kq/ctPjJ9HOYXlpH+BzPO2ExlUiVACLvSRuQrvKYNgLbW8iZ3338BJ32bh3jaY2BkYGAA4hPnzHXi+W2+MshzMIDAmS8TbiHof+c4GNjOAbkcDEwgUQBg/gzIAHjaY2BkYGA7928ZAwPnYgaGHwwcDAxAERQgBwBxfwRFeNrjYIAAxvkMDEwrGRg4FzMwcDAwPgbiIiDeBMTHIJghF4iLOFgYqoG0DhB7AfEeoNwsIN0PpDOA+DQQT+VgYNKDYLAYOr4Psg8An9sPKgAAAAAAAAAAAAAAAAgAWAD8AW4B0AIyAnIC7AMuA4QEXgT2BS4FygYEBjQGYAZuBoQGuAbsByAHVAe4CEoIWAAAAAEAAAAeAFwABgAAAAAAAgABAAIAFgAAAQAAvAAAAAB42n2QvQ4BQRSFv2UJjVKl2FoQFpEoRXQaBTWCSIRkUeg8kKdQ8RKewgM4s3tJNJvJ3Dn355w5M0CBNVk8v4hHBQxnKClLcJYpVcM+Na6Gc5S5Gc5r+m74ofrL8JMmb2ZcOLJloLVlyYE9oziemLBiw5kdc6Jf1Z2R6isCQhpSCehrpyklEy161BVDxVA8h9JZ/w6myqJ42vWdnrs9TWEmxkK/+NVLGGPjD9Vdmq9A9Y5cNukqtuNXmccPQmg2/wB42n3POQ7CQAxG4XnDEvZ9B3GGcSABSpbkLjR03J8BflosWZ+7Jzvv/s82Ls7jqVClRp2EBk1atOnQpUefAUNGjJkwZcacBUtWrNkkz8c9hHB7W8RDmkzlTu5lJnN5kEd5kmd5kVf56xWy/Grqm/qmvqlv6pv6pr6pb59+Gf94Ab4GPNu4Af+FsAGNAEuwCFBYsQEBjlmxRgYrWCGwEFlLsBRSWCGwgFkdsAYrXFhZsBQrAAAAAVDO4FoAAA==) format('woff'),url('../fonts/wysibbiconfont-wb.ttf') format('truetype');font-weight:normal;font-style:normal;}
@@ -609,7 +627,6 @@ input[name="password"] {border-radius:3px;border-color:white;}
 #ajax_login .warning .fa {color:red;font-size:16px;vertical-align:middle;}
 #ajax_login .warning {border:1px dashed red;padding:5px!important;margin:5px;font-size:11px;}
 .zzBoxes_mess {overflow:hidden;}
-
 /* Nav Drop */
 .nav_profile {position:relative;}
 .nav_drop {position:absolute;top:37px;left:0px;z-index:99999;border:5px solid rgb(30, 61, 182);}
@@ -644,6 +661,7 @@ ul.nav_drop_priv .nav_tnr a:first-child:before {content:" được gửi bởi "
 .changeLast {border:1px solid #DDD;font-weight:bold;}
 th.th.top {width:25%;}
 .tkbv li{position:relative;width:96%;list-style-type:none;line-height:24px;border-bottom:1px dashed #CCC;counter-increment:Zzindex}
+li.chbv.dataf .nguoigui {width: initial;}
 li.chbv .nguoigui span {width: 32%;display: inline-block;text-align: center;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
 li.chbv .nguoigui {width: 44%;}
 .tkbv li:before{content:counter(Zzindex);display:inline-block;height:16px;background:#98D0FF;margin-right:10px;left:-23px;font-size:11px;top:5px;border-radius:2px;text-align:center;width:18px;color:#FFF;line-height:16px}
@@ -658,7 +676,7 @@ ul.cubv {padding-right:10px;height:252px;overflow:hidden;}
 ul.cubv:hover {overflow-y:scroll;}
 .nguoigui a {max-width:100%;display:inline-block;vertical-align:bottom}
 .th.bv {width: 80%;text-align:left;position: relative;}
-.th_right {position: absolute;right: 48px;width: 41%;top: 14px;z-index: 99999;display: block;}
+.th_right {position: absolute;right: 48px;width: 41%;top: 14px;display: block;}
 .th_right span {width: 32%;display: inline-block;text-align: center;}
 .topp .hide a {vertical-align:bottom;display:inline-block;}
 .topActive,.data_f0 {display:block;position: relative;}
@@ -677,7 +695,7 @@ b.m_get {display: block;padding: 3px;font-size: 11px;}
 .nopost {height:100%}
 .nopost:after {content:"Hiện không có bài viết nào trong chuyên mục này.";color:red;font-size:19px;font-weight:bold;position:relative;top:50%;width:100%;text-align:center;display:block}
 /* Tooltip */
-#tooltip{font-weight:bold;max-width:400px}
+#tooltip{font-weight:bold;max-width:400px;word-wrap: break-word;}
 .traloivaxem {border-bottom:0px!important;}
 #tooltip p {border-bottom:1px dashed #ccc;margin:0;line-height:20px;}
 .thongtinlast {font-size:14px;text-align:center;border-bottom:0px!important;}
