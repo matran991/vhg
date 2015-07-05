@@ -126,15 +126,19 @@ table th.thCornerR, table th.thTop, table.forumline th.thCornerL {background:bro
 .boxhead h2, .titlebox {color:#48CDAA;margin:0;font-size:25px;display:inline-block;}
 .boxbt .title {margin:0;overflow: hidden;max-width: 100%;position: relative;z-index: 9;}
 .boxbt a.forumtitle {color:coral;font-size: 12px;text-align: center;}
+.boxbt a.forumtitle:hover .fa {color: greenyellow;}
 .boxbt a.forumtitle .box_icont, .boxbt .forum_box_name {display: block;padding: 10px;}
-.box_hide {position: absolute;top: -1px;background: black;z-index: 999;left: 0;border: 2px solid rgb(199, 37, 37);width: 0;border-radius: 3px;word-wrap: break-word;max-width: 185px;  visibility: hidden;height: 0;transition: all 0.5s;  -moz-transition: all 0.5s;  -webkit-transition: all 0.5s;  -o-transition: all 0.5s;min-height: 157px;min-width: 185px;}
-li.khungbox:hover .box_hide {left: 214px;visibility: visible;}
-li.khungbox:last-child:hover .box_hide {left: -217px;visibility: visible;}
+.box_hide {position: absolute;top: -1px;background: black;z-index: 999;left: 0;border: 2px solid rgb(199, 37, 37);width: 0;border-radius: 3px;word-wrap: break-word;max-width: 185px;  visibility: hidden;height: 0;transition: all 0.5s;  -moz-transition: all 0.5s;  -webkit-transition: all 0.5s;  -o-transition: all 0.5s;min-height: 157px;min-width: 185px;opacity: 0;}
+.listforum .khungbox:nth-child(2):hover .box_hide {min-height: 157px;opacity: 1;left: 0!important;visibility: visible;}
+.listforum .khungbox:nth-child(2) .box_hide {min-height: 0}
+.listforum .khungbox:nth-child(2):hover .box_hide:after,.listforum .khungbox:nth-child(2):hover .box_hide:before {display: none;}
+li.khungbox:nth-child(1):hover .box_hide {left: 214px;visibility: visible;opacity: 1;}
+li.khungbox:nth-child(3):hover .box_hide {left: -217px;visibility: visible;opacity: 1;}
 .box_hide div {position: relative;z-index: 9;}
 .box_hide:after {content: "";background: rgb(0, 0, 0);position: absolute;width: 30px;height: 30px;left: -13px;top: 40%;transform: rotate(135deg);}
 .box_hide:before {content: "";background: rgb(199, 37, 37);position: absolute;width: 30px;height: 30px;left: -16px;top: 40%;transform: rotate(135deg);}
-li.khungbox:last-child .box_hide:after {left: 168px;}
-li.khungbox:last-child .box_hide:before {left: 171px;}
+.khungbox:nth-child(3) .box_hide:after {left: 168px;}
+li.khungbox:nth-child(3) .box_hide:before {left: 171px;}
 .box_hide .gensmall {display: block;font-size: 12px;padding: 5px;}
 .forum_box_name {background: rgb(199, 37, 37);color: white;font-size: 12px;}
 .boxbt a.forumtitle .box_icont[data*="unread"] {animation: color 3s infinite;-moz-animation: color 3s infinite;-webkit-animation: color 3s infinite;-o-animation: color 3s infinite;}
