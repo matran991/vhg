@@ -59,7 +59,7 @@
 .dhide,a[href="#top"],.breadcrumb .boardTitle,#tabs a[href*="watchse"], #tabs a[href*="favouri"], #tabs a[href*="draft"],.message-header .message-date,#profile-advanced-details .message-footer li:after,.box_thank .show_thanker a:last-child:after ,.hide,.gensmall,#tooltip div[title^="/t"],form[action="/search?mode=results"] .dashed{display:none}
 
 /* Padding 5px */
-.m_tb.m_content,.search .postbody .postprofile li,#form_confirm .inner .fields2,#profile-advanced-details .avatar img,.module .inner div[style="text-align:center;"],.new-message.bottom,input[type="text"],input[type="password"],select,.ctfr a, .ctfr span strong ,.imgavata img,.postbody_new .author,.content.clearfix,.pad5,.listboxcon a,.topiclist.topics.bg_none .row,.profile-icons a,.prev, .sbpost,#cp-main h1,.panel .message-block .message-text,#profile-advanced-left .panel,h1.page-title.wall,.new-message.bottom a,#cp-main .panel ol li,.forumline .thHead,#poll_ballot a[href*="mode=close"],#poll_result a[href*="mode=close"],a.view_vote,.zzBoxes_mess .lh_member a,.tt_mem span,dl.codebox dt,dl.codebox code,.error.dndk,.type_topic[title*="Global announcement"],.type_topic[title*="Chú ý"],.type_topic[title*="Bầu chọn"],.type_topic[title*="Thông báo"],.right-box a,.file_avata img,.file_info_2 span,input[name="password"],.nav_drop_priv,.nav_drop_priv .nav_tnr,.note_content,#cont_pwd .pwd_img,.tkbv td,.changeLast,.selop,#tooltip p,.thongtinlast,.module .inner div[style="text-align:center;"] img,#profile-advanced-details .message-footer li a,.zzBoxes_mess .thongtinct ,.zzBoxes_mess .lh_member,.wysibb .wysibb-text{padding:5px}
+.m_tb.m_content, .search .postbody .postprofile li, #form_confirm .inner .fields2, #profile-advanced-details .avatar img, .module .inner div[style="text-align:center;"], .new-message.bottom, input[type="text"], input[type="password"], select, .ctfr a, .ctfr span strong, .imgavata img, .postbody_new .author, .content.clearfix, .pad5, .listboxcon a, .topiclist.topics.bg_none .row, .profile-icons a, .prev, .sbpost, #cp-main h1, .panel .message-block .message-text, #profile-advanced-left .panel, h1.page-title.wall, .new-message.bottom a, #cp-main .panel ol li, .forumline .thHead, #poll_ballot a[href*="mode=close"], #poll_result a[href*="mode=close"], a.view_vote, .zzBoxes_mess .lh_member a, .tt_mem span, dl.codebox dt, dl.codebox code, .error.dndk, .type_topic[title*="Global announcement"], .type_topic[title*="Chú ý"], .type_topic[title*="Bầu chọn"], .type_topic[title*="Thông báo"], .right-box a, .file_avata img, .file_info_2 span, input[name="password"], .nav_drop_priv, .nav_drop_priv .nav_tnr, .note_content, #cont_pwd .pwd_img, .tkbv td, .changeLast, .selop, .module .inner div[style="text-align:center;"] img, #profile-advanced-details .message-footer li a, .zzBoxes_mess .thongtinct, .zzBoxes_mess .lh_member, .wysibb .wysibb-text{padding:5px}
 
 /* Border red */
 #post_topic,.m_tb.inner,.m_cof.inner,.post,.topiclist.topics.search,.breadcrumb,.postprofile_new,.imgavata img,#form_confirm .inner,#memberlist,form[action="/memberlist"] .inner,.panel .message-block,#profile-advanced-details .avatar,#cp-main,.module .inner,#tabs a,#profile-advanced-layout #tabs #new-message-link a,form[action="/search?mode=results"] .inner,#tooltip,#Chatboxvhg{border:2px solid rgb(199, 37, 37)}
@@ -126,9 +126,9 @@ table th.thCornerR, table th.thTop, table.forumline th.thCornerL {background:bro
 .boxhead h2, .titlebox {color:#48CDAA;margin:0;font-size:25px;display:inline-block;}
 .boxbt .title {margin:0;overflow: hidden;max-width: 100%;position: relative;z-index: 9;}
 .boxbt a.forumtitle {color:coral;font-size: 12px;text-align: center;}
-.boxbt a.forumtitle:hover .fa {color: greenyellow;}
+.listforum .khungbox:hover .fa {color: greenyellow!important;}
 .boxbt a.forumtitle .box_icont, .boxbt .forum_box_name {display: block;padding: 10px;}
-.box_hide {position: absolute;top: -1px;background: black;z-index: 999;left: 0;border: 2px solid rgb(199, 37, 37);width: 0;border-radius: 3px;word-wrap: break-word;max-width: 185px;  visibility: hidden;height: 0;transition: all 0.5s;  -moz-transition: all 0.5s;  -webkit-transition: all 0.5s;  -o-transition: all 0.5s;min-height: 157px;min-width: 185px;opacity: 0;}
+.box_hide {position: absolute;top: -1px;background: black;z-index: 999;left: 0;border: 2px solid rgb(199, 37, 37);width: 0;border-radius: 3px;word-wrap: break-word;max-width: 185px;  visibility: hidden;height: 0;transition: all 0.2s;  -moz-transition: all 0.2s;  -webkit-transition: all 0.2s;  -o-transition: all 0.2s;min-height: 157px;min-width: 185px;opacity: 0;}
 .listforum .khungbox:nth-child(2):hover .box_hide {min-height: 157px;opacity: 1;left: 0!important;visibility: visible;}
 .listforum .khungbox:nth-child(2) .box_hide {min-height: 0}
 .listforum .khungbox:nth-child(2):hover .box_hide:after,.listforum .khungbox:nth-child(2):hover .box_hide:before {display: none;}
@@ -183,11 +183,13 @@ span.lastpost-avatar img {padding:2px;border:1px solid #a5cae4;-webkit-border-ra
 .breadcrumb .crust:hover a.crumb {background-color:forestgreen;}
 .breadcrumb .crust:hover .arrow span {border-left-color:forestgreen;}
 .breadcrumb .jumpMenuTrigger{background:transparent;margin:5px 5px 6px;display:block;float:right;white-space:nowrap;text-indent:9999px;overflow:hidden;width:13px;height:13px;}
-.breadcrumb {-khtml-border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;border-radius:3px;font-size:11px;height:35px;max-width:100%;overflow:hidden;zoom:1;display:block;width:100%;margin:5px}
+.breadcrumb {-khtml-border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;border-radius:3px;font-size:11px;height:35px;max-width:98%;overflow:hidden;zoom:1;display:block;width:100%;margin:10px}
 .breadcrumb .crust a.crumb {font-size:16px;text-transform:uppercase;-moz-outline-style:0 none;_border-bottom:none;background-color:black;cursor:pointer;display:block;line-height:35px;margin-bottom:-1px;outline:0 none;text-decoration:none;z-index:1;position:relative;padding-right:10px;left:-4px;padding-left:25px!Important;}
 .breadcrumb .crust .arrow {-moz-border-right-colors:#a5cae4;border:20px solid transparent;border-left-color:rgb(199, 37, 37);border-right:2px none #000;display:block;height:0;position:absolute;right:-12px;top:-2px;width:0;z-index:9;}
 .breadcrumb .crust .arrow span {-moz-border-right-colors:#f0f7fc;border:16px solid transparent;border-left-color:black;border-right:1px none #000;display:block;height:0px;left:-20px;overflow:hidden;position:absolute;text-indent:9999px;top:-16px;white-space:nowrap;width:0;z-index:51;}
+.crust.homeCrumb a[href="/"] {font-size: 0;}
 
+.crust.homeCrumb a[href="/"]:before {content: "\f015";font-size: 25px;font-family: FontAwesome;}
 /* pargination */
 .topiclist .pagination a {padding:5px!important;margin:5px!important;denimportant}
 .row .pagination {font-size:12px;font-weight:bold;}
@@ -588,8 +590,15 @@ html{height:100%!important;}
 .type_topic[title*="Global announcement"] strong:before {font-size:13px;content:"Thông báo:";}
 .type_topic[title*="Global announcement"] strong {font-size:0;}
 .type_topic[title*="Global announcement"] {color:cyan;}
-h2.topic-title.hierarchy a.topictitle {white-space:nowrap;max-width:343px;overflow:hidden;display:inline-block;vertical-align:sub;text-overflow:ellipsis;}
-
+h2.topic-title.hierarchy a.topictitle {white-space:nowrap;max-width:500px;overflow:hidden;display:inline-block;vertical-align:sub;text-overflow:ellipsis;font-family: Taoma, FontAwesome;}
+a.topictitle.topiclist[data*="_unread"]:before,a.topictitle.topiclist[data*="folder_announce_new1"]:before {color:red;}
+a.topictitle.topiclist[data*="announce_read"]:before, a.topictitle.topiclist[data*="announce_unread"]:before {content: "\f0a2";}
+a.topictitle.topiclist[data*="folder_announce1"]:before, a.topictitle.topiclist[data*="folder_announce_new1"]:before {content: "\f071";}
+a.topictitle.topiclist[data*="sticky_read"]:before, a.topictitle.topiclist[data*="sticky_unread"]:before {content: "\f0a1";}
+a.topictitle.topiclist[data*="topic_read"]:before, a.topictitle.topiclist[data*="topic_unread"]:before,a.topictitle.topiclist[data*="topic_unread_hot"]:before {content: "\f0e5";}
+a.topictitle.topiclist[data*="topic_read_locked"]:before, a.topictitle.topiclist[data*="topic_unread_locked"]:before {content: "\f023";}
+a.topictitle.topiclist[data*="topic_read_hot"]:before {content: "\f006";color:gold;}
+a.topictitle.topiclist:before {font-size: 50px;vertical-align: middle;padding: 5px;font-weight: 100!Important;margin-right: 5px;color: white;}
 /* Right Box */
 a.button1.cgu-buttons[href*="register"] {background:initial;color:red;border:1px solid;}
 a.button2.cgu-buttons[href="/"] {background:inherit;color:darksalmon;border:1px solid;}
@@ -677,7 +686,7 @@ li.chbv .nguoigui {width: 44%;}
 .tkbv li:nth-child(5):before,#left li:nth-child(5):after{background:#55e7aa}
 .baivietlast,.cdlx {max-width: 50%;display:inline-block;vertical-align:bottom;}
 ul.cubv {padding-right:10px;height:252px;overflow:hidden;}
-ul.cubv:hover {overflow-y:scroll;}
+ul.cubv:hover {}
 .nguoigui a {max-width:100%;display:inline-block;vertical-align:bottom}
 .th.bv {width: 80%;text-align:left;position: relative;}
 .th_right {position: absolute;right: 48px;width: 41%;top: 14px;display: block;}
@@ -699,8 +708,15 @@ b.m_get {display: block;padding: 3px;font-size: 11px;}
 .nopost {height:100%}
 .nopost:after {content:"Hiện không có bài viết nào trong chuyên mục này.";color:red;font-size:19px;font-weight:bold;position:relative;top:50%;width:100%;text-align:center;display:block}
 /* Tooltip */
-#tooltip{font-weight:bold;max-width:400px;word-wrap: break-word;}
+#tooltip{max-width:400px;word-wrap: break-word;font-size: 11px;font-weight: bold;}
+#tooltip div {padding: 5px;}
 .traloivaxem {border-bottom:0px!important;}
-#tooltip p {border-bottom:1px dashed #ccc;margin:0;line-height:20px;}
+#tooltip p {margin:0;line-height:20px;font-size: 11px;}
+#tooltip .ndf:before {content: "Nội dung sơ lượt: ";color: chartreuse;}
+#tooltip .ndf {max-height: 100px;overflow: hidden;text-overflow: ellipsis;}
+#tooltip .ndf i {display: block;}
+#tooltip .ndf i br {display: none;}
 .thongtinlast {font-size:14px;text-align:center;border-bottom:0px!important;}
 div[style="overflow:visible"], div[style="overflow:visible"] iframe {denimportant;}
+#page-footer:before {content: "\f1f9 2015 COPYRIGHT DESIGN MATRAN999";background: rgb(199, 37, 37);padding: 5px;display: block;font-size: 20px;}
+#page-footer {border: 2px solid rgb(199, 37, 37);width: 96%;margin: 0 auto;}
