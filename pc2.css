@@ -129,9 +129,8 @@ table th.thCornerR, table th.thTop, table.forumline th.thCornerL {background:bro
 .listforum .khungbox:hover .fa {color: greenyellow!important;}
 .boxbt a.forumtitle .box_icont, .boxbt .forum_box_name {display: block;padding: 10px;}
 .box_hide {position: absolute;top: -1px;background: black;z-index: 999;left: 0;border: 2px solid rgb(199, 37, 37);width: 0;border-radius: 3px;word-wrap: break-word;max-width: 185px;  visibility: hidden;height: 0;transition: all 0.2s;  -moz-transition: all 0.2s;  -webkit-transition: all 0.2s;  -o-transition: all 0.2s;min-height: 157px;min-width: 185px;opacity: 0;}
-.listforum .khungbox:nth-child(2):hover .box_hide {min-height: 157px;opacity: 1;left: 0!important;visibility: visible;}
+.listforum .khungbox:nth-child(2):hover .box_hide {min-height: 157px;opacity: 1;visibility: visible;left: 213px;}
 .listforum .khungbox:nth-child(2) .box_hide {min-height: 0}
-.listforum .khungbox:nth-child(2):hover .box_hide:after,.listforum .khungbox:nth-child(2):hover .box_hide:before {display: none;}
 li.khungbox:nth-child(1):hover .box_hide {left: 214px;visibility: visible;opacity: 1;}
 li.khungbox:nth-child(3):hover .box_hide {left: -217px;visibility: visible;opacity: 1;}
 .box_hide div {position: relative;z-index: 9;}
