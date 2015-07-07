@@ -50,13 +50,13 @@
 .f14{font-size:14px}
 .f16{font-size:16px}
 /* Color white */
-.search.post .h3 a,#memberlist thead tr th,fieldset dl:hover dt label,.module .inner .h3 strong,#tabs .activetab a span,#tabs .activetab a:hover span,.content blockquote,.wbb-list,.nav_profile li a:hover ,.nav_profile .topictitle:hover,.nav_drop_note a:hover,.wysibb-toolbar-container.modeSwitch,ins.fonticon.sar,.wysibb-toolbar-btn:hover .btn-tooltip .butedit,.nav_profile li a:hover ,.nav_profile .topictitle:hover,.nav_drop_note a:hover,select,.wbb-list h2, .wbb-list h3, .wbb-list h4,#wrap,#searchajax,.boxbt a.forumtitle:hover,.listboxcon a:hover,.boxbt .lastpost a[title=""]:before,ul.topiclist dd,li.row,.header dl.icon dt,.profile-icons a,.prev input, .sbpost input,.prev, .sbpost,#memberlist thead th,.h3,#cp-main h1,h1.page-title.wall ,#profile-advanced-layout #tabs #new-message-link a,.new-message.bottom a,#profile-advanced-details .message-footer li a,table.forumline,.ctfr a, .ctfr span strong,.prev, .sbpost,input.button[value="Chuyển"],a.button1, a.button2, button.button2, input.button1, input.button2,textarea,#poll_ballot a[href*="mode=close"],#poll_result a[href*="mode=close"],a.view_vote,.zzBoxes_inner,dl.codebox,.load_content,.wysibb .wysibb-toolbar .wysibb-toolbar-container .wysibb-toolbar-btn .fonticon,.wbb-list .nc,#wbbmodal .wbbm,#wbbmodal .wbbm-title .wbbclose,.wysibb-toolbar-btn.wbb-select.wbb-fontsize, .wysibb-toolbar-btn.wbb-select.wbb-fontfamily,.butedit,input[name="password"],#pwd_middle,#cont_pwd .pwd_img ,#ajax_login .warning,.nav_profile.note.on .on,.fbt.actv,#tkbv .main-head h2 ,#tooltip,.thongtinlast,.wysibb-toolbar-btn.wbb-code,.wysibb-text-editor.wysibb-body,a:hover,a:active,.wysibb .wysibb-toolbar .wysibb-toolbar-container .wysibb-toolbar-btn.on .fonticon,.navvhg a{color:white}
+.search.post .h3 a,#memberlist thead tr th,fieldset dl:hover dt label,.module .inner .h3 strong,#tabs .activetab a span,#tabs .activetab a:hover span,.content blockquote,.wbb-list,.nav_profile li a:hover ,.nav_profile .topictitle:hover,.nav_drop_note a:hover,.wysibb-toolbar-container.modeSwitch,ins.fonticon.sar,.wysibb-toolbar-btn:hover .btn-tooltip .butedit,.nav_profile li a:hover ,.nav_profile .topictitle:hover,.nav_drop_note a:hover,select,.wbb-list h2, .wbb-list h3, .wbb-list h4,#wrap,#searchajax,.boxbt a.forumtitle:hover,.listboxcon a:hover,.boxbt .lastpost a[title=""]:before,ul.topiclist dd,li.row,.header dl.icon dt,.profile-icons a,.prev input, .sbpost input,.prev, .sbpost,#memberlist thead th,.h3,#cp-main h1,h1.page-title.wall ,#profile-advanced-layout #tabs #new-message-link a,.new-message.bottom a,#profile-advanced-details .message-footer li a,table.forumline,.ctfr a, .ctfr span strong,.prev, .sbpost,input.button[value="Chuyển"],a.button1, a.button2, button.button2, input.button1, input.button2,textarea,#poll_ballot a[href*="mode=close"],#poll_result a[href*="mode=close"],a.view_vote,.zzBoxes_inner,dl.codebox,.load_content,.wysibb .wysibb-toolbar .wysibb-toolbar-container .wysibb-toolbar-btn .fonticon,.wbb-list .nc,#wbbmodal .wbbm,#wbbmodal .wbbm-title .wbbclose,.wysibb-toolbar-btn.wbb-select.wbb-fontsize, .wysibb-toolbar-btn.wbb-select.wbb-fontfamily,.butedit,input[name="password"],#pwd_middle,#cont_pwd .pwd_img ,#ajax_login .warning,.nav_profile.note.on .on,.fbt.actv,#tkbv .main-head h2 ,#tooltip,.thongtinlast,.wysibb-toolbar-btn.wbb-code,.wysibb-text-editor.wysibb-body,a:hover,a:active,.wysibb .wysibb-toolbar .wysibb-toolbar-container .wysibb-toolbar-btn.on .fonticon,.navvhg a{color:white}
 
 /* Color white important */
 .nav_name,.titlebox h2 a,.topiclist .pagination a,.wysibb-toolbar-btn.wbb-code,.wysibb-text-editor.wysibb-body,.cgu-buttons:hover,.nav_name[href^="/u"]{color:white!important}
 
 /* Display hide */
-.dhide,a[href="#top"],.breadcrumb .boardTitle,#tabs a[href*="watchse"], #tabs a[href*="favouri"], #tabs a[href*="draft"],.message-header .message-date,#profile-advanced-details .message-footer li:after,.box_thank .show_thanker a:last-child:after ,.hide,.gensmall,#tooltip div[title^="/t"],form[action="/search?mode=results"] .dashed{display:none}
+.dhide,a[href="#top"],.breadcrumb .boardTitle,#tabs a[href*="watchse"], #tabs a[href*="favouri"], #tabs a[href*="draft"],.message-header .message-date,#profile-advanced-details .message-footer li:after,.box_thank .show_thanker a:last-child:after ,.hide,.gensmall,#tooltip div[title^="/t"],form[action="/search?mode=results"] .dashed{display:none}
 
 /* Padding 5px */
 .m_tb.m_content, .search .postbody .postprofile li, #form_confirm .inner .fields2, #profile-advanced-details .avatar img, .module .inner div[style="text-align:center;"], .new-message.bottom, input[type="text"], input[type="password"], select, .ctfr a, .ctfr span strong, .imgavata img, .postbody_new .author, .content.clearfix, .pad5, .listboxcon a, .topiclist.topics.bg_none .row, .profile-icons a, .prev, .sbpost, #cp-main h1, .panel .message-block .message-text, #profile-advanced-left .panel, h1.page-title.wall, .new-message.bottom a, #cp-main .panel ol li, .forumline .thHead, #poll_ballot a[href*="mode=close"], #poll_result a[href*="mode=close"], a.view_vote, .zzBoxes_mess .lh_member a, .tt_mem span, dl.codebox dt, dl.codebox code, .error.dndk, .right-box a, .file_avata img, .file_info_2 span, input[name="password"], .nav_drop_priv, .nav_drop_priv .nav_tnr, .note_content, #cont_pwd .pwd_img, .tkbv td, .changeLast, .selop, .module .inner div[style="text-align:center;"] img, #profile-advanced-details .message-footer li a, .zzBoxes_mess .thongtinct, .zzBoxes_mess .lh_member, .wysibb .wysibb-text{padding:5px}
@@ -353,7 +353,7 @@ blockquote{font-size:16px;-moz-osx-font-smoothing:grayscale;padding:0;margin:5%;
 blockquote cite{width:100%;display:block;padding:10px;background:darkturquoise;margin-left:-25px;margin-top:-6px;font-size:16px;margin-bottom:10px;padding-right:22px;color:white}
 blockquote blockquote div cite{background:rgb(173, 97, 10)}
 blockquote blockquote{background:black;position:relative;left:-18px;border-color:rgb(173, 97, 10)}
-blockquote blockquote cite{background:chartreuse!important}
+blockquote blockquote cite{background:chartreuse!important}
 blockquote cite a{color:white!Important}
 blockquote cite:after{content:"\f176";padding-left:10px}
 blockquote .box_download,blockquote .box_thanker, blockquote div .head_download,blockquote div .head_thanker{width:initial;margin-left:0}
@@ -545,6 +545,8 @@ html{height:100%!important}
 .content-phpbb3{font-size:13px;line-height:normal!important}
 .content-phpbb3 .codebox dt{float:none;width:100%}
 .content-phpbb3 .codebox dd{margin:0!important}
+@media (min-width: 1000px) {
+.wysibb .wysibb-toolbar .wysibb-toolbar-container .wysibb-toolbar-btn, .wysibb .wysibb-toolbar .wysibb-toolbar-container .wysibb-toolbar-btn.wbb-select{text-align: center;}
 .wysibb .wysibb-text{margin:0}
 .wysibb .wysibb-toolbar{float:none;width:auto;overflow:visible;border-right:0}
 .wysibb .wysibb-toolbar{border-bottom:2px solid rgb(199, 37, 37);position:relative;padding:0 60px 0 0;height:auto}
@@ -560,6 +562,7 @@ html{height:100%!important}
 .wbb-list .sc{width:16px;height:16px;margin:0 0 1px 1px;display:inline-block;*display:inline;zoom:1;cursor:pointer;border:1px solid #fff}
 .ve-tlb-colorpick{width:24px;height:24px;line-height:24px;text-align:right}
 .wysibb .bottom-resize-line{display:block;height:5px;cursor:ns-resize}
+}
 .wysibb-toolbar-btn.mswitch.on .btn-inner.modesw:before{content:"WYSIWYG ";font-size:12px}
 .wysibb-toolbar-btn.mswitch.on .btn-inner.modesw{font-size:0px}
 .wysibb-text-editor.wysibb-body code:before{content:"Code";background:rgb(100, 103, 103);display:block;margin:-10px;margin-bottom:10px;padding:5px}
@@ -615,7 +618,7 @@ a.button2.cgu-buttons[href="/"]{background:inherit;color:darksalmon;border:1px s
 #ajax_login p{position:relative;padding:10px}
 #ajax_login{padding:10px;margin-top:-9px;height:220px}
 input[name="password"]{border-radius:3px;border-color:white}
-#cont_pwd #pwd_good:before{content:"Rất Tốt"}
+#cont_pwd #pwd_good:before{content:"Rất Tốt"}
 #cont_pwd #pwd_middle:before{content:" Bình Thường"}
 #pwd_middle{background:darkorchid}
 #cont_pwd .pwd_img:before{font-size:18px}
@@ -713,3 +716,64 @@ div[style="overflow:visible"], div[style="overflow:visible"] iframe{denimportant
 .login_register{padding:5px;background:rgb(199, 37, 37);vertical-align:middle;color:white;margin-left:20px}
 .login_register:hover{background:blueviolet}
 .login_sub{text-align:center;display:block}
+
+/* Mobile */
+@media only screen and (max-device-width: 860px) {
+.btkcfr {float: none;display: block;width: 100%;clear: both;}
+.boxvhg1 {width: 98%;text-align: center;}
+.forum_box_name {font-size: 10px;padding: 3px 0!important;}
+.khungbox {width: 44%!important;margin: 5px 2%!important;}
+#left {margin: 0!important;width: 100%!important;}
+#logo {height: inherit!important;}
+a.baivietlast {max-width: inherit!important;display: inline;vertical-align: middle;white-space: normal!important;}
+#main-content {margin: 0 auto;width: 96%;}
+.tpbuttons.pad10 {float: right;}
+.ctfr {clear: both;display: block;line-height: 25px;}
+.topic-title.hierarchy a.topictitle {white-space: normal!important;max-width: 98%!important;}
+.dterm {width: 98%!Important;}
+.action_top {height: inherit;}
+.breadcrumb .crust a.crumb:before {font-size: 15px;padding-right: 0;}
+.breadcrumb .crust a.crumb {font-size: 11px;}
+.crust.homeCrumb a[href="/"] {font-size: 0;}
+.postprofile_new {display: block;float: none;margin: 0!Important;padding: 0;border: 0;position: relative;border-bottom: 2px solid rgb(199, 37, 37);}
+.post {border-radius: 0;padding: 0;margin: 0;position: relative;width: 99%;}
+.post .inner {margin-top: 32px;}
+.postprofile_new .imgavata {display: inline-block;vertical-align: top;padding: 0;}
+.avata_display {display: inline-block;border: 0;position: absolute;}
+.postprofile_new .dhide {font-size: 11px;position: absolute;top: 25px;margin-left: 5px;display: inline-block;max-width: 61%;white-space: nowrap;    overflow: hidden;    text-overflow: ellipsis;}
+.postprofile_new .imgavata img {border: 0;width: 80px;height: 80px;}
+.postbody_new .author {font-size: 0;width: inherit!important;position: absolute;top: 0;left: 0;right: 0;}
+.fottertopic {text-align: center;clear: both;float: none;}
+.fottertopic span {display: inline-block;}
+.box_thank {margin: 5px;}
+.content.clearfix {min-height: inherit;}
+#quickreply {width: 100%;padding: 0;}
+#post_topic fieldset dt {width: inherit;padding: 5px 0;}
+#profile-advanced-left {clear: both;float: none;width: 100%;margin: 5px 0;}
+#profile-advanced-layout {position: relative;}
+#new-message #tabs a {margin: 5px;}
+#profile-advanced-details .pagination.top {font-size: 0}
+#profile-advanced-details .pagination.top a, #profile-advanced-details .pagination.top span strong {font-size: 12px;padding: 5px;}
+#profile-advanced-layout #tabs #new-message-link {display: inline-block;}
+form[action="/privmsg?folder=inbox"] .gtn.mag10.fright {clear: both;float: none;}
+form[action="/privmsg?folder=inbox"] .postbody {border: 0!important;}
+form[action="/privmsg?folder=inbox"] .postbody .avata_display {display: inline-block;position: inherit;}
+form[action="/privmsg?folder=inbox"] .submit-buttons {line-height: 40px;}
+p.right,#profile-advanced-right,.th_right,.th.top,td.topp,.nguoigui,.navvhg.f14,div[style="overflow:visible"],div[style="overflow:visible"] iframe,.forumbg .posts,.forumbg .views,.forumbg .lastpost,.lh_member,div#profile-advanced-details .message-block:after,.postprofile_new .arrow,#profile-advanced-details .message-block:before,.message-block .message-date,.thongtinlhtn,#profile-advanced-details .avatar,.box_hide,span.file_avata {display: none}
+.postprofile_new .dhide .rank_text, .postprofile_new .dhide .thongtintv,.thongtintv .thongtinct,.pagination input {display: block;}
+.postbody_new,#profile-advanced-layout #tabs,#profile-advanced-details .message-block,form[action="/privmsg?folder=inbox"] .inner,form[action="/privmsg?folder=inbox"] .postbody .h3,.ndposttn {margin: 0!important;clear: both;}
+.postprofile_new .avata_display,#privmsgs-menu li {display: inline-block!important;}
+.file_info {float: none;display: inline-block;margin-left: 10px;width: inherit;}
+.file_contact {display: inline-block;margin-left: 10px;}
+.file_left,.file_right {float: none;}
+li.tkiol,li.tkiol a {font-size: 12px;}
+ul.cubv {  overflow: inherit;  height: inherit;}
+.nguoigui {  width: inherit!Important;  float: none;  display: block;  vertical-align: text-top;}
+.nguoigui .lasttl:before {  content: "Trả Lời: ";}
+.nguoigui .lastcm:before {  content: " , Chuyên Mục: ";}
+.nguoigui .lastlx:before {  content: " , Lượt Xem: ";}
+.nguoigui .td_right {  width: initial!Important;  white-space: normal!important;  overflow: initial!important;  display: initial!important;  vertical-align: top;}
+a.topictitle.topiclist:before {  font-size: 18px;  float: left;}
+.tkbv li:before,.tkbv li:after {  margin-right: 2px;}
+li.chbv {  width: 100%;}
+}
