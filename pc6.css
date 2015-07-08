@@ -144,6 +144,7 @@ li.khungbox:nth-child(3) .box_hide:before{left:171px}
 .boxbt a.forumtitle .box_icont[data*="unread"]:before{content:"Có bài mới";background:red;padding:5px;color:white;transform:rotate(314deg);display:block;position:absolute;left:-41px;top:24px;z-index:9;width:139px}
 .boxbt a.forumtitle .fa{font-size:90px;color:white;display:block}
 .boxvhg1{width:68%;border: 2px solid rgb(199, 37, 37);border-radius: 3px;margin-left: 10px;}
+.boxtitle {background: rgb(199, 37, 37);padding: 5px;display: block;font-size: 16px;}
 .boxbt a.forumtitle:hover{text-decoration:none}
 .boxbt .lastpost{/* min-width:200px;*/padding:10px;min-height:81px}
 .boxbt .ttboxbv{width:100%}
@@ -721,7 +722,7 @@ div[style="overflow:visible"], div[style="overflow:visible"] iframe{denimportant
 /* Mobile */
 @media only screen and (max-device-width: 860px) {
 .btkcfr {float: none;display: block;width: 100%;clear: both;}
-.boxvhg1 {width: 98%;text-align: center;}
+.boxvhg1 {width: 98%;text-align: center;margin: 0}
 .forum_box_name {font-size: 10px;padding: 3px 0!important;}
 .khungbox {width: 44%!important;margin: 5px 2%!important;}
 #left {margin: 0!important;width: 100%!important;}
