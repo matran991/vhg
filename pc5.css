@@ -143,7 +143,7 @@ li.khungbox:nth-child(3) .box_hide:before{left:171px}
 .boxbt a.forumtitle .box_icont[data*="unread"]{animation:color 3s infinite;-moz-animation:color 3s infinite;-webkit-animation:color 3s infinite;-o-animation:color 3s infinite}
 .boxbt a.forumtitle .box_icont[data*="unread"]:before{content:"Có bài mới";background:red;padding:5px;color:white;transform:rotate(314deg);display:block;position:absolute;left:-41px;top:24px;z-index:9;width:139px}
 .boxbt a.forumtitle .fa{font-size:90px;color:white;display:block}
-.boxvhg1{width:68%}
+.boxvhg1{width:68%;border: 2px solid rgb(199, 37, 37);border-radius: 3px;margin-left: 10px;}
 .boxbt a.forumtitle:hover{text-decoration:none}
 .boxbt .lastpost{/* min-width:200px;*/padding:10px;min-height:81px}
 .boxbt .ttboxbv{width:100%}
@@ -303,7 +303,8 @@ table.forumline{min-width:200px;border:1px solid}
 table.forumline tr:hover td{background-color:black}
 input.button[value="Chuyển"]{background:cornflowerblue}
 a.button1, a.button2, button.button2, input.button1, input.button2{background-color:rgb(199, 37, 37);font-weight:bold;border:0}
-.button2[href="/register"]:before{content:""}
+.button2[href="/register"]:before{content:"  "}
+a.button2[href="/register"] {background: rgb(199, 37, 37);color: white;padding: 5px 10px;}
 .inputbox:hover, .inputbox:focus{border:2px solid}
 textarea{background-color:black!important;border:1px solid white!important}
 fieldset.submit-buttons input{margin-right:10px;display:inline-block}
@@ -385,7 +386,8 @@ dl.codebox dt{background:rgb(100, 103, 103);margin:-3px;position:relative;font-s
 .error.dndk .fa{color:red;font-size:30px;vertical-align:middle}
 
 /* Loading */
-.load_content{position:fixed;top:50%;left:39%;z-index:999;font-size:20px;overflow:hidden;white-space:nowrap;animation:loading2 0.5s infinite;-moz-animation:loading2 0.5s infinite;-webkit-animation:loading2 0.5s infinite;-o-animation:loading2 0.5s infinite;transform:rotate(-360deg)}
+.load_content {font-size: 20px;display: block;text-align: center;}
+.wrap_load {position: fixed;top: 50%;z-index: 9999;width: 100%;}
 .load_content .fa,.ajax_pri .fa{animation:loading 0.5s infinite;-moz-animation:loading 0.5s infinite;-webkit-animation:loading 0.5s infinite;-o-animation:loading 0.5s infinite;transform:rotate(-360deg)}
 .load_content .fa{font-size:50px;vertical-align:middle;color:chartreuse}
 
@@ -546,7 +548,6 @@ html{height:100%!important}
 .content-phpbb3 .codebox dt{float:none;width:100%}
 .content-phpbb3 .codebox dd{margin:0!important}
 @media (min-width: 1000px) {
-.wysibb .wysibb-toolbar .wysibb-toolbar-container .wysibb-toolbar-btn, .wysibb .wysibb-toolbar .wysibb-toolbar-container .wysibb-toolbar-btn.wbb-select{text-align: center;}
 .wysibb .wysibb-text{margin:0}
 .wysibb .wysibb-toolbar{float:none;width:auto;overflow:visible;border-right:0}
 .wysibb .wysibb-toolbar{border-bottom:2px solid rgb(199, 37, 37);position:relative;padding:0 60px 0 0;height:auto}
@@ -626,7 +627,7 @@ input[name="password"]{border-radius:3px;border-color:white}
 #cont_pwd .pwd_img{background:none;font-size:0;height:inherit;line-height:20px}
 #pwd_good{background:darkcyan}
 #pwd_good:before{content:"\f046  Rất Tốt"}
-#ajax_login .title{background:chocolate;margin-left:-10px;width:100%}
+#ajax_login .title{background: rgb(199, 37, 37);margin-left:-10px;width:100%;margin-top: -1px;}
 #ajax_login .warning .fa{color:red;font-size:16px;vertical-align:middle}
 #ajax_login .warning{border:1px dashed red;padding:5px!important;margin:5px;font-size:11px}
 .zzBoxes_mess{overflow:hidden}
@@ -759,12 +760,13 @@ form[action="/privmsg?folder=inbox"] .gtn.mag10.fright {clear: both;float: none;
 form[action="/privmsg?folder=inbox"] .postbody {border: 0!important;}
 form[action="/privmsg?folder=inbox"] .postbody .avata_display {display: inline-block;position: inherit;}
 form[action="/privmsg?folder=inbox"] .submit-buttons {line-height: 40px;}
-p.right,#profile-advanced-right,.th_right,.th.top,td.topp,.nguoigui,.navvhg.f14,div[style="overflow:visible"],div[style="overflow:visible"] iframe,.forumbg .posts,.forumbg .views,.forumbg .lastpost,.lh_member,div#profile-advanced-details .message-block:after,.postprofile_new .arrow,#profile-advanced-details .message-block:before,.message-block .message-date,.thongtinlhtn,#profile-advanced-details .avatar,.box_hide,span.file_avata {display: none}
+p.right,#profile-advanced-right,.th_right,.th.top,td.topp,.nguoigui,.navvhg.f14,div[style="overflow:visible"],div[style="overflow:visible"] iframe,.forumbg .posts,.forumbg .views,.forumbg .lastpost,.lh_member,div#profile-advanced-details .message-block:after,.postprofile_new .arrow,#profile-advanced-details .message-block:before,.message-block .message-date,.thongtinlhtn,#profile-advanced-details .avatar,.box_hide,.data_f0 .nguoigui:before {display: none}
 .postprofile_new .dhide .rank_text, .postprofile_new .dhide .thongtintv,.thongtintv .thongtinct,.pagination input {display: block;}
 .postbody_new,#profile-advanced-layout #tabs,#profile-advanced-details .message-block,form[action="/privmsg?folder=inbox"] .inner,form[action="/privmsg?folder=inbox"] .postbody .h3,.ndposttn {margin: 0!important;clear: both;}
 .postprofile_new .avata_display,#privmsgs-menu li {display: inline-block!important;}
-.file_info {float: none;display: inline-block;margin-left: 10px;width: inherit;}
-.file_contact {display: inline-block;margin-left: 10px;}
+.file_info {  float: left;display: inline-block;width: inherit;min-height: 92px;margin-left: 10px;}
+.file_contact {display: inline-block;height: inherit;padding-top: 0}
+fieldset.breadcrumb {margin: 0;max-width: 100%}
 .file_left,.file_right {float: none;}
 li.tkiol,li.tkiol a {font-size: 12px;}
 ul.cubv {  overflow: inherit;  height: inherit;}
@@ -776,4 +778,18 @@ ul.cubv {  overflow: inherit;  height: inherit;}
 a.topictitle.topiclist:before {  font-size: 18px;  float: left;}
 .tkbv li:before,.tkbv li:after {  margin-right: 2px;}
 li.chbv {  width: 100%;}
+.wysibb .wysibb-toolbar .wysibb-toolbar-container .wysibb-toolbar-btn, .wysibb .wysibb-toolbar .wysibb-toolbar-container .wysibb-toolbar-btn.wbb-select{text-align: center;}
+.zzBoxes_inner {width: 98%!important;margin-left: 0!important;left: 0}
+.dataf .nguoigui {display: inline;vertical-align: inherit}
+.dataf a.cdlx {max-width: none;display: inline;white-space: normal!Important;margin: 0 5px;word-wrap: normal;vertical-align: inherit}
+.th_right {display: none!Important}
+td.bv {padding: 0}
+li.chbv {padding: 5px;border-bottom: 2px solid rgb(199, 37, 37);}li.chbv .nguoigui:before {content: " - Người gửi: ";}
+.data_ftl .nguoigui:before,.data_flx .nguoigui:before {content: " - Có: "!important;}
+form[action="/login"] .panel {margin: 0;padding: 0;}
+form[action="/login"] .panel .inner .fld_connexion dt {display: none;}
+form[action="/login"] .panel .inner .fld_connexion dd {margin: 0;}
+form[action="/login"] .panel .inner .fld_connexion {width: 100%;padding: 0;text-align: center;}
+form[action="/login"] .panel .inner .fld_connexion dd a {padding: 5px;display: block;}
+a.button2[href="/register"] {background: rgb(199, 37, 37);color: white;padding: 5px 10px;}
 }
