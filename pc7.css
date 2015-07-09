@@ -669,7 +669,7 @@ th.th.top{width:25%}
 li.chbv.dataf .nguoigui{width:initial}
 li.chbv .nguoigui span{width:32%;display:inline-block;text-align:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 li.chbv .nguoigui{width:44%}
-.tkbv li:before{content:counter(Zzindex);display:inline-block;height:16px;background:#98D0FF;margin-right:10px;left:-23px;font-size:11px;top:5px;border-radius:2px;text-align:center;width:18px;color:#FFF;line-height:16px}
+.tkbv li:before{content:counter(Zzindex);display:inline-block;height:16px;background:#98D0FF;margin-right:10px;left: 0px;font-size:11px;top:5px;border-radius:2px;text-align:center;width:18px;color:#FFF;line-height:16px}
 .tkbv li:after{content:" ";background:#98D0FF;display:block;width:6px;height:6px;position:absolute;top:10px;left:15px;transform:rotate(45deg);-ms-transform:rotate(45deg);-webkit-transform:rotate(45deg)}
 .tkbv li:nth-child(1):before,#left li:nth-child(1):after{background:red}
 .tkbv li:nth-child(2):before,#left li:nth-child(2):after{background:#d47a2a}
@@ -721,14 +721,18 @@ div[style="overflow:visible"], div[style="overflow:visible"] iframe{denimportant
 
 /* Mobile */
 @media only screen and (max-device-width: 860px) {
-.btkcfr {float: none;display: block;width: 100%;clear: both;}
-.boxvhg1 {width: 98%;text-align: center;margin: 0}
+.btkcfr {float: none;display: block;width: 100%;clear: both;border: 0;}
+#tkbv .main-head h2{padding:5px}
+#page-footer {border: 0;width: 100%;}
+#page-footer:before,.boxtitle,#tkbv .main-head h2,.boxhead h2, .titlebox {font-size: 16px;text-align:center;display:block;text-transform: uppercase;font-size: 18px!important;}
+#tkbv .main-head h2:before {content: "\f09e  ";font-family: FontAwesome;}
+.boxvhg1 {width: 100%;text-align: center;margin: 0;border: 0;}
 .forum_box_name {font-size: 10px;padding: 3px 0!important;}
 .khungbox {width: 44%!important;margin: 5px 2%!important;}
 #left {margin: 0!important;width: 100%!important;}
 #logo {height: inherit!important;}
 a.baivietlast {max-width: inherit!important;display: inline;vertical-align: middle;white-space: normal!important;}
-#main-content {margin: 0 auto;width: 96%;}
+#main-content {margin: 0 auto;width: 100%;}
 .tpbuttons.pad10 {float: right;}
 .ctfr {clear: both;display: block;line-height: 25px;}
 .topic-title.hierarchy a.topictitle {white-space: normal!important;max-width: 98%!important;}
@@ -738,13 +742,13 @@ a.baivietlast {max-width: inherit!important;display: inline;vertical-align: midd
 .breadcrumb .crust a.crumb {font-size: 11px;}
 .crust.homeCrumb a[href="/"] {font-size: 0;}
 .postprofile_new {display: block;float: none;margin: 0!Important;padding: 0;border: 0;position: relative;border-bottom: 2px solid rgb(199, 37, 37);}
-.post {border-radius: 0;padding: 0;margin: 0;position: relative;width: 99%;}
+.post {border-radius: 0;padding: 0;margin: 0;position: relative;width: 100%;border: 0;border-bottom: 2px solid rgb(199, 37, 37);}
 .post .inner {margin-top: 32px;}
 .postprofile_new .imgavata {display: inline-block;vertical-align: top;padding: 0;}
 .avata_display {display: inline-block;border: 0;position: absolute;}
 .postprofile_new .dhide {font-size: 11px;position: absolute;top: 25px;margin-left: 5px;display: inline-block;max-width: 61%;white-space: nowrap;    overflow: hidden;    text-overflow: ellipsis;}
 .postprofile_new .imgavata img {border: 0;width: 80px;height: 80px;}
-.postbody_new .author {font-size: 0;width: inherit!important;position: absolute;top: 0;left: 0;right: 0;}
+.postbody_new .author {font-size: 0;width: inherit!important;position: absolute;top: -32px;left: 0;right: 0;}
 .fottertopic {text-align: center;clear: both;float: none;}
 .fottertopic span {display: inline-block;}
 .box_thank {margin: 5px;}
@@ -762,6 +766,10 @@ form[action="/privmsg?folder=inbox"] .postbody {border: 0!important;}
 form[action="/privmsg?folder=inbox"] .postbody .avata_display {display: inline-block;position: inherit;}
 form[action="/privmsg?folder=inbox"] .submit-buttons {line-height: 40px;}
 p.right,#profile-advanced-right,.th_right,.th.top,td.topp,.nguoigui,.navvhg.f14,div[style="overflow:visible"],div[style="overflow:visible"] iframe,.forumbg .posts,.forumbg .views,.forumbg .lastpost,.lh_member,div#profile-advanced-details .message-block:after,.postprofile_new .arrow,#profile-advanced-details .message-block:before,.message-block .message-date,.thongtinlhtn,#profile-advanced-details .avatar,.box_hide,.data_f0 .nguoigui:before {display: none}
+.forumbg .header dt {margin: 0!important;padding: 5px!Important;display: block;font-size: 18px;text-align: center;width: inherit;float: none;}
+.forumbg .header dt:before {content: "\f115  ";font-family: FontAwesome;}
+.forumbg {padding: 0}
+.borxd {border: 0;border-bottom: 2px solid rgb(199, 37, 37);}
 .postprofile_new .dhide .rank_text, .postprofile_new .dhide .thongtintv,.thongtintv .thongtinct,.pagination input {display: block;}
 .postbody_new,#profile-advanced-layout #tabs,#profile-advanced-details .message-block,form[action="/privmsg?folder=inbox"] .inner,form[action="/privmsg?folder=inbox"] .postbody .h3,.ndposttn {margin: 0!important;clear: both;}
 .postprofile_new .avata_display,#privmsgs-menu li {display: inline-block!important;}
@@ -769,7 +777,7 @@ p.right,#profile-advanced-right,.th_right,.th.top,td.topp,.nguoigui,.navvhg.f14,
 .file_contact {display: inline-block;height: inherit;padding-top: 0}
 fieldset.breadcrumb {margin: 0;max-width: 100%}
 .file_left,.file_right {float: none;}
-li.tkiol,li.tkiol a {font-size: 12px;}
+li.tkiol a {font-size: 12px;display: inline-block;margin: 5px;}
 ul.cubv {  overflow: inherit;  height: inherit;}
 .nguoigui {  width: inherit!Important;  float: none;  display: block;  vertical-align: text-top;}
 .nguoigui .lasttl:before {  content: "Trả Lời: ";}
@@ -778,12 +786,13 @@ ul.cubv {  overflow: inherit;  height: inherit;}
 .nguoigui .td_right {  width: initial!Important;  white-space: normal!important;  overflow: initial!important;  display: initial!important;  vertical-align: top;}
 a.topictitle.topiclist:before {  font-size: 18px;  float: left;}
 .tkbv li:before,.tkbv li:after {  margin-right: 2px;}
+.tkbv li:after {left: 20px;top: 14px;}
 li.chbv {  width: 100%;}
 .wysibb .wysibb-toolbar .wysibb-toolbar-container .wysibb-toolbar-btn, .wysibb .wysibb-toolbar .wysibb-toolbar-container .wysibb-toolbar-btn.wbb-select{text-align: center;}
 .zzBoxes_inner {width: 98%!important;margin-left: 0!important;left: 0}
 .dataf .nguoigui {display: inline;vertical-align: inherit}
 .dataf a.cdlx {max-width: none;display: inline;white-space: normal!Important;margin: 0 5px;word-wrap: normal;vertical-align: inherit}
-.th_right {display: none!Important}
+.th_right,#tooltip,.thanktopic {display: none!Important}
 td.bv {padding: 0}
 li.chbv {padding: 5px;border-bottom: 2px solid rgb(199, 37, 37);}li.chbv .nguoigui:before {content: " - Người gửi: ";}
 .data_ftl .nguoigui:before,.data_flx .nguoigui:before {content: " - Có: "!important;}
@@ -793,4 +802,5 @@ form[action="/login"] .panel .inner .fld_connexion dd {margin: 0;}
 form[action="/login"] .panel .inner .fld_connexion {width: 100%;padding: 0;text-align: center;}
 form[action="/login"] .panel .inner .fld_connexion dd a {padding: 5px;display: block;}
 a.button2[href="/register"] {background: rgb(199, 37, 37);color: white;padding: 5px 10px;}
+#tkbv{border:0}
 }
