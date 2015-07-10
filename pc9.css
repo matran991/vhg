@@ -335,20 +335,6 @@ table.table1 tbody tr.hover, table.table1 tbody tr:hover{background-color:black}
 .zzPoll .frm-buttons a{margin:0 10px;font-weight:bold;height:30px;vertical-align:top}
 a.view_vote{background:rgb(41, 128, 185);display:inline;position:relative;top:1px}
 p.poll_w{max-width:560px}
-/* Pop Up */
-.zzBoxes_button{border-top:1px solid}
-.zzBoxes_mess .dibl.fleft img{height:150px;width:150px;border-radius:3px}
-.zzBoxes_inner{border:1px solid white}
-.zzBoxes_mess .dibl.fright .name_text{font-size:24px}
-.zzBoxes_mess .fright{width:70%}
-.zzBoxes_inner{border-color:#C72525;font-size:14px;font-weight:bold;z-index:99999}
-.zzBoxes_mess .rank_text{position:absolute;right:260px;bottom:14px;left:20px}
-.zzBoxes_mess .tt_mem{display:inline-block}
-.zzBoxes_mess .thongtinct{border-bottom:1px dashed;display:block;font-size:11px}
-.zzBoxes_mess .lh_member{margin-top:-7px;width:200px;display:inline-block;float:right}
-.zzBoxes_mess .lh_member a{display:block;font-size:12px;border-bottom:1px dashed}
-.tt_mem span{display:block;font-size:12px;border-bottom:1px dashed}
-.zzBoxes_mess .thongtinct span{display:initial;padding:0;border:0}
 /* Quote */
 blockquote div{font-family:Tahoma;font-weight:bold;width:97%;margin-left:18px;display:inline-block;padding:6px;font-size:14px}
 blockquote{font-size:16px;-moz-osx-font-smoothing:grayscale;padding:0;margin:5%;border:2px solid darkturquoise}
@@ -793,6 +779,8 @@ div[style="overflow:visible"], div[style="overflow:visible"] iframe{denimportant
 .user_load .fa {animation: loading 0.5s infinite;-moz-animation: loading 0.5s infinite;-webkit-animation: loading 0.5s infinite;-o-animation: loading 0.5s infinite;transform: rotate(-360deg);color: crimson;}
 .load_text_user {display: inline-block;margin-left: 10px;text-align: left;}
 #user_content li{list-style-type: none;}
+.ajax_user:before {content: "";width: 100%;height: 100%;position: absolute;left: 0;z-index: -1;top: 0;background-size: contain;}
+.ajax_user,.stroker {text-shadow:-2px -2px 0px #000,-1px -2px 0px #000,0px -2px 0px #000,1px -2px 0px #000,2px -2px 0px #000,2px -1px 0px #000,2px  0px 0px #000,2px  1px 0px #000,2px  2px 0px #000,1px  2px 0px #000,0px  2px 0px #000,-1px  2px 0px #000,-2px  2px 0px #000,-2px  1px 0px #000,-2px  0px 0px #000,-2px -1px 0px #000;-moz-text-shadow:-2px -2px 0px #000,-1px -2px 0px #000,0px -2px 0px #000,1px -2px 0px #000,2px -2px 0px #000,2px -1px 0px #000,2px  0px 0px #000,2px  1px 0px #000,2px  2px 0px #000,1px  2px 0px #000,0px  2px 0px #000,-1px  2px 0px #000,-2px  2px 0px #000,-2px  1px 0px #000,-2px  0px 0px #000,-2px -1px 0px #000;-webkit-text-shadow:-2px -2px 0px #000,-1px -2px 0px #000,0px -2px 0px #000,1px -2px 0px #000,2px -2px 0px #000,2px -1px 0px #000,2px  0px 0px #000,2px  1px 0px #000,2px  2px 0px #000,1px  2px 0px #000,0px  2px 0px #000,-1px  2px 0px #000,-2px  2px 0px #000,-2px  1px 0px #000,-2px  0px 0px #000,-2px -1px 0px #000}
 #user_content {min-height: 50%;position: relative;z-index: -1;}
 .tab_change_user a[href$="friends"], .tab_change_user a[href$="stats"], .tab_change_user a[href$="contact"], .tab_change_user a[href$="wall"],.tab_change_user a[href$="info"],.tab_change_user a[href$="config"]{font-size: 14px;background: rgb(199, 37, 37);padding: 5px;display: inline-block;width: initial;color: white;}
 .tab_change_user li {display: inline-block;margin: 5px 5px 2px 5px;}
@@ -807,7 +795,7 @@ a.check_ok {background: rgb(23, 139, 210)!Important;margin-bottom: -2px;}
 #user_content .avatar {display: inline-block;border: 2px solid rgb(199, 37, 37);padding: 5px;background: black;border-radius: 3px;vertical-align: middle;}
 .get_data_wall .inner ol {text-align: center;}
 .ajax_user .message-footer li {display: inline-block;margin: 5px;}
-.ajax_user .message-text {padding: 5px;line-height: 20px;z-index: 9;position: relative;min-height: 60px;}
+.ajax_user .message-text {background: black;padding: 5px;line-height: 20px;z-index: 9;position: relative;min-height: 60px;}
 .ajax_user .message-header {font-size: 0;}
 .ajax_user .message-header a {font-size: 12px;}
 .ajax_user .message-header a:before {content: "Được gửi bởi: ";color: white;}
