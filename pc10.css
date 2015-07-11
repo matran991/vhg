@@ -99,7 +99,7 @@ input{outline:none!important}
 /* Header */
 .headerbar{background-image:none}
 #logo{height:141px!important;overflow:hidden;background:black!important}
-#logo img{max-width:100%}
+#logo img{max-width:100%;width:100%}
 #searchajax{left:0!important;top:37px}
 #phpbb{padding:0;background-color:black}
 #wrap{border:0!important}
@@ -257,7 +257,7 @@ form[action="/search?mode=results"]{denimportant}
 .table1 tbody tr{border:0!important}
 #memberlist thead th{border:0}
 form[action="/memberlist"] p{text-align:center!Important;padding:5px!important}
-.panel .message-block{margin-left:88px;position:relative}
+#profile-advanced-details .message-block{margin-left:88px;position:relative}
 .panel .message-block:after{content:"";width:20px;height:20px;position:absolute;left:-8px;background:rgb(0, 0, 0);transform:rotate(-134deg);display:inline-block;top:54px}
 .panel .message-block:before{content:"";width:20px;height:20px;position:absolute;left:-11px;transform:rotate(-134deg);display:inline-block;top:54px}
 #profile-advanced-details .avatar{position:relative;top:28px;border-radius:3px;width:60px}
@@ -267,13 +267,13 @@ form[action="/memberlist"] p{text-align:center!Important;padding:5px!important}
 
 /* Wall */
 #profile-advanced-layout #tabs{display:block;margin:0;margin-left:6px}
-#profile-advanced-layout #new-message{z-index:999}
+#profile-advanced-layout #new-message{z-index:999;margin-top: 0;}
 #cp-main{margin:0}
 #cp-main h1{margin:0}
 #profile-tab-field-profil div.separator{padding:0}
 #profile-tab-field-profil div.separator{border-bottom:2px solid #C72525}
 #profile-tab-field-profil div.separator:last-child{border:0}
-#profile-advanced-right{margin-top:-18px;float:left;width:30%;margin-left:10px}
+#profile-advanced-right{float:left;width:30%;margin-left:10px}
 #profile-advanced-left{margin-right:0;margin-left:50px;display:inline-block;width:60%;margin-top:10px}
 .module .inner .h3{margin:0}
 .module .inner div[style="text-align:center;"] img{width:106px;height:106px}
@@ -281,7 +281,7 @@ form[action="/memberlist"] p{text-align:center!Important;padding:5px!important}
 #page-footer{clear:both}
 #tabs .activetab a{border-bottom:3px solid rgb(199, 37, 37)}
 #profile-advanced-left .panel{margin:0;margin-top:-4px;position:relative}
-#tabs a:hover, #profile-advanced-layout #tabs #new-message-link a:hover{background-color:#8a2be2;border:2px solid #8a2be2}
+#tabs .activetab a:hover,#tabs a:hover, #profile-advanced-layout #tabs #new-message-link a:hover{background-color: #8a2be2!important;border: 2px solid #8a2be2!important;}
 h1.page-title.wall{display:block;margin-left:19px}
 #new-message-link{margin:0;padding-bottom:0px!important;float:none!important;position:inherit!important}
 #profile-advanced-layout #tabs #new-message-link a{padding:6px;margin:0 2px}
@@ -295,7 +295,7 @@ h1.page-title.wall{display:block;margin-left:19px}
 #cp-main .panel ol li{border:0}
 ul.message-footer{padding:5px!important;margin:5px}
 #profile-advanced-details .message-footer li a{text-decoration:none}
-#profile-advanced-details .message-footer li a:hover{background:darkorchid}
+#profile-advanced-details .message-footer li a:hover{background: darkorchid!important;}
 ul.message-footer{margin:10px}
 .message-footer li{border:0!important}
 #cp-main .ctfr{display:inline-block;float:right}
@@ -780,6 +780,7 @@ div[style="overflow:visible"], div[style="overflow:visible"] iframe{denimportant
 .load_text_user {display: inline-block;margin-left: 10px;text-align: left;}
 #user_content li{list-style-type: none;}
 .ajax_user:before {content: "";width: 100%;height: 100%;position: absolute;left: 0;z-index: -1;top: 0;background-size: contain;}
+.get_data_wall .inner .warning {text-align: center;border: 2px dashed;display: block;margin: 5px 90px;padding: 5px;font-size: 16px;}
 .ajax_user,.stroker {text-shadow:-2px -2px 0px #000,-1px -2px 0px #000,0px -2px 0px #000,1px -2px 0px #000,2px -2px 0px #000,2px -1px 0px #000,2px  0px 0px #000,2px  1px 0px #000,2px  2px 0px #000,1px  2px 0px #000,0px  2px 0px #000,-1px  2px 0px #000,-2px  2px 0px #000,-2px  1px 0px #000,-2px  0px 0px #000,-2px -1px 0px #000;-moz-text-shadow:-2px -2px 0px #000,-1px -2px 0px #000,0px -2px 0px #000,1px -2px 0px #000,2px -2px 0px #000,2px -1px 0px #000,2px  0px 0px #000,2px  1px 0px #000,2px  2px 0px #000,1px  2px 0px #000,0px  2px 0px #000,-1px  2px 0px #000,-2px  2px 0px #000,-2px  1px 0px #000,-2px  0px 0px #000,-2px -1px 0px #000;-webkit-text-shadow:-2px -2px 0px #000,-1px -2px 0px #000,0px -2px 0px #000,1px -2px 0px #000,2px -2px 0px #000,2px -1px 0px #000,2px  0px 0px #000,2px  1px 0px #000,2px  2px 0px #000,1px  2px 0px #000,0px  2px 0px #000,-1px  2px 0px #000,-2px  2px 0px #000,-2px  1px 0px #000,-2px  0px 0px #000,-2px -1px 0px #000}
 #user_content {min-height: 50%;position: relative;z-index: -1;}
 .tab_change_user a[href$="friends"], .tab_change_user a[href$="stats"], .tab_change_user a[href$="contact"], .tab_change_user a[href$="wall"],.tab_change_user a[href$="info"],.tab_change_user a[href$="config"]{font-size: 14px;background: rgb(199, 37, 37);padding: 5px;display: inline-block;width: initial;color: white;}
@@ -813,10 +814,11 @@ a.check_ok {background: rgb(23, 139, 210)!Important;margin-bottom: -2px;}
 #wall_send input {padding-left: 10px;font-size: 21px;margin: 10px;}
 .get_data_info dl dt span {color: white!important;}
 .get_data_info dl dt,.get_data_info dl dd {display: inline-block;margin: 5px;}
-.get_data_info .avatar_user {display: inline-block;}
-.get_data_info .avatar_user .matran45 {display: block;text-align: center;padding: 5px;}
+.get_data_info .avatar_user {display: inline-block;vertical-align: middle;}
+.get_data_info .avatar_user .matran45 {display: block;text-align: center;padding: 5px;background: rgb(199, 37, 37);}
+.get_data_info .avatar_user img {width: 100%;}
 .get_data_info .panel {margin: 0;text-align: center;}
-.user_info_pop {display: inline-block;margin-left: 40px;text-align: left;}
+.user_info_pop {vertical-align: middle;display: inline-block;margin-left: 40px;text-align: left;}
 .get_data_stats legend,.get_data_contact .separator,.get_data_info .separator,.get_data_contact dl,.get_data_config,.ajax_user .message-footer,#field_id1,.user_over,#user_pop {display: none}
 .inner a[href^="/profile?mode=email"]:before{content: "\f0e0  Gửi Email";}
 .inner a[href^="/privmsg?mode=post"]:before{content: "\f0e5  Gửi Tin Nhắn";}
@@ -831,6 +833,12 @@ input.wall_image {margin-left: 15px;width: 55%;}
 
 /* Mobile */
 @media only screen and (max-device-width: 860px) {
+  #user_pop {left: 0;width: 90%;margin: 0 auto!important;right: 0;}
+.user_load{font-size:14px}
+#user_content .avatar{display:none}
+.ajax_user .message-block {margin-left: 0;width: inherit;display: block;word-wrap: break-word;}
+.get_data_config .panel div {width: inherit;}
+input.wall_image {margin: 0;display: block;width: 90%;}
 .btkcfr {float: none;display: block;width: 100%;clear: both;border: 0;}
 #tkbv .main-head h2{padding:5px}
 #page-footer {border: 0;width: 100%;}
