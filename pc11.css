@@ -698,7 +698,12 @@ b.m_get{display:block;padding:3px;font-size:11px}
 div[style="overflow:visible"], div[style="overflow:visible"] iframe{denimportant}
 #page-footer:before{content:"\f1f9 2015 COPYRIGHT DESIGN  BY MATRAN999";background:rgb(199, 37, 37);padding:5px;display:block;font-size:20px}
 #page-footer{border:2px solid rgb(199, 37, 37);width:96%;margin:0 auto}
-
+/* Màu Nick */
+a[href^="/u"]{color:#2EE0E6}
+a[href="/u1"]{color:red!important}
+a[href="/u4"],a[href="/u52"]{color:#DD00FF!important}
+a[href="/u16"],a[href="/u46"]{color:#0000FF!important}
+a[href="/u7"]{color:#00FF33!important}
 /* Login Form */
 .login_defaul .inputfield{width:87%;margin:10px}
 .login_register{padding:5px;background:rgb(199, 37, 37);vertical-align:middle;color:white;margin-left:20px}
@@ -830,7 +835,16 @@ a.check_ok {background: rgb(23, 139, 210)!Important;margin-bottom: -2px;}
 .get_data_config .panel div {width: 50%;margin: 0 auto;text-align: left;padding: 5px;position: relative;line-height: 45px;}
 input.wall_image {margin-left: 15px;width: 55%;}
 .ajax_user .panel {position: relative;background: transparent!important;}
-
+/* Thông Báo */
+.zzBoxes_title.notifi {font-size: 20px!Important;background: rgb(199, 37, 37);padding: 5px;}
+.zzBoxes_close.notifi {right: -45px;width: 30px;height: 30px;}
+.zzBoxes_mess.notifi a {font-size: 14px;font-weight: bold;}
+.zzBoxes_inner.notifi { border: 3px solid rgb(199, 37, 37);}
+ul.noti_content li {padding: 5px;border-bottom: 2px solid rgb(199, 37, 37);}
+.numtb {background: forestgreen;padding: 5px 9px;position: relative;margin-left: 8px;text-align: center;}
+.numtb:before {background: forestgreen;position: absolute;width: 10px;height: 10px;left: -4px;content: "";transform: rotate(130deg);top: 10px;z-index: 1;}
+.numtb b {position: relative;z-index: 9;}
+.zzBoxes_inner.notifi .zzBoxes_button {text-align: center;}
 /* Mobile */
 @media only screen and (max-device-width: 860px) {
   #user_pop {left: 0;width: 90%;margin: 0 auto!important;right: 0;}
