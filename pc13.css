@@ -71,7 +71,7 @@
 .navvhg li.tkiol.pad5.file_user:hover,#main-content > div[style="overflow:visible"],select,input[type="text"],input[type="password"],#searchajax,.forabg,.listboxcon,.breadcrumb,.row .pagination a:hover,.postprofile_new,#quickreply,#profile-advanced-details .avatar,.module .inner,table.forumline,.zzBoxes_button,.zzBoxes_inner,.zzBoxes_inner,blockquote ,code,dl.codebox ,.wysibb,.wysibb .wysibb-toolbar .wysibb-toolbar-container .wysibb-toolbar-btn span.btn-tooltip,.wysibb .wysibb-toolbar .wysibb-toolbar-container .wysibb-toolbar-btn .wbb-list,.ve-tlb-colorpick .cp-line,#wbbmodal .wbbm,.nav_drop li,.nav_profile:hover li,.nav_drop_priv,.nav_drop_note,.changeLast,.fbt.actv ,.selop,#tooltip,.bde{background:black}
 
 /* Font */
-a,div,span,b,i,li,body,input,button,dl,dd,dt{font-family:FontAwesome,Tahoma,Verdana,Arial,Helvetica,sans-serif}
+a,div,span,b,i,li,body,input,button,dl,dd,dt,h1,h2,h3,h4,blockquote,cite,code,sub,sup{font-family:FontAwesome,Tahoma,Verdana,Arial,Helvetica,sans-serif}
 a:hover{text-decoration:none!important}
 input[type="text"],input[type="password"]{border:2px solid;border-color:white;cursor:text;color:white;font-weight:bold;border-radius:3px}
 .knl{display:block;width:100%;height:18px;padding:6px 12px;font-size:14px;line-height:1.42857143;color:#555;background-color:#fff;background-image:none;border:1px solid #ccc;border-radius:4px;-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075);box-shadow:inset 0 1px 1px rgba(0,0,0,.075);-webkit-transition:border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;-o-transition:border-color ease-in-out .15s,box-shadow ease-in-out .15s;transition:border-color ease-in-out .15s,box-shadow ease-in-out .15s}
@@ -842,14 +842,35 @@ input.wall_image {margin-left: 15px;width: 55%;}
 .zzBoxes_inner.notifi { border: 3px solid rgb(199, 37, 37);}
 ul.noti_content li {padding: 5px;border-bottom: 2px solid rgb(199, 37, 37);}
 .numtb {background: forestgreen;padding: 5px 9px;position: relative;margin-left: 8px;text-align: center;}
-.numtb:before {background: forestgreen;position: absolute;width: 10px;height: 10px;left: -4px;content: "";transform: rotate(130deg);top: 10px;z-index: 1;}
+.numtb:before {background: forestgreen;position: absolute;width: 10px;height: 10px;left: -4px;content: "";transform: rotate(130deg);top: 8px;z-index: 1;}
 .numtb b {position: relative;z-index: 9;}
 .zzBoxes_inner.notifi .zzBoxes_button {text-align: center;}
+/* Slide_show Topic */
+.m_show_topic {display: inline-block;width: 320px;position: relative;}
+.topic_show_img {display: block;width: 100%;height: 200px;background-size: cover;    background-position: center center;    background-repeat: no-repeat;position: relative;border-left: 2px solid white;}
+.m_topic_content {text-align: center;display: block;overflow: hidden;height: inherit;position: absolute;}
+.m_topic_title {position: absolute;font-size: 14px!important;text-align: center;background: rgba(0, 0, 0, 0.6);bottom: 0;height: 34px;overflow: hidden;left: 0;right: 0;}
+.m_topic_change {position: relative;height: 200px;text-align: center;width: 98%;overflow: hidden;margin: 0 auto;padding: 5px 0;}
+.topic_tooltip {display: block;position: absolute;top: 0;background: black;left: 2px;right: 0;width: 100%;z-index: 999999999;overflow-x: hidden;height: 0;transition: all 0.5s;opacity: 0;word-wrap: break-word;}
+#topic_changer {position: relative;border: 2px solid rgb(199, 37, 37);}
+.tooltip_show_post {position: absolute;bottom: -212px;background: black;border: 2px solid rgb(199, 37, 37);z-index: 9999999;}
+.tooltip_content {overflow: auto;height: 200px;}
+.topic_author_post li,.topic_content_post {padding: 5px;}
+.m_topic_header {background: rgb(199, 37, 37);}
+.m_topic_header a {color: white;font-weight: bold;font-size: 20px;}
+.topic_content_post {border-top: 2px solid rgb(199, 37, 37);line-height: 20px;margin: 5px 0;}
+.m_show_topic:hover .topic_tooltip {height: 200px;opacity: 1;}
+.set_arrow {position: absolute;top: 40%;z-index: 99999999;background: rgba(255, 255, 255, 0.58);padding: 5px 8px;font-size: 42px;text-align: center;color: brown}
+.m_arrow_left {left: 0px;}
+.m_arrow_right {right: 0;}
+#topic_changer .boxhead {font-size: 20px;padding: 5px;}
+.set_arrow:hover {background: darkmagenta;color: white;cursor: pointer;}
+.m_topic_header a:hover {color: darkturquoise;}
 /* Mobile */
 @media only screen and (max-device-width: 860px) {
   #user_pop {left: 0;width: 90%;margin: 0 auto!important;right: 0;}
 .user_load{font-size:14px}
-#user_content .avatar{display:none}
+#user_content .avatar,#topic_changer{display:none}
 .ajax_user .message-block {margin-left: 0;width: inherit;display: block;word-wrap: break-word;}
 .get_data_config .panel div {width: inherit;}
 input.wall_image {margin: 0;display: block;width: 90%;}
@@ -897,7 +918,7 @@ form[action="/privmsg?folder=inbox"] .gtn.mag10.fright {clear: both;float: none;
 form[action="/privmsg?folder=inbox"] .postbody {border: 0!important;}
 form[action="/privmsg?folder=inbox"] .postbody .avata_display {display: inline-block;position: inherit;}
 form[action="/privmsg?folder=inbox"] .submit-buttons {line-height: 40px;}
-p.right,#profile-advanced-right,.th_right,.th.top,td.topp,.nguoigui,.navvhg.f14,div[style="overflow:visible"],div[style="overflow:visible"] iframe,.forumbg .posts,.forumbg .views,.forumbg .lastpost,.lh_member,div#profile-advanced-details .message-block:after,.postprofile_new .arrow,#profile-advanced-details .message-block:before,.message-block .message-date,.thongtinlhtn,#profile-advanced-details .avatar,.box_hide,.data_f0 .nguoigui:before {display: none}
+p.right,#profile-advanced-right,.th_right,.th.top,td.topp,.nguoigui,div[style="overflow:visible"],div[style="overflow:visible"] iframe,.forumbg .posts,.forumbg .views,.forumbg .lastpost,.lh_member,div#profile-advanced-details .message-block:after,.postprofile_new .arrow,#profile-advanced-details .message-block:before,.message-block .message-date,.thongtinlhtn,#profile-advanced-details .avatar,.box_hide,.data_f0 .nguoigui:before {display: none}
 .forumbg .header dt {margin: 0!important;padding: 5px!Important;display: block;font-size: 18px;text-align: center;width: inherit;float: none;}
 .forumbg .header dt:before {content: "\f115  "}
 .forumbg {padding: 0}
@@ -935,4 +956,16 @@ form[action="/login"] .panel .inner .fld_connexion {width: 100%;padding: 0;text-
 form[action="/login"] .panel .inner .fld_connexion dd a {padding: 5px;display: block;}
 a.button2[href="/register"] {background: rgb(199, 37, 37);color: white;padding: 5px 10px;}
 #tkbv{border:0}
+.listnav li {display: block;border-bottom: 2px solid black;}
+.listnav {display: inline-block;width: inherit;background: rgb(199, 37, 37);position: absolute;top: 35px;transition: all 0.5s;right: -200px}
+.navvhg.f14 {position: fixed;z-index: 999;left: 0;right: 0;text-align: center}
+.navvhg.f14:before {width: inherit;padding: 5px;background: rgb(199, 37, 37);display: inline-block;position: absolute;top: 0;right: 0;font-size: 24px;content: "\f03a";z-index: 9;border-left: 2px solid black;}
+.navvhg.f14:after {content: "Việt Hóa Game";display: inline-block;position: absolute;top: 0;left: 0;padding: 5px;background: rgb(199, 37, 37);width: initial;right: 0;border-right: 2px solid black;font-size: 20px; z-index: 1;}
+.navvhg:hover .listnav {right: 0}
+#logo,#searchajax,li.nav_profile,ul.nav_drop.dhide,ul.nav_drop_priv {display: none!important}
+.navvhg{display: block;background: none;}
+#main-content{margin-top: 28px}
+b.ngc {display: inline-block;}
+b.ngc a {vertical-align: middle;}
+b.ngc span {width: inherit!important;}
 }
