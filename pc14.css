@@ -56,7 +56,7 @@
 .nav_name,.titlebox h2 a,.topiclist .pagination a,.wysibb-toolbar-btn.wbb-code,.wysibb-text-editor.wysibb-body,.cgu-buttons:hover,.nav_name[href^="/u"]{color:white!important}
 
 /* Display hide */
-.dhide,a[href="#top"],.breadcrumb .boardTitle,#tabs a[href*="watchse"], #tabs a[href*="favouri"], #tabs a[href*="draft"],.message-header .message-date,#profile-advanced-details .message-footer li:after,.box_thank .show_thanker a:last-child:after ,.hide,#tooltip div[title^="/t"],form[action="/search?mode=results"] .dashed{display:none}
+.dhide,li.tttop .gensmall,a[href="/tags/new_post"],a[href="/tags/new-topic"],label[for="rtags"],a[href="#top"],.breadcrumb .boardTitle,#tabs a[href*="watchse"], #tabs a[href*="favouri"], #tabs a[href*="draft"],.message-header .message-date,#profile-advanced-details .message-footer li:after,.box_thank .show_thanker a:last-child:after ,.hide,#tooltip div[title^="/t"],form[action="/search?mode=results"] .dashed{display:none}
 
 /* Padding 5px */
 .m_tb.m_content, .search .postbody .postprofile li, #form_confirm .inner .fields2, #profile-advanced-details .avatar img, .module .inner div[style="text-align:center;"], .new-message.bottom, input[type="text"], input[type="password"], select, .ctfr a, .ctfr span strong, .imgavata img, .postbody_new .author, .content.clearfix, .pad5, .listboxcon a, .topiclist.topics.bg_none .row, .profile-icons a, .prev, .sbpost, #cp-main h1, .panel .message-block .message-text, #profile-advanced-left .panel, h1.page-title.wall, .new-message.bottom a, #cp-main .panel ol li, .forumline .thHead, #poll_ballot a[href*="mode=close"], #poll_result a[href*="mode=close"], a.view_vote, .zzBoxes_mess .lh_member a, .tt_mem span, dl.codebox dt, dl.codebox code, .error.dndk, .right-box a, .file_avata img, .file_info_2 span, input[name="password"], .nav_drop_priv, .nav_drop_priv .nav_tnr, .note_content, #cont_pwd .pwd_img, .tkbv td, .changeLast, .selop, .module .inner div[style="text-align:center;"] img, #profile-advanced-details .message-footer li a, .zzBoxes_mess .thongtinct, .zzBoxes_mess .lh_member, .wysibb .wysibb-text{padding:5px}
@@ -144,7 +144,7 @@ li.khungbox:nth-child(3) .box_hide:before{left:171px}
 .boxbt a.forumtitle .box_icont[data*="unread"]:before{content:"Có bài mới";background:red;padding:5px;color:white;transform:rotate(314deg);display:block;position:absolute;left:-41px;top:24px;z-index:9;width:139px}
 .boxbt a.forumtitle .fa{font-size:90px;color:white;display:block}
 .boxvhg1{width:68%;border: 2px solid rgb(199, 37, 37);border-radius: 3px;margin-left: 10px;}
-.boxtitle {background: rgb(199, 37, 37);padding: 5px;display: block;font-size: 16px;}
+.boxtitle {background: rgb(199, 37, 37);display: block;font-size: 20px;    padding: 5px;}
 .boxbt a.forumtitle:hover{text-decoration:none}
 .boxbt .lastpost{/* min-width:200px;*/padding:10px;min-height:81px}
 .boxbt .ttboxbv{width:100%}
@@ -252,7 +252,7 @@ h1.page-title.view{margin-top:0;margin:5px}
 .panel{background-color:black!important;padding:10px;margin:10px}
 #form_confirm .inner .page-title{margin:0;padding:10px;border:0}
 form[action="/search?mode=results"] .submit-buttons{border:0!important}
-form[action="/search?mode=results"]{denimportant}
+form[action="/search?mode=results"]{margin:0;}
 #memberlist{margin:10px;padding:10px;width:98%;padding:0}
 .table1 tbody tr{border:0!important}
 #memberlist thead th{border:0}
@@ -680,7 +680,7 @@ b.m_get{display:block;padding:3px;font-size:11px}
 .lastRight,.nguoigui{float:right}
 .fbt{padding:12px;cursor:pointer}
 #tkbv{border:2px solid #C72525;border-radius:3px}
-#tkbv .main-head h2{margin:0;padding:10px;background:#C72525;text-transform:capitalize;font-size:18px!important}
+#tkbv .main-head h2{margin:0;padding: 5px;background:#C72525;text-transform:capitalize;font-size:18px!important}
 .nguoigui .fa{line-height:inherit;animation:loading 0.5s infinite;-moz-animation:loading 0.5s infinite;-webkit-animation:loading 0.5s infinite;-o-animation:loading 0.5s infinite}
 .selop{display:inherit}
 .nopost{height:100%}
@@ -826,7 +826,7 @@ a.check_ok {background: rgb(23, 139, 210)!Important;margin-bottom: -2px;}
 .user_info_pop {vertical-align: middle;display: inline-block;margin-left: 40px;text-align: left;}
 .get_data_stats legend,.get_data_contact .separator,.get_data_info .separator,.get_data_contact dl,.get_data_config,.ajax_user .message-footer,#field_id1,.user_over,#user_pop {display: none}
 .inner a[href^="/profile?mode=email"]:before{content: "\f0e0  Gửi Email";}
-.inner a[href^="/privmsg?mode=post"]:before{content: "\f0e5  Gửi Tin Nhắn";}
+.inner a[href^="/privmsg?mode=post"]:before, #profile-advanced-layout #tabs #new-message-link a:before {content: "\f0e5  Gửi Tin Nhắn";}
 .inner a[title="Website của thành viên này"]:before{content: "\f0ac  Website";}
 .get_data_contact dl:nth-child(1), .get_data_contact dl:nth-child(5), .get_data_contact dl:nth-child(3) {display: block;}
 .color-box{width: 40px;height: 40px;margin:5px;border: 1px solid white;display:inline-block;position: absolute;right: 0;top: 0;cursor: pointer;}
@@ -846,20 +846,20 @@ ul.noti_content li {padding: 5px;border-bottom: 2px solid rgb(199, 37, 37);}
 .numtb b {position: relative;z-index: 9;}
 .zzBoxes_inner.notifi .zzBoxes_button {text-align: center;}
 /* Slide_show Topic */
-.m_show_topic {display: inline-block;width: 320px;position: relative;}
-.topic_show_img {display: block;width: 100%;height: 200px;background-size: cover;    background-position: center center;    background-repeat: no-repeat;position: relative;border-left: 2px solid white;}
+.m_show_topic {display: inline-block;width: 316px;position: relative;margin: 0 2px;}
+.topic_show_img {display: block;width: 96%;height: 196px;background-size: cover;    background-position: center center;    background-repeat: no-repeat;position: relative;border: 2px solid white;border-radius: 3px;margin: 0 auto;}
 .m_topic_content {text-align: center;display: block;overflow: hidden;height: inherit;position: absolute;}
-.m_topic_title {position: absolute;font-size: 14px!important;text-align: center;background: rgba(0, 0, 0, 0.6);bottom: 0;height: 34px;overflow: hidden;left: 0;right: 0;}
-.m_topic_change {position: relative;height: 200px;text-align: center;width: 98%;overflow: hidden;margin: 0 auto;padding: 5px 0;}
-.topic_tooltip {display: block;position: absolute;top: 0;background: black;left: 2px;right: 0;width: 100%;z-index: 999999999;overflow-x: hidden;height: 0;transition: all 0.5s;opacity: 0;word-wrap: break-word;}
-#topic_changer {position: relative;border: 2px solid rgb(199, 37, 37);}
+.m_topic_title {position: absolute;font-size: 14px!important;text-align: center;background: rgba(0, 0, 0, 0.6);bottom: 0;height: 34px;overflow: hidden;left: 0;right: 0;padding: 5px;}
+.m_topic_change {position: relative;height: 200px;text-align: center;overflow: hidden;margin: 0 auto;padding: 5px 0;border: 2px solid rgb(199, 37, 37);}
+.topic_tooltip {display: block;position: absolute;top: 2px;background: black;left: 7px;width: 100%;z-index: 999999999;overflow-x: hidden;height: 0;transition: all 0.5s;opacity: 0;word-wrap: break-word;width: 96%;}
+#topic_changer {position: relative;width: 98%;margin: 10px;}
 .tooltip_show_post {position: absolute;bottom: -212px;background: black;border: 2px solid rgb(199, 37, 37);z-index: 9999999;}
 .tooltip_content {overflow: auto;height: 200px;}
 .topic_author_post li,.topic_content_post {padding: 5px;}
 .m_topic_header {background: rgb(199, 37, 37);}
 .m_topic_header a {color: white;font-weight: bold;font-size: 20px;}
 .topic_content_post {border-top: 2px solid rgb(199, 37, 37);line-height: 20px;margin: 5px 0;}
-.m_show_topic:hover .topic_tooltip {height: 200px;opacity: 1;}
+.m_show_topic:hover .topic_tooltip {height: 195px;opacity: 1;}
 .set_arrow {position: absolute;top: 40%;z-index: 99999999;background: rgba(255, 255, 255, 0.58);padding: 5px 8px;font-size: 42px;text-align: center;color: brown}
 .m_arrow_left {left: 0px;}
 .m_arrow_right {right: 0;}
