@@ -428,7 +428,7 @@ html{height:100%!important}
 .wysibb-toolbar-btn.wbb-thanker .btn-tooltip{left:-162px!important}
 .wysibb .wysibb-toolbar .wysibb-toolbar-container .wysibb-toolbar-btn span.btn-text{text-transform:uppercase;font-family:sans-serif,Verdana,Tahoma;font-weight:bold;line-height:28px;text-align:center}
 .wysibb .wysibb-toolbar .wysibb-toolbar-container .wysibb-toolbar-btn:hover{padding:0px 1px;border-radius:0px;background:darkorchid}
-.wysibb .wysibb-toolbar .wysibb-toolbar-container .wysibb-toolbar-btn .fonticon{font-family:'WysiBBiconFont';font-size:18px;line-height:28px;text-align:center;speak:none}
+.wysibb .wysibb-toolbar .wysibb-toolbar-container .wysibb-toolbar-btn .fonticon{font-family:WysiBBiconFont!Important;font-size:18px;line-height:28px;text-align:center;speak:none}
 .wysibb .wysibb-toolbar .wysibb-toolbar-container .wysibb-toolbar-btn:hover .fonticon{color:white}
 .wysibb .wysibb-toolbar .wysibb-toolbar-container .wysibb-toolbar-btn.on .fonticon{text-shadow:none;color:white}
 .wysibb .wysibb-toolbar .modeSwitch .wysibb-toolbar-btn{}
