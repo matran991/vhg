@@ -870,6 +870,7 @@ ul.noti_content li {padding: 5px;border-bottom: 2px solid rgb(199, 37, 37);}
 #topic_changer .boxhead {font-size: 20px;padding: 5px;}
 .set_arrow:hover {background: darkmagenta;color: white;cursor: pointer;}
 .m_topic_header a:hover {color: darkturquoise;}
+#left td ul {position: relative;}
 /* Mobile */
 @media only screen and (max-device-width: 860px) {
 	 #user_pop {left: 0;width: 90%;margin: 0 auto!important;right: 0;}
