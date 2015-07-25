@@ -931,12 +931,11 @@ ul.noti_content li {padding: 5px;border-bottom: 2px solid rgb(199, 37, 37);}
 	.borxd {border: 0;border-bottom: 2px solid rgb(199, 37, 37);}
 	.postprofile_new .dhide .rank_text, .postprofile_new .dhide .thongtintv,.thongtintv .thongtinct,.pagination input {display: block;}
 	.postbody_new,#profile-advanced-layout #tabs,#profile-advanced-details .message-block,form[action="/privmsg?folder=inbox"] .inner,form[action="/privmsg?folder=inbox"] .postbody .h3,.ndposttn {margin: 0!important;clear: both;}
-	.wysibb-text-editor.wysibb-body h2, h2.post-content,.wysibb-text-editor.wysibb-body h3, h3.post-content,.wysibb-text-editor.wysibb-body h4, h4.post-content {font-size: inherit!important;margin: 0;text-transform: none;padding: 0;}
+	.wysibb-text-editor.wysibb-body h2, h2.post-content,.wysibb-text-editor.wysibb-body h3, h3.post-content,.wysibb-text-editor.wysibb-body h4, h4.post-content {border: 0;font-size: inherit!important;margin: 0;text-transform: none;padding: 0;}
 	.postprofile_new .avata_display,#privmsgs-menu li {display: inline-block!important;}
 	.file_info {  float: left;display: inline-block;width: inherit;min-height: 92px;margin-left: 10px;}
 	.file_contact {display: inline-block;height: inherit;padding-top: 0}
 	fieldset.breadcrumb {margin: 0;max-width: 100%;float: left;margin-bottom: 10px;}
-
 	h1.page-title.view a {font-size: 18px;text-transform: none;}
 	.file_left,.file_right {float: none;}
 	li.tkiol a {font-size: 12px;display: inline-block;margin: 5px;}
@@ -982,4 +981,15 @@ ul.noti_content li {padding: 5px;border-bottom: 2px solid rgb(199, 37, 37);}
 	table.tkbv li:before, table.tkbv li:after {display: none;}
 	.selop {display: block;}
 	.th.bv {text-align: center;}
+	.profile-icons a i {font-size: 30px;background: green;padding: 5px;}
+	.profile-icons a {background: none;display: block;    font-size: 0;    padding: initial;margin: 5px 10px;}
+	.profile-icons {display: block;width: 100%;}
+	a.davote:hover, a.davote i {background: rgb(97, 97, 97);    cursor: no-drop;}
+	blockquote {margin: 0;border-color: darkcyan;}
+	blockquote cite {text-align: center;padding: 0;margin: 0;line-height: 30px;background: darkcyan;}
+	blockquote div {width: 100%;margin: 0;padding: 0;line-height: 30px;}
+	blockquote span {display: block;}
+	blockquote span div {padding: 5px;width: 96%;}
+	.codebox {margin: 0;}
+	.forum_hide3.postprofile_new,.forum_hide2.postprofile_new,.forum_hide1.postprofile_new {display: none!important;}
 }
