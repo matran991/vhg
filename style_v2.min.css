@@ -355,7 +355,7 @@ blockquote .nd_download,blockquote .nd_thanker{width:inherit;margin-left:0;displ
 .wysibb-text-editor.wysibb-body code:after, dl.codebox dt:after{content:"\f121";top:3px}
 .codebox{margin:5%;border:2px solid rgb(100, 103, 103)}
 .codebox.spoiler{border:2px solid rgb(22, 169, 22);position:relative}
-.codebox.spoiler .spoiler_content{display:block!Important;height:0;font-size:0}
+.codebox.spoiler .spoiler_content{height:0;font-size:0}
 .wysibb-text-editor.wysibb-body .codebox.spoiler .spoiler_content:before{top:0px}
 .codebox.spoiler .spoiler_content:before{content:"\f150  Hiện nội dung"}
 .codebox.spoiler .spoiler_content.hidden:before{content:"\f151  Ẩn nội dung"}
@@ -866,6 +866,11 @@ ul.noti_content li {padding: 5px;border-bottom: 2px solid rgb(199, 37, 37);}
 .set_arrow:hover {background: darkmagenta;color: white;cursor: pointer;}
 .m_topic_header a:hover {color: darkturquoise;}
 #left td ul {position: relative;}
+.onl_video,.megabox,table.mobile_video{display: none;}
+.read_video {  margin: 10px 20%;display: block;text-align: center;padding: 5px;background: darkcyan;font-size: 20px;font-weight: 100;cursor: pointer;}
+.read_video:before {content: "\f06e  ";}
+.read_video:hover {background: darkmagenta;}
+.ttboxct {overflow: auto;max-height: 102px;}
 /* Mobile */
 @media only screen and (max-device-width: 860px) {
 	 #user_pop {left: 0;width: 90%;margin: 0 auto!important;right: 0;}
