@@ -10,6 +10,7 @@ ol, ul {padding: 0}
 div,form {float: left;width: 100%}
 p,div,a,span{word-wrap: break-word;}
 img, iframe, embed,object,textarea {max-width: 100%;}
+.post_body img,.post_body iframe,.post_body embed,.post_body object {margin:10px 0;}
 .pad5{padding:5px;}
 /* Header */
 #header{padding-bottom:18px;background:#23334b;border-bottom: 10px solid #3592D2;}
@@ -124,7 +125,7 @@ fieldset dl:hover dt label {color: inherit;font-weight: bold}
 .bor_forum_right:before {transition: all .2s ease-in-out 0s;position: absolute;content: "";top: -7px;z-index: 2;width: 0;height: 0;border-style: solid;left: 0px;border-width: 0 0 45px 10px;border-color: transparent transparent #45CCFF;background: #23334B;}
 .bor_forum_left:before {content: "";background: #45CCFF;top: 0;bottom: 0;width: 10px;left: 0;position: absolute}
 .forum_box_head_grid {background: #E2E2E2;font-size: 15px;line-height: 25px}
-.forum_box_list {background: white;margin: 10px 0;border-top: 0;}
+.forum_box_list {background: white;border-top: 0;}
 .forum_box_box h3 {margin: 0;padding: 5px}
 .forum_box_box_grid {border-bottom: 1px solid #e1e1e8;line-height: 25px}
 .forum_box_box_grid:last-child {border: 0}
@@ -215,6 +216,10 @@ footer.burned-asphalt {background: black;float: left;width: 100%}
 .block_title h1:before,.block_title h1:after {content: "";background: #45CCFF;display: inline-block;position: absolute;left: 0;top: 0;width: 10px;bottom: 0}
 .block_title h1:after {left: 99%}
 .block_title h1 a:hover {color: darkorange}
+.box_box_con:before {content: "\f03a  Danh Mục: ";display: block;font-size: 18px;font-family: FontAwesome;}
+.box_box_con {font-size: 0;}
+.box_box_con a {font-size: 12px;width: 31%;}
+.box_box_con a:before {content: "\f075";font-family: FontAwesome;margin-right: 3px;}
 /* Breadcrumb */
 .breadcrumb{overflow: hidden;width: 100%;background: #23334B;margin-bottom: 0;padding: 0}
 .breadcrumb li{float: left;margin: 0 10px 0 10px}
@@ -232,7 +237,7 @@ footer.burned-asphalt {background: black;float: left;width: 100%}
 .breadcrumb .current::before{content: normal}
 .breadcrumb>li+li:before {display: none}
 .breadcrumb li:first-child a:before {background: #45CCFF;transform: inherit;left: -10px}
-.breadcrumb_block {background: #45CCFF;position: relative;color: white}
+.breadcrumb_block {background: #45CCFF;position: relative;color: white;margin: 10px 0;}
 .breadcrumb li:nth-child(1) a, .breadcrumb li:nth-child(1) a:after {background: darkcyan}
 .breadcrumb li:nth-child(2) a, .breadcrumb li:nth-child(2) a:after,.breadcrumb li:nth-child(2) a:before {background: darkmagenta}
 .breadcrumb li:nth-child(3) a, .breadcrumb li:nth-child(3) a:after, .breadcrumb li:nth-child(3) a:before {background: darkorchid}
@@ -246,12 +251,14 @@ footer.burned-asphalt {background: black;float: left;width: 100%}
 .pagination .current,.pagination .item{margin:0 2px}
 .pagination .current,.pagination .item a{background:#1a2b44;padding:7px 14px;font-weight:700;color:#fff;display:inline-block}
 .pagination .current,.pagination .item a:hover{background-color:#45CCFF}
+.box_noidung .pagination .current,.box_noidung .pagination .item a {padding: 0px 3px;}
+.box_noidung .pagination span {display: inline-block}
 /* View Topic */
 .view_topic .post-icon a {display: inline-block;margin-right: 20px}
 .postprofile {height: 100%;position: relative;margin: 10px 0;display: inline-block}
 .box_view_topic {margin: 20px 0}
 .post_body {background: white;min-height: 300px;padding: 0}
-.post_topic {background: #DDDDDD;margin:  10px 0}
+.post_topic {background: #1C89A5;;margin:  10px 0}
 .avata_img img {background: white;width: 100%;height: 120px;border: 5px solid white;}
 .avata_img {padding: 0;width: 120px;margin: 5px auto!important;float: none;height: 120px;}
 .box_profile_left {margin: 3px 0;background: white;padding: 0 5px;text-align: center}
@@ -374,7 +381,6 @@ blockquote div {background: white;z-index: 1;border: 2px solid #C47719;margin-to
 /* Blog List */
 .item_blog {height: 325px;overflow: hidden;margin-bottom: 20px}
 .blog_image img {height: 100%;width: 100%;max-height: 270px}
-.topic_list_box {background: white;padding: 10px 0}
 .title_video {background: darkmagenta;text-align: center;color: white;padding: 5px;font-size: 16px;margin: 0 0 10px 0;height: 52px;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 2}
 .item_video {position: relative}
 a.item_video:hover:after {content: "\f04b";position: absolute;top: 35%;left: 32%;padding: 0 30px;background: rgba(0, 206, 209, 0.44);color: white;line-height: 83px;font-size: 30px;border-radius: 100%;font-family: FontAwesome}
@@ -421,10 +427,12 @@ i.blog_title_post {max-width: 79%;overflow: hidden;display: inline-block;white-s
 .yes_media .box_forum {background: #F2F2F2}
 .yes_media #FB_comment {margin-top: 30px}
 .yes_media .topic_like {background: inherit}
+.yes_media #media_topic {color: white;}
+.yes_media #media_topic a {color: darkturquoise;}
 .video_load {color:white;width: 100%;height: 360px;position: relative;}
 .load_img {position: absolute;top: 45%;display: inline-block;text-align: center;left: 0;right: 0;}
 .load_img span {display: block;}
-
+#episode a {color: white!important;}
 /* UCP */
 .tab_menu {background: white;padding: 5px}
 .panel_changer {background: white;margin-bottom: 20px}
@@ -458,3 +466,10 @@ i.blog_title_post {max-width: 79%;overflow: hidden;display: inline-block;white-s
 .mark_all, .un_mark_all {display: inline-block;background: darkcyan;padding: 0 5px}
 .btt_submit_pri a {color: white}
 .btt_submit_pri:hover {background: darkmagenta}
+/* Color Forum */
+a[href="/u1"]{color:#FF0000}
+.post_topic[onclick*="Quản Trị"] {background: darkred}
+.post_topic[onclick*="Cao Cấp"] {background: darkcyan;}
+.post_topic[onclick*="Điều Hành Viên"] {background: darkslateblue;}
+.post_topic[onclick*="Danh Dự"] {background: darkmagenta;}
+.post_topic[onclick*="Bot"] {background: darkgoldenrod;}
