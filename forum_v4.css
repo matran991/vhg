@@ -131,10 +131,7 @@ fieldset dl:hover dt label {color: inherit;font-weight: bold}
 .forum_box_box_grid:last-child {border: 0}
 .forum_topic_list .forum_header,.forum_box_list .forum_header{border-right: 1px solid #ccc}
 .forum_box_list .forum_header {min-height: 120px;    padding-left: 0}
-
-.forum_topic_list .forum_header {
-    min-height: 80px;
-}
+.forum_topic_list .forum_header {min-height: 80px;}
 .box_chi_tiet span {padding: 0 5px}
 .forum_box_name h2 {margin: 0;font-size: 20px;display: inline-block}
 .forum_box_box.tag,.forum_box_box.online,.fanpage {padding: 5px;word-wrap: break-word}
@@ -510,7 +507,6 @@ div[onclick*="Game PC"] .forum_header {background: darkorchid}
 div[onclick*="Phần Mềm"] .forum_header {background: darkslateblue}
 div[onclick*="Góp Ý"] .forum_header {background: darkcyan}
 div[onclick*="Download Game"] .forum_header {background: darkgreen}
-.forum_header {background-image: linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black), linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black);background-size: 60px 60px;background-position: 0 0, 30px 30px}
 div[onclick*="Download Game"] h3 a:before {content: "\f0ed"}
 div[onclick*="PC"]  h3 a:before {content: "\f108"}
 div[onclick*="Thông Báo"]  h3 a:before {content: "\f0a1"}
