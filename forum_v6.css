@@ -533,3 +533,9 @@ div[onclick*="Âm Nhạc"] h3 a:before {content: "\f001"}
 /* Wall */
 .field_editable.invisible {display: none;}
 .profile_contact {margin: 10px 0;}
+
+/* Register */
+.register-page2 form {background: white;}
+.line_reg {padding: 5px;}
+.confirm_submit {margin: 10px 0;}
+.pwd_img{display:none}
