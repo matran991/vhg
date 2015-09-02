@@ -14,12 +14,13 @@ ol, ul {padding: 0}
 div,form {float: left;width: 100%}
 p,div,a,span{word-wrap: break-word;}
 img, iframe, embed,object,textarea {max-width: 100%;}
+textarea,.wysibb-body{font-size:18px};
 .post_body img,.post_body iframe,.post_body embed,.post_body object,#box_forum .forum_box_list,.socialbar,.fotter_list .forum_box_list,.option_search .forum_box_mod,.profile_user_box .forum_box_mod,.name_change {margin:10px 0;}
 .pad5{padding:5px;}
 #main_body>.col-md-12 {margin: 10px 0;}
 h1 {font-family: fonth1;word-spacing:10px;}
 h2 {font-family: fonth2;word-spacing:5px;}
-h3 {font-family: fonth3;}
+h3 {font-family: fonth3;word-spacing:5px;}
 h4 {font-family: fonth4;}
 /* Header */
 #header{padding-bottom:18px;background:#23334b;border-bottom: 10px solid #3592D2;}
@@ -291,6 +292,10 @@ footer.burned-asphalt {background: black;float: left;width: 100%}
 a.da_thank {color: black;cursor: no-drop;}
 .show_thanker a:after {content: ",";padding-right: 3px;}
 .box_thanker {font-size: 12px;padding: 5px;}
+.total_thanker {background: #23334B;color: white;padding: 0 5px;}
+.total_thanker,.total_thanker a, .total_thanker a span, .total_thanker strong {color: white!important;font-weight: inherit;font-size: 14px;}
+.show_thanker {padding: 0 5px;border: 1px solid #ccc;}
+.show_thanker a:last-child:after {display: none;}
 #quick_reply {width: 100%;float: left}
 #quickreply .wysibb-body, #quickreply #editor {min-height: 200px!important;max-height: 200px!important}
 #quickreply .submit_post {background: #E9EAED}
@@ -298,9 +303,9 @@ a.da_thank {color: black;cursor: no-drop;}
 .forum_box_list.rules .forum_box_mod {font-weight: bold}
 .wysibb .wysibb-toolbar .wysibb-toolbar-container {width: inherit}
 .wysibb-body {min-height: 400px!important}
-#quickreply .wbb-header,#quickreply .wbb-thanker,#quickreply .wbb-download,#quickreply .wbb-spoiler,#quickreply .wbb-quote,#quickreply .wbb-tbl,#quickreply .wbb-italic,#quickreply .wbb-underline,#quickreply .wbb-fontfamily,#quickreply .wbb-bullist,#quickreply .wbb-numlist {display: none!important}
-#quickreply .wbb-fontsize {width: 40px!Important}
-.wysibb .wysibb-toolbar .wysibb-toolbar-container .wysibb-toolbar-btn .fa {color: #333;      font-size: 18px;line-height: 28px;text-shadow: 0px 1px 0px #fff;text-align: center;speak: none;display: block;height: 26px;min-width: 26px;margin: 2px}
+.wbb-fontfamily,.wbb-fontsize,#quickreply .wbb-thanker,#quickreply .wbb-download,#quickreply .wbb-spoiler,#quickreply .wbb-quote,#quickreply .wbb-tbl,#quickreply .wbb-italic,#quickreply .wbb-underline,#quickreply .wbb-fontfamily,#quickreply .wbb-bullist,#quickreply .wbb-numlist {display: none!important}
+#quickreply .wbb-header {width: 40px!Important}
+.wysibb .wysibb-toolbar .wysibb-toolbar-container .wysibb-toolbar-btn .fa {color: #333;font-size: 18px;line-height: 28px;text-shadow: 0px 1px 0px #fff;text-align: center;speak: none;display: block;height: 26px;min-width: 26px;margin: 2px}
 .wysibb .wysibb-toolbar {min-height: 34px}
 .modesw {min-width: 100px!important}
 .frm-buttons {padding: 10px;text-align: center}
@@ -500,7 +505,6 @@ div[onclick*="Tin Công Nghệ"],div[onclick*="Download"] {display: block;width:
 .forum_box_left .forum_box_box {margin: 10px 0}
 div[onclick*="PC"] .forum_header {min-height: 144px}
 div[onclick*="Tin"] .forum_header div,div[onclick*="PC"] .forum_header div {padding: 0 5px}
-div[onclick*="Tin"] h3,div[onclick*="PC"] h3 {font-size: 18px}
 div[onclick*="Tin"] .forum_box_img:before,div[onclick*="PC"] .forum_box_img:before {font-size: 40px!important}
 div[onclick*="Tin Công Nghệ"] {display: block;width: 100%;margin-top: 10px}
 div[onclick*="Phim Bộ"] .forum_header {min-height: 198px}
