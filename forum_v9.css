@@ -1,6 +1,10 @@
 /* Default */
+@font-face {font-family: fonth1;src: url(https://cdn.rawgit.com/matran991/vhg/master/Font/SVN-Berkshire%20Swash.ttf);}
+@font-face {font-family: fonth2;src: url(https://cdn.rawgit.com/matran991/vhg/master/Font/VL_Kahitna.ttf);}
+@font-face {font-family: fonth3;src: url(https://cdn.rawgit.com/matran991/vhg/master/Font/VNF-Sofia%20Regular.ttf);}
+@font-face {font-family: fonth4;src: url(https://cdn.rawgit.com/matran991/vhg/master/Font/VNF-Futura%20Regular.ttf);}
 #wrap {min-width: inherit;width: 100%;padding: 0}
-#phpbb {padding: 0;background: #e9eaed;}
+#phpbb {padding: 0;background: #e9eaed;font-family: fonth4,Arial,sans-serif;}
 a {text-decoration: inherit!Important;display: inline-block;}
 a:hover {color: darkorange}
 .fade {background-image: none}
@@ -13,12 +17,16 @@ img, iframe, embed,object,textarea {max-width: 100%;}
 .post_body img,.post_body iframe,.post_body embed,.post_body object,#box_forum .forum_box_list,.socialbar,.fotter_list .forum_box_list,.option_search .forum_box_mod,.profile_user_box .forum_box_mod,.name_change {margin:10px 0;}
 .pad5{padding:5px;}
 #main_body>.col-md-12 {margin: 10px 0;}
+h1 {font-family: fonth1;word-spacing:10px;}
+h2 {font-family: fonth2;word-spacing:5px;}
+h3 {font-family: fonth3;}
+h4 {font-family: fonth4;}
 /* Header */
 #header{padding-bottom:18px;background:#23334b;border-bottom: 10px solid #3592D2;}
 #header .menu-trigger{display:none}
 #header .menu-trigger .fa{font-size:30px;color:#45CCFF}
 #header #logo{background-position:0 0;width: 100%;font-size:12px;padding:0;margin: 15px 0;margin-left:auto;margin-right:auto}
-#header #logo a{color: white;display:block;font-size: 50px;padding-left:5px;text-transform: uppercase;font-family: Courier New;font-weight: bold;text-shadow: 2px 2px 2px #E4D136;}
+#header #logo a{color: white;display:block;font-size: 45px;padding-left:5px;text-transform: uppercase;font-weight: bold;text-shadow: 2px 2px 2px #E4D136;}
 #header #search{margin-top:17px;position:relative;box-sizing:border-box}
 #header #search,#header #search .keyword{-webkit-box-sizing:border-box;-khtml-box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;-o-box-sizing:border-box}
 #header #search .keyword,#header #search .submit{border:none;float:left;background-color:#1c2a3e;height:46px}
@@ -400,7 +408,7 @@ a.item_video:hover:after {content: "\f04b";position: absolute;top: 35%;left: 32%
 .topic_body, .media_body {padding: 10px}
 .blog_topic li.edit_topic a {position: fixed;right: 0;bottom: 0;background: darkgreen;color: white;padding: 5px;z-index: 999}
 .blog_topic li.edit_topic a:hover {background: darkmagenta}
-.box_change, .zoom_video span {color: white;background: #142032;padding: 5px;font-size: 14px;margin: 10px;cursor: pointer;font-family: FontAwesome,Tahoma;-webkit-transition: background .1s ease-in-out 0s;-khtml-transition: background .1s ease-in-out 0s;-moz-transition: background .1s ease-in-out 0s;-ms-transition: background .1s ease-in-out 0s;-o-transition: background .1s ease-in-out 0s;transition: background .1s ease-in-out 0s;}
+.box_change, .zoom_video span {color: white;background: #142032;padding: 5px;font-size: 14px;margin: 10px;cursor: pointer;font-family: FontAwesome,fonth4,Tahoma;-webkit-transition: background .1s ease-in-out 0s;-khtml-transition: background .1s ease-in-out 0s;-moz-transition: background .1s ease-in-out 0s;-ms-transition: background .1s ease-in-out 0s;-o-transition: background .1s ease-in-out 0s;transition: background .1s ease-in-out 0s;}
 #controls {/* background: #1B2D43; */padding: 10px;}
 .box_change:before {content: "\f013  ";}
 #controls span {display: inline-block;}
@@ -413,7 +421,7 @@ a.item_video:hover:after {content: "\f04b";position: absolute;top: 35%;left: 32%
 #episode a {margin: 5px;background: #223955;color: #eee;line-height: 25px;padding: 5px 10px;min-width: 45px;text-align: center;font-weight: 700;border-radius: 4px;-webkit-transition: background .1s ease-in-out 0s;-khtml-transition: background .1s ease-in-out 0s;-moz-transition: background .1s ease-in-out 0s;-ms-transition: background .1s ease-in-out 0s;-o-transition: background .1s ease-in-out 0s;transition: background .1s ease-in-out 0s;  };}
 .box_change:before, .zoom_video span:before {color: #45CCFF;}
 .box_change:hover:before, .zoom_video span:hover:before {color: white;}
-.spoiler_left,.spoiler_right {display: block;padding: 5px 20px;background: darkviolet;font-size: 20px;font-family: Tahoma,FontAwesome;cursor: pointer;width: 50%;margin: 10px auto;color: white;}
+.spoiler_left,.spoiler_right {display: block;padding: 5px 20px;background: darkviolet;font-size: 20px;font-family: fonth4,Tahoma,FontAwesome;cursor: pointer;width: 50%;margin: 10px auto;color: white;}
 .spoiler {padding: 5px;margin: 10px 0;}
 .spoiler_title {text-align: center;}
 .spoiler_left:before {content: "\f196  ";}
@@ -561,13 +569,13 @@ div[onclick*="Âm Nhạc"] h3 a:before {content: "\f001"}
 body.mobile {overflow-x: hidden}
 #header #logo a {font-size: 20px}
 #header #logo {height: inherit;margin-top: 5px}
+div[class*="col-md"] {display: block;width: 100%;padding: 0 5px}
 #main_body div[style="overflow:visible"],.last_topic .last_news:before,.forum_box_head_grid,.forum_box_img,i.blog_title_post,.breadcrumb a:before,.breadcrumb a:after,.breadcrumb li:last-child a:after,.breadcrumb_block .bor_forum_right   {display: none}
 .col-md-12 {padding: 0}
 .last_user:before {content: "Người Gửi: "}
 .last_forum:before {content: "Chuyên Mục: "}
 .last_topic {border-bottom: 1px solid #ccc}
 .last_topic div[class^="col-md"] {padding: 0 5px}
-div[class*="col-md"] {display: block;width: 100%;padding: 0 5px}
 .forum_box_left .forum_box_box_grid {width: 100%;margin-top: 10px}
 .breadcrumb li {margin: 5px}
 .block_title h1:after {left: 97%}
@@ -593,4 +601,8 @@ div[class*="col-md"] {display: block;width: 100%;padding: 0 5px}
 .blog_tt{padding: 5px!important}
 .wysibb .wysibb-text {margin: 0;display: inline-block;width: 79%;padding: 5px}
 h1, h2, h3 {font-size: 18px}
+.post_body .content.clearfix {padding: 0;}
+#postingbox .wysibb-toolbar-container {background: none;}
+#postingbox .wysibb-toolbar,#postingbox .wysibb-body {min-height: 200px!important;max-height: 200px!Important;}
+#postingbox .wysibb-toolbar-btn,#postingbox .wysibb-toolbar-container {margin: 0!important;padding: 0!important;}
 }
