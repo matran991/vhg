@@ -22,6 +22,10 @@ h1 {font-family: fonth1;word-spacing:10px;}
 h2 {font-family: fonth2;word-spacing:5px;}
 h3 {font-family: fonth3;word-spacing:5px;}
 h4 {font-family: fonth4;}
+.content.clearfix h2,.wysibb-body h2 {line-height: 50px;font-weight: 500;    color: darkmagenta;}
+.content.clearfix h3,.wysibb-body h3 {line-height: 35px;color: darkgoldenrod;}
+.content.clearfix h4,.wysibb-body h4 {line-height: 30px;color: darkviolet;}
+.content.clearfix h2,.wysibb-body h2,.content.clearfix h3,.wysibb-body h3,.content.clearfix h4,.wysibb-body h4{margin: 5px 0;}
 /* Header */
 #header{padding-bottom:18px;background:#23334b;border-bottom: 10px solid #3592D2;}
 #header .menu-trigger{display:none}
@@ -269,14 +273,14 @@ footer.burned-asphalt {background: black;float: left;width: 100%}
 .view_topic .post-icon a {display: inline-block;margin-right: 20px}
 .postprofile {height: 100%;position: relative;margin: 10px 0;display: inline-block}
 .box_view_topic {margin: 20px 0}
-.post_body {background: white;min-height: 300px;padding: 0}
+.post_body {background: white;min-height: 280px;padding: 0}
 .post_topic {background: #1C89A5;;margin:  10px 0}
 .avata_img img {background: white;width: 100%;height: 120px;border: 5px solid white;}
 .avata_img {padding: 0;width: 120px;margin: 5px auto!important;float: none;height: 120px;}
 .box_profile_left {margin: 3px 0;background: white;padding: 0 5px;text-align: center}
 .total_post_label {text-align: left}
 .postprofile br {display: none}
-.post_body .content.clearfix {padding: 0 15px;line-height: 30px;margin-bottom: 90px}
+.post_body .content.clearfix {padding: 0 15px;line-height: 40px;}
 .post_topic .author {background: #23334B;color: white;padding: 10px;position: relative}
 .box_profile_left a {word-wrap: break-word;width: 100%}
 .tool_post li {display: inline-block;width: 100px;height: 75px;text-align: center;position: relative}
@@ -291,7 +295,7 @@ footer.burned-asphalt {background: black;float: left;width: 100%}
 .topic_like .fb-like span,.topic_like .fb-share-button span {position: initial!important}
 a.da_thank {color: black;cursor: no-drop;}
 .show_thanker a:after {content: ",";padding-right: 3px;}
-.box_thanker {font-size: 12px;padding: 5px;}
+.box_thanker {font-size: 12px;padding: 5px;width: initial;float: right;margin: 20px 0 100px 0;opacity: 0;}
 .total_thanker {background: #23334B;color: white;padding: 0 5px;}
 .total_thanker,.total_thanker a, .total_thanker a span, .total_thanker strong {color: white!important;font-weight: inherit;font-size: 14px;}
 .show_thanker {padding: 0 5px;border: 1px solid #ccc;}
