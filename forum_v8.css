@@ -251,7 +251,7 @@ footer.burned-asphalt {background: black;float: left;width: 100%}
 /* pagination */
 .pagination{margin-top:15px;overflow:hidden;clear:both;display:block;text-align:center;font-size:14px;text-transform:uppercase;background:#DDDEE0}
 .pagination .desc{margin-right:5px}
-.pagination .current,.pagination .item{margin:0 2px}
+.pagination .current,.pagination .item{margin:5px}
 .pagination .current,.pagination .item a{background:#1a2b44;padding:7px 14px;font-weight:700;color:#fff;display:inline-block}
 .pagination .current,.pagination .item a:hover{background-color:#45CCFF}
 .box_noidung .pagination .current,.box_noidung .pagination .item a {padding: 0px 3px;}
@@ -391,7 +391,7 @@ a.item_video:hover:after {content: "\f04b";position: absolute;top: 35%;left: 32%
 .blog_tt .blog_mess {color: black!important}
 .blog_tt img {min-height: 150px;max-height: 150px}
 .blog_tt u {display: none}
-.blog_tt .blog_mess br {display: none}
+.blog_tt .blog_mess br,.blog_tt .blog_mess img {display: none;} {display: none}
 /* Blog Topic  Media*/
 .box_box_right {margin: 20px 0}
 .box_box_right .main_content {background: white;padding: 5px}
@@ -553,3 +553,44 @@ div[onclick*="Âm Nhạc"] h3 a:before {content: "\f001"}
 .login_page form {background: white;padding: 20px;}
 .login_page input[type="submit"]:hover {background: darkmagenta!important;}
 .login_page button{display:none}
+
+
+
+/* Mobile */
+@media only screen and (max-device-width: 700px) {
+body.mobile {overflow-x: hidden}
+#header #logo a {font-size: 20px}
+#header #logo {height: inherit;margin-top: 5px}
+#main_body div[style="overflow:visible"],.last_topic .last_news:before,.forum_box_head_grid,.forum_box_img,i.blog_title_post,.breadcrumb a:before,.breadcrumb a:after,.breadcrumb li:last-child a:after,.breadcrumb_block .bor_forum_right   {display: none}
+.col-md-12 {padding: 0}
+.last_user:before {content: "Người Gửi: "}
+.last_forum:before {content: "Chuyên Mục: "}
+.last_topic {border-bottom: 1px solid #ccc}
+.last_topic div[class^="col-md"] {padding: 0 5px}
+div[class*="col-md"] {display: block;width: 100%;padding: 0 5px}
+.forum_box_left .forum_box_box_grid {width: 100%;margin-top: 10px}
+.breadcrumb li {margin: 5px}
+.block_title h1:after {left: 97%}
+.breadcrumb li:first-child a:before {background: none}
+.breadcrumb a {background: none!important;padding: 0 3px}
+.breadcrumb a:after {display: inline;position: inherit;background: none!important;transform: none;content: "»"}
+.forum_topic_list .forum_header {border: 0}
+.board_index .forum_header {background: darkgreen}
+.block_title h1 a, .block_title h1 {font-size: 18px;line-height: 30px;min-height: inherit;padding: 0 5px;margin: 5px 0}
+.avata_img {display: inline-block!important;width: 25%!important;height: auto;float: left!important}
+.user_name_profile,.rank_text {}
+.box_profile_left {display: inline-block;width: 70%;float: right}
+.avata_img img {width: 100%;height: auto}
+.tool_post {position: relative}
+.tool_post li .fa {font-size: 30px}
+.tool_post li {width: 25%}
+.edit_topic a,.delete_topic a {font-size: 0}
+.edit_topic a:after {content: "Sửa Bài";font-size: 14px}
+.delete_topic a:after {content: "Xóa Bài";font-size: 14px}
+.post_body .content.clearfix {margin-bottom: 20px}
+.post_body {min-height: inherit}
+.wysibb .wysibb-toolbar {min-width: 20%;text-align: center;max-width: 20%}
+.blog_tt{padding: 5px!important}
+.wysibb .wysibb-text {margin: 0;display: inline-block;width: 79%;padding: 5px}
+h1, h2, h3 {font-size: 18px}
+}
