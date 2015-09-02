@@ -104,7 +104,7 @@ li.item .search .submit {display: inline-block;margin: 5px;}
 #autologin {display: inline-block}
 .modal-header {background: #23334b;color: white}
 .modal-body {background: white}
-.login_close, #login_pop .frm-buttons input {background: #45ccff;color: white;border-radius: 0;border: 0;-webkit-transition: all .2s ease-in-out 0s;-o-transition: all .2s ease-in-out 0s;-khtml-transition: all .2s ease-in-out 0s;-moz-transition: all .2s ease-in-out 0s;-ms-transition: all .2s ease-in-out 0s;vertical-align: initial;padding: 5px 10px;text-shadow: 0 0 0;}
+.login_close, #login_pop .frm-buttons input, .login_page input[type="submit"] {background: #45ccff!important;color: white;border-radius: 0;border: 0;-webkit-transition: all .2s ease-in-out 0s;-o-transition: all .2s ease-in-out 0s;-khtml-transition: all .2s ease-in-out 0s;-moz-transition: all .2s ease-in-out 0s;-ms-transition: all .2s ease-in-out 0s;vertical-align: initial;padding: 5px 10px;text-shadow: 0 0 0;}
 .login_close:hover,#login_pop .frm-buttons input:hover {background: darkcyan;color: white}
 #login_pop .frm-buttons {display: block;text-align: center;float: none}
 .alert a {color: inherit}
@@ -385,7 +385,13 @@ blockquote div {background: white;z-index: 1;border: 2px solid #C47719;margin-to
 .title_video {background: darkmagenta;text-align: center;color: white;padding: 5px;font-size: 16px;margin: 0 0 10px 0;height: 52px;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 2}
 .item_video {position: relative}
 a.item_video:hover:after {content: "\f04b";position: absolute;top: 35%;left: 32%;padding: 0 30px;background: rgba(0, 206, 209, 0.44);color: white;line-height: 83px;font-size: 30px;border-radius: 100%;font-family: FontAwesome}
-
+.blog_tt a.item_video:hover:after {display: none}
+.blog_tt {background: white;padding: 15px;height: inherit}
+.blog_tt h2.post-content {font-size: 18px;margin-top: 0;color: darkgreen!important}
+.blog_tt .blog_mess {color: black!important}
+.blog_tt img {min-height: 150px;max-height: 150px}
+.blog_tt u {display: none}
+.blog_tt .blog_mess br {display: none}
 /* Blog Topic  Media*/
 .box_box_right {margin: 20px 0}
 .box_box_right .main_content {background: white;padding: 5px}
@@ -408,15 +414,17 @@ a.item_video:hover:after {content: "\f04b";position: absolute;top: 35%;left: 32%
 .box_change:before, .zoom_video span:before {color: #45CCFF;}
 .box_change:hover:before, .zoom_video span:hover:before {color: white;}
 .spoiler_left,.spoiler_right {display: block;padding: 5px 20px;background: darkviolet;font-size: 20px;font-family: Tahoma,FontAwesome;cursor: pointer;width: 50%;margin: 10px auto;color: white;}
-.spoiler {padding: 5px;margin: 10px;}
+.spoiler {padding: 5px;margin: 10px 0;}
 .spoiler_title {text-align: center;}
 .spoiler_left:before {content: "\f196  ";}
 .spoiler_title span:hover {background: #45CCFF;}
 .spoiler_right:before {content: "\f147  ";}
-
+.spoiler_content img {margin: 10px auto;display: inherit;}
 /* Blog Topic No Media */
 .no_media .media_check {display: none!Important}
 .no_media .blog_view_topic {width: 100%;padding: 0}
+.no_media iframe.col-md-12 {background: black}
+.no_media embed{display: none}
 /* Yes Media */
 i.blog_title_post {max-width: 79%;overflow: hidden;display: inline-block;white-space: nowrap;text-overflow: ellipsis;      line-height: 20px;position: relative;top: 4px}
 .blog_message {padding: 0!important;margin-bottom: 0!important}
@@ -539,3 +547,9 @@ div[onclick*="Âm Nhạc"] h3 a:before {content: "\f001"}
 .line_reg {padding: 5px;}
 .confirm_submit {margin: 10px 0;}
 .pwd_img{display:none}
+
+/* Login */
+.login_page {margin: 20px 0;}
+.login_page form {background: white;padding: 20px;}
+.login_page input[type="submit"]:hover {background: darkmagenta!important;}
+.login_page button{display:none}
