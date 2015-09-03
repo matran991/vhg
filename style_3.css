@@ -164,7 +164,6 @@ fieldset dl:hover dt label {color: inherit;font-weight: bold}
 .box_noidung[style*="unread"] em {color: crimson}
 .box_noidung[style*="unread"] em:after {content: "Có bài mới";font-size: 12px;display: block}
 .forum_box_box.tag a {margin-right: 3px}
-.box_like span {width: 60px!important;overflow: hidden!important;display: inline-block}
 #box_forum .forum_box_list,.fotter_list .forum_box_list,.block_post .forum_box_list {margin: 10px 0!important;}
 /* Login Index */
 .online form div {padding: 10px 0}
@@ -225,7 +224,7 @@ footer.burned-asphalt {background: black;float: left;width: 100%}
 .forum_topic_list .forum_header {border-right: 1px solid #ccc}
 .topic_list_box .forum_box_box {border-bottom: 1px solid #ccc}
 .topic_list_box .forum_box_box:last-child {border: 0}
-.noi_dung_box {padding: 0 5px}
+.noi_dung_box {padding: 0 5px;}
 .block_post .post-icon {margin-top: 10px}
 .block_post .forum_box_mod {padding: 5px}
 .post-icon {text-align: center}
@@ -237,9 +236,10 @@ footer.burned-asphalt {background: black;float: left;width: 100%}
 .block_title h1:before,.block_title h1:after {content: "";background: #45CCFF;display: inline-block;position: absolute;left: 0;top: 0;width: 10px;bottom: 0}
 .block_title h1:after {left: 99%}
 .block_title h1 a:hover {color: darkorange}
-.box_box_con:before {/* content: "\f03a  Danh Mục: "; */display: block;font-size: 18px;font-family: FontAwesome;}
-.box_box_con {font-size: 0;display: block;text-align: left;}
-.box_box_con a {font-size: 12px;margin-right: 10px;}
+.box_chi_tiet {text-align: right;}
+.box_box_con {font-size: 0;display: block;}
+.box_box_con a {font-size: 14px;margin-right: 10px;}
+.box_box_con a:first-child:before {content: "Chuyên mục: \f075";color: white!important;}
 .box_box_con a:before {content: "\f075";font-family: FontAwesome;margin-right: 3px;}
 .box_box_con[onclick$="''"] {display: none;}
 /* Breadcrumb */
@@ -518,16 +518,16 @@ div[onclick*="PC"] .forum_header {min-height: 144px}
 div[onclick*="Tin"] .forum_header div,div[onclick*="PC"] .forum_header div {padding: 0 5px}
 div[onclick*="Tin"] .forum_box_img:before,div[onclick*="PC"] .forum_box_img:before {font-size: 40px!important}
 div[onclick*="Tin Công Nghệ"] {display: block;width: 100%;margin-top: 10px}
-div[onclick*="Phim Bộ"] .forum_header {min-height: 198px}
-div[onclick*="Giả Lập"] .forum_header,div[onclick*="Thảo Luận"] .forum_header {min-height: 144px}
-div[onclick*="Thông Báo"] .forum_header{min-height: 140px}
+div[onclick*="Giả Lập"] .forum_header,div[onclick*="Thảo Luận"] .forum_header {min-height: 139px;}
+div[onclick*="Thông Báo"] .forum_header{min-height: 134px;}
 .forum_box_left .forum_box_box_grid {padding: 0 10px}
 .forum_box_left .forum_box_img {position: relative;text-align: center;min-height: inherit}
 .forum_box_left h3 a:before {content: "\f115";font-weight: 100;font-size: 50px;font-family: FontAwesome;top: 45%;vertical-align: middle;margin-right: 10px;}
-.board_index .forum_header {background: black}
+#box_forum .forum_box_url {padding: 5px;}
 .viewforum .forum_box_box_grid {margin-top: 10px;}
 .viewforum .forum_box_box_grid:last-child .forum_header {background: tomato;}
 .viewforum .forum_box_box_grid:first-child .forum_header {background: #2F819E;}
+.forum_box_box .forum_box_box_grid[onclick*="Phim Lẻ"],.forum_box_box .forum_box_box_grid[onclick*="Phim Bộ"],.forum_box_box .forum_box_box_grid[onclick*="Phim Di"],.forum_box_box .forum_box_box_grid[onclick*="Âm Nhạc"] {width: 100%;margin: 10px 0;}
 div[onclick*="Thông Báo"] .forum_header {background: darkred}
 div[onclick*="Android Game"] .forum_header {background: blue}
 div[onclick*="Giả Lập"] .forum_header {background: deeppink}
