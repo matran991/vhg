@@ -30,7 +30,7 @@ h2 {font-family: fonth2;word-spacing:5px;}
 h3 {font-family: fonth3;word-spacing:5px;}
 h4 {font-family: fonth4;}
 h1,h2,h3,h4{font-weight: bold;margin: 5px 0;}
-.content.clearfix h2,.wysibb-body h2 {line-height: 50px;font-weight: 500;    color: darkmagenta;}
+.content.clearfix h2,.wysibb-body h2 {line-height: 40px;color: darkmagenta;}
 .content.clearfix h3,.wysibb-body h3 {line-height: 35px;color: darkgoldenrod;}
 .content.clearfix h4,.wysibb-body h4 {line-height: 30px;color: darkviolet;}
 .dhide,div[onclick*="Phim Server 1"]{display: none}
@@ -289,7 +289,7 @@ footer.burned-asphalt {background: black;float: left;width: 100%}
 .box_profile_left {margin: 3px 0;background: white;padding: 0 5px;text-align: center}
 .total_post_label {text-align: left}
 .postprofile br {display: none}
-.post_body .content.clearfix {padding: 0 15px;line-height: 40px;}
+.post_body .content.clearfix {padding: 0 15px;line-height: 25px;}
 .post_topic .author {background: #23334B;color: white;padding: 10px;position: relative}
 .box_profile_left a {word-wrap: break-word;width: 100%}
 .tool_post li {display: inline-block;width: 100px;height: 75px;text-align: center;position: relative}
@@ -503,8 +503,13 @@ a[href="/u1"]{color:#FF0000}
 
 /* Last-recent */
 .last_content {background: white}
-.last_topic {padding: 5px 0;counter-increment: Zzindex;position: relative}
-.last_topic .last_news:before {content: counter(Zzindex);display: inline-block; background: #23334B;  border-radius: 2px;text-align: center; color: #FFF; margin-right: 5px;min-width: 22px}
+.last_topic {padding: 5px 0;position: relative}
+.topic_last_url {display: inline-block;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;max-width: 100%;}
+.last_news {width: 100%;}
+.last_user,.last_forum {width: initial;display: inline-block;}
+.last_user:before,.last_forum:before {color: black!important;}
+.last_user:before {content: "Người gửi: ";}
+.last_forum:before {content: "Chuyên mục: ";}
 
 /* Topic List New */
 div[onclick*="Thông Báo"],div[onclick*="Góp Ý"],div[onclick*="Android"],div[onclick*="Java"],div[onclick*="Phim"],div[onclick*="Âm Nhạc"],div[onclick*="Tin"],div[onclick*="PC"],div[onclick*="Download"] {width: 50%}
@@ -584,15 +589,13 @@ div[onclick*="Âm Nhạc"] h3 a:before {content: "\f001"}
 
 /* Mobile */
 @media only screen and (max-device-width: 700px) {
-body.mobile {overflow-x: hidden}
+body {overflow-x: hidden!important}
 #header #logo a {font-size: 20px}
 #header #logo {height: inherit;margin-top: 5px}
 div[class*="col-md"] {display: block;width: 100%;padding: 0 5px}
 #main_body div[style="overflow:visible"],.last_topic .last_news:before,.forum_box_head_grid,i.blog_title_post,.breadcrumb a:before,.breadcrumb a:after,.breadcrumb li:last-child a:after,.breadcrumb_block .bor_forum_right,.box_like_media .col-md-2{display: none}
 .forum_box_img,.zoom_video{display: none!important}
 .col-md-12,.topic_body, .media_body,.box_thanker {padding: 0}
-.last_user:before {content: "Người Gửi: "}
-.last_forum:before {content: "Chuyên Mục: "}
 .last_topic {border-bottom: 1px solid #ccc}
 .last_topic div[class^="col-md"] {padding: 0 5px}
 .forum_box_left .forum_box_box_grid {width: 100%;margin-top: 10px}
