@@ -18,7 +18,7 @@ ol, ul {padding: 0}
 div,form {float: left;width: 100%}
 p,div,a,span{word-wrap: break-word;}
 img, iframe, embed,object,textarea {max-width: 100%;}
-.content.clearfix img {margin: 5px}
+.content.clearfix img {margin: 5px auto}
 textarea,.wysibb-body{font-size:18px};
 .post_body img,.post_body iframe,.post_body embed,.post_body object,#box_forum .forum_box_list,.socialbar,.fotter_list .forum_box_list,.option_search .forum_box_mod,.profile_user_box .forum_box_mod,.name_change {margin:10px 0;}
 .pad5{padding:5px;}
@@ -121,6 +121,7 @@ li.item .search .submit {display: inline-block;margin: 5px;}
 .thiet_lap:hover .thiet_lap_box {display: block;top: 96%}
 .thong_tin_user:hover, .tin_nhan_rieng:hover, .thiet_lap:hover {background: darkmagenta}
 .thong_tin_user:hover {background: none;}
+#signing {max-width: 300px;float: right;}
 /* Login pop */
 #autologin {display: inline-block}
 .modal-header {background: #23334b;color: white}
@@ -503,8 +504,8 @@ a[href="/u1"]{color:#FF0000}
 
 /* Last-recent */
 .last_content {background: white}
-.last_topic {padding: 5px 0;position: relative}
-.topic_last_url {display: inline-block;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;max-width: 100%;}
+.last_topic {padding: 5px 0;position: relative;border-bottom: 5px solid #E9EAED;}
+.topic_last_url {display: inline-block;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;max-width: 100%;font-weight: bold;}
 .last_news {width: 100%;}
 .last_user,.last_forum {width: initial;display: inline-block;}
 .last_user:before,.last_forum:before {color: black!important;}
@@ -574,11 +575,13 @@ div[onclick*="Âm Nhạc"] h3 a:before {content: "\f001"}
 .profile_contact {margin: 10px 0;}
 
 /* Register */
-.register-page2 form {background: white;}
-.line_reg {padding: 5px;}
-.confirm_submit {margin: 10px 0;}
 .pwd_img{display:none}
-
+.reg_page dl {padding: 5px;display: block;float: left;width: 100%;}
+.reg_content {background: white;padding: 10px;}
+fieldset {float: left;width: 100%;}
+.reg_page {background: #e9eaed;}
+#cont_pwd {margin-top: 10px;}
+.pwd_img {width: initial;}
 /* Login */
 .login_page {margin: 20px 0;}
 .login_page form {background: white;padding: 20px;}
