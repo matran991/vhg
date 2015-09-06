@@ -613,7 +613,7 @@ fieldset {float: left;width: 100%;}
 #chatbox .text-muted span {margin-right: 5px;}
 /* Mobile */
 @media only screen and (max-device-width: 700px) {
-body,html {overflow-y: hidden;!important;}
+body,html {overflow: hidden;overflow-y: auto;}
 #header #logo a {font-size: 20px}
 #header #logo {height: inherit;margin-top: 5px}
 div[class*="col-md"] {display: block;width: 100%;padding: 0 5px}
