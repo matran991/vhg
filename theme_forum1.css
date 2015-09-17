@@ -306,13 +306,30 @@ a.da_thank {color: black;cursor: no-drop;}
 #quickreply .submit_post {background: #E9EAED}
 #quickreply .forum_box_mod {padding: 0}
 .forum_box_list.rules .forum_box_mod {font-weight: bold}
-.wysibb .wysibb-toolbar .wysibb-toolbar-container {width: inherit}
-.wysibb-body {min-height: 400px!important}
+.wysibb .wysibb-toolbar .wysibb-toolbar-container {width: inherit;margin: 10px 0;}
+.wysibb-body {min-height: 400px!important;max-height: inherit!important;overflow: hidden!important;padding: 0 20px;}
 .wbb-fontfamily,.wbb-fontsize,#quickreply .wbb-thanker,#quickreply .wbb-download,#quickreply .wbb-spoiler,#quickreply .wbb-quote,#quickreply .wbb-tbl,#quickreply .wbb-italic,#quickreply .wbb-underline,#quickreply .wbb-fontfamily,#quickreply .wbb-bullist,#quickreply .wbb-numlist {display: none!important}
 #quickreply .wbb-header {width: 40px!Important}
 .wysibb .wysibb-toolbar .wysibb-toolbar-container .wysibb-toolbar-btn .fa {color: #333;font-size: 18px;line-height: 28px;text-shadow: 0px 1px 0px #fff;text-align: center;speak: none;display: block;height: 26px;min-width: 26px;margin: 2px}
-.wysibb .wysibb-toolbar {min-height: 34px}
-.modesw {min-width: 100px!important}
+.wysibb .wysibb-toolbar {height: 50px;background: #f7f7f7;}
+.wysibb-toolbar {padding: 0!important;max-height: inherit!important}
+.btn-inner.modesw {min-width: inherit!important}
+.wysibb-toolbar {padding: 0!important;max-height: inherit!important}
+.modesw {min-width: inherit}
+.wysibb-toolbar {text-align: center}
+.wysibb-toolbar-container {float: none}
+.wysibb-body table {display: inline-block;float: none;margin: 0 auto}
+.wysibb-toolbar-btn {background: #FFF!important;border: 1px outset #DDD!important;margin: 0 2px!important}
+ins.fonticon.ar {right: 8px!important}
+.wysibb-toolbar-container .on {border: 1px inset #DDD!important}
+.modeSwitch .btn-tooltip {left: -89px!important}
+.modeSwitch .btn-tooltip ins {left: 96px!important}
+.wbb-removeformat .btn-tooltip {left: -57px!important}
+.wbb-removeformat .btn-tooltip ins {left: 64px!important}
+.toolbar_fixed {position: fixed!important;top: 0;left: 0;right: 0;z-index: 999;border-bottom: 2px solid black!important;height: 40px!important;}
+.toolbar_fixed .wysibb-toolbar-container {margin: 3px 0!important}
+.wysibb-body code {background: #eee;border: 1px solid #aaa;display: block;margin: 10px 0;padding: .25em;position: relative;white-space: pre;border-radius: 0;line-height: 40px;}
+.wysibb-body code:before {content: 'Code:';color: white;right: 0;padding: 5px 5px;display: block;margin: -5px -5px 0px -4px;background: black;line-height: normal;}
 .frm-buttons {padding: 10px;text-align: center}
 .frm-buttons input[type="submit"] {border: 0;background: none}
 .frm-buttons .sbpost {background: darkcyan;padding: 5px;color: white}
@@ -329,22 +346,31 @@ a.da_thank {color: black;cursor: no-drop;}
 .submit_posting {width: 100px;display: inline-block;margin: 0 auto;background: darkcyan;color: white;float: none;cursor: pointer;position: relative}
 .submit_post {text-align: center}
 .submit_posting:hover {background: darkmagenta}
-#postingbox .wysibb-toolbar {border: 0}
-#postingbox .wysibb-toolbar {border: 0!important;text-align: center;padding-right: 0}
-#postingbox .wysibb-toolbar-container {background: #ccc;padding: 5px;margin: 5px}
-#postingbox .modeSwitch {position: relative!important}
-#postingbox .wysibb-toolbar {min-height: 112px!important;display: block;background: #f7f7f7}
-#postingbox .wysibb-toolbar-container {float: none}
-#postingbox .wysibb-toolbar-btn {margin: 0 3px!important;background: white!important;border: 0!important;box-shadow: 0 0 0!important}
-#postingbox .wysibb .on,#postingbox .wysibb .on:active {border: 0}
-#postingbox .wysibb-toolbar-container .on {background: darkmagenta!important}
-#postingbox .wysibb-toolbar-container .on .fonticon.btn-inner,#postingbox .wysibb-toolbar-container .on .fa,#postingbox .wysibb-toolbar-container .on .val,#postingbox .wysibb-toolbar-container .on .modesw {color: white!Important}
+
 .poll_multiple, .poll_cancel_vote {padding: 0}
 #FB_comment {margin: 10px 0;background: white;}
 /* Quote */
-blockquote {float: left;border: 0;padding: 0;margin: 10px 0;background: #C47719;display: block;position: relative;z-index: 2; width: inherit}
+blockquote {float: left;border: 0;padding: 0;margin: 10px 0;background: #C47719;display: block;position: relative;z-index: 2; width: 100%;}
 blockquote cite {display: block;padding: 5px;color: white;position: absolute;top: 0;left: 0;right: 0}
-blockquote div {background: white;z-index: 1;border: 2px solid #C47719;margin-top: 40px;padding: 5px}
+blockquote div {background: white;z-index: 1;border: 2px solid #C47719;margin-top: 35px;padding: 10px;}
+blockquote blockquote {background: darkgreen}
+blockquote blockquote>div {border-color: darkgreen}
+blockquote blockquote blockquote {background: darkred}
+blockquote blockquote blockquote>div {border-color: darkred}
+blockquote blockquote blockquote blockquote {background: darkmagenta}
+blockquote blockquote blockquote blockquote>div {border-color: darkmagenta}
+blockquote cite a {color: white!important;}
+/* Code */
+.codebox {background: #eee;border: 1px solid #aaa;}
+.codebox dt {background: #111010;padding: 5px;color: white;}
+.codebox code {line-height: 27px;background: none;color: inherit;white-space: pre;display: block;padding: 0 5px;}
+/* Spoiler */
+.codebox.spoiler {background: #1B80AF;display: block;float: left;width: 100%;padding: 0;border: 1px solid #1B80AF;}
+.codebox.spoiler .spoiler_content {background: white;padding: 0 10px;line-height: 30px;display: none;}
+.codebox.spoiler dt {background: #1B80AF;color: white;padding: 5px 10px;font-weight: 100;font-size: 18px;}
+.opensp .spoiler_content {display: block!important;}
+.codebox.spoiler dt:before {content: "\f196  Hiện nội dung";position: absolute;right: 37px;font-family: FontAwesome, Tahoma;}
+.opensp dt:before {content: "\f147  Ẩn nội dung"!important;}
 /* Rules */
 .agreement .forum_box_mod {padding: 5px}
 .agreement .forum_box_mod ul {padding-left: 30px}
