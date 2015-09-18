@@ -437,8 +437,6 @@ blockquote cite a {color: white!important;}
 .blog_tt img {min-height: 150px;max-height: 150px}
 .blog_tt u {display: none}
 .blog_tt .blog_mess br,.blog_tt .blog_mess img {display: none;} {display: none}
-.blog_tt .item_video:after {content: "Xem đầy đủ bài viết"!important;width: 100%;display: block;background: darkmagenta;color: white;text-align: center;padding: 5px;margin: 10px 0;float: left;position: relative;}
-
 .blog_tt .item_video .blog_mess:after {content: "\f06e  Xem đầy đủ bài viết";width: initial;display: inline-block;background: darkmagenta;color: white;text-align: center;padding: 5px 20px;margin: 10px 0;position: relative;float: right;font-family: FontAwesome,Tahoma;}
 .blog_tt .item_video .blog_mess h2:hover {color: darkorange!important;}
 .blog_tt .item_video .blog_mess:hover:after {background: darkorange;}
@@ -644,7 +642,7 @@ fieldset {float: left;width: 100%;}
 #chatbox .text-muted span {margin-right: 5px;}
 /* Mobile */
 @media only screen and (max-device-width: 700px) {
-body,html {/* overflow: hidden; */}
+body,html {overflow: hidden;}
 #header #logo a {font-size: 20px}
 #header #logo {height: inherit;margin-top: 5px}
 div[class*="col-md"] {display: block;width: 100%;padding: 0 5px}
