@@ -114,7 +114,7 @@ li.item .search .submit {display: inline-block;margin: 5px;}
 .thiet_lap:hover .thiet_lap_box {display: block;top: 96%}
 .thong_tin_user:hover, .tin_nhan_rieng:hover, .thiet_lap:hover {background: darkmagenta}
 .thong_tin_user:hover {background: none;}
-#signing {max-width: 300px;float: right;}
+#signing {max-width: 220px;float: right;}
 /* Login pop */
 #autologin {display: inline-block}
 .modal-header {background: #23334b;color: white}
@@ -305,6 +305,7 @@ a.da_thank {color: black;cursor: no-drop;}
 #quickreply .wysibb-body, #quickreply #editor {min-height: 200px!important;max-height: 200px!important}
 #quickreply .submit_post {background: #E9EAED}
 #quickreply .forum_box_mod {padding: 0}
+#quickreply .wysibb {margin-top: 0;}
 .forum_box_list.rules .forum_box_mod {font-weight: bold}
 .wysibb .wysibb-toolbar .wysibb-toolbar-container {width: inherit;margin: 10px 0;}
 .wysibb-body {min-height: 400px!important;max-height: inherit!important;overflow: hidden!important;padding: 0 20px;}
@@ -426,9 +427,9 @@ blockquote cite a {color: white!important;}
 /* Blog List */
 .item_blog {height: 325px;overflow: hidden;margin-bottom: 20px}
 .blog_image img {height: 100%;width: 100%;max-height: 270px;min-height: 270px}
-.title_video {background: darkmagenta;text-align: center;color: white;padding: 5px;font-size: 16px;margin: 0 0 10px 0;height: 52px;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 2}
+.video_blog .title_video {background: darkmagenta;text-align: center;color: white;padding: 5px;font-size: 16px;margin: 0 0 10px 0;height: 52px;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 2}
 .item_video {position: relative}
-a.item_video:hover:after {content: "\f04b";position: absolute;top: 35%;left: 32%;padding: 0 30px;background: rgba(0, 206, 209, 0.44);color: white;line-height: 83px;font-size: 30px;border-radius: 100%;font-family: FontAwesome}
+.video_blog a.item_video:hover:after {content: "\f04b";position: absolute;top: 35%;left: 32%;padding: 0 30px;background: rgba(0, 206, 209, 0.44);color: white;line-height: 83px;font-size: 30px;border-radius: 100%;font-family: FontAwesome}
 .blog_tt a.item_video:hover:after {display: none}
 .blog_tt {background: white;padding: 15px;height: inherit}
 .blog_tt h2.post-content {font-size: 18px;margin-top: 0;color: darkgreen!important}
@@ -436,6 +437,11 @@ a.item_video:hover:after {content: "\f04b";position: absolute;top: 35%;left: 32%
 .blog_tt img {min-height: 150px;max-height: 150px}
 .blog_tt u {display: none}
 .blog_tt .blog_mess br,.blog_tt .blog_mess img {display: none;} {display: none}
+.blog_tt .item_video:after {content: "Xem đầy đủ bài viết"!important;width: 100%;display: block;background: darkmagenta;color: white;text-align: center;padding: 5px;margin: 10px 0;float: left;position: relative;}
+
+.blog_tt .item_video .blog_mess:after {content: "\f06e  Xem đầy đủ bài viết";width: initial;display: inline-block;background: darkmagenta;color: white;text-align: center;padding: 5px 20px;margin: 10px 0;position: relative;float: right;font-family: FontAwesome,Tahoma;}
+.blog_tt .item_video .blog_mess h2:hover {color: darkorange!important;}
+.blog_tt .item_video .blog_mess:hover:after {background: darkorange;}
 /* Blog Topic  Media*/
 .box_box_right {margin: 20px 0}
 .box_box_right .main_content {background: white;padding: 5px}
@@ -464,6 +470,7 @@ a.item_video:hover:after {content: "\f04b";position: absolute;top: 35%;left: 32%
 .spoiler_title span:hover {background: #45CCFF;}
 .spoiler_right:before {content: "\f147  ";}
 .spoiler_content img {margin: 10px auto;display: inherit;}
+.blog_topic .tool_post li {width: 0;}
 /* Blog Topic No Media */
 .no_media .media_check {display: none!Important}
 .no_media .blog_view_topic {width: 100%;padding: 0}
@@ -637,7 +644,7 @@ fieldset {float: left;width: 100%;}
 #chatbox .text-muted span {margin-right: 5px;}
 /* Mobile */
 @media only screen and (max-device-width: 700px) {
-body,html {overflow: hidden;}
+body,html {/* overflow: hidden; */}
 #header #logo a {font-size: 20px}
 #header #logo {height: inherit;margin-top: 5px}
 div[class*="col-md"] {display: block;width: 100%;padding: 0 5px}
@@ -666,7 +673,7 @@ div[class*="col-md"] {display: block;width: 100%;padding: 0 5px}
 .delete_topic a:after {content: "Xóa Bài";font-size: 14px}
 .post_body .content.clearfix {margin-bottom: 20px}
 .post_body {min-height: inherit}
-.wysibb .wysibb-toolbar {min-width: 20%;text-align: center;max-width: 20%}
+.wysibb .wysibb-toolbar {text-align: center;float: left;height: auto;padding: 5px!important;width: 100%;border: 0;}
 .blog_tt{padding: 5px!important}
 .wysibb .wysibb-text {margin: 0;display: inline-block;width: 79%;padding: 5px}
 h1, h2, h3 {font-size: 18px}
@@ -684,4 +691,12 @@ h1, h2, h3 {font-size: 18px}
 #chatbox .form_submit {width: 30%;}
 #chatbox .warning_body {width: 100%;font-size: 20px;}
 #chatbox .warning {padding: 0;}
+.wysibb-toolbar-btn {width: 35px!important;}
+.wysibb-toolbar-container {vertical-align: middle;width: initial!important;margin: 5px 0!important;float: left;}
+.ve-tlb-colorpick {width: 28px;}
+.wysibb-text {width: 100%!important;text-align: left;}
+.title_video {overflow: inherit;height: inherit;display: block;margin: 0;width: 100%;    float: left;}
+.blog_image {margin-bottom: 0!important;}
+.item_blog {overflow: inherit;margin: 5px 0;height: inherit;}
+.blog_tt .item_video .blog_mess:after {float: left;display: block;width: 100%;}
 }
