@@ -4,7 +4,7 @@
 a {text-decoration: inherit!Important;display: inline-block;}
 a:hover {color: darkorange}
 .fade {background-image: none}
-.tran{-webkit-transition: all .2s ease-in-out 0s;-o-transition: all .2s ease-in-out 0s;-khtml-transition: all .2s ease-in-out 0s;-moz-transition: all .2s ease-in-out 0s;-ms-transition: all .2s ease-in-out 0s}
+.tran,p,div,a,span,img, iframe, embed,object,textarea,ol, ul,li,h1,h2,h3,h4,i,b{-webkit-transition: all .2s ease-in-out 0s;-o-transition: all .2s ease-in-out 0s;-khtml-transition: all .2s ease-in-out 0s;-moz-transition: all .2s ease-in-out 0s;-ms-transition: all .2s ease-in-out 0s}
 .tran5{-webkit-transition: all .5s ease-in-out 0s;-o-transition: all .5s ease-in-out 0s;-khtml-transition: all .5s ease-in-out 0s;-moz-transition: all .5s ease-in-out 0s;-ms-transition: all .5s ease-in-out 0s}
 .tran10{-webkit-transition: all 1s ease-in-out 0s;-o-transition: all 1s ease-in-out 0s;-khtml-transition: all 1s ease-in-out 0s;-moz-transition: all 1s ease-in-out 0s;-ms-transition: all 1s ease-in-out 0s}
 .stroke_b:hover,.stroker_b,.box_box_con a:hover{text-shadow: 1px 1px 0 #333, 1px -1px 0 #333, -1px 1px 0 #333, -1px -1px 0 #333;}
@@ -479,7 +479,10 @@ blockquote cite a {color: white!important;}
 .box_change small {margin-left: 5px;background: red;padding: 2px 4px;border-radius: 5px;text-align: center}
 .list_config small {color: white!important;position: absolute;right: 10px;padding: 2px;line-height: normal;margin-top: 3px}
 #vd_google {background-repeat: round!important;background-size: cover!important;background-position: inherit!important;}
-.box_change.active {background: #45CCFF!important;}
+.box_change.active,.light_off.active {background: #45CCFF!important;}
+.off_video, .off_video .box_box_right, .off_video .box_forum,.off_video .post_body {background: #151C28!important;color: white!important;}
+.off_video .forum_box_list,.off_video .main_content,.off_video #sub-footer,.off_video #header,.off_video #menu,div[style="overflow:visible"],.off_video .box_box_right {display:none}
+.light_off:before {content: "\f0eb ";}
 /* Blog Topic No Media */
 .no_media .media_check {display: none!Important}
 .no_media .blog_view_topic {width: 100%;padding: 0}
