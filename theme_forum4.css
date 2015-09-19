@@ -347,7 +347,6 @@ ins.fonticon.ar {right: 8px!important}
 .submit_posting {width: 100px;display: inline-block;margin: 0 auto;background: darkcyan;color: white;float: none;cursor: pointer;position: relative}
 .submit_post {text-align: center}
 .submit_posting:hover {background: darkmagenta}
-
 .poll_multiple, .poll_cancel_vote {padding: 0}
 #FB_comment {margin: 10px 0;background: white;}
 /* Quote */
@@ -469,6 +468,16 @@ blockquote cite a {color: white!important;}
 .spoiler_right:before {content: "\f147  ";}
 .spoiler_content img {margin: 10px auto;display: inherit;}
 .blog_topic .tool_post li {width: 0;}
+.fp_config_fix {position: absolute;top: 4px;right: 140px;width: inherit;color: white;font-family: FontAwesome,Tahoma!important}
+.list_config {position: absolute;top: -60px;left: 0;width: 154px;bottom: 28px;text-align: center;background-color: rgba(0,0,0,0.65)}
+.list_config li span {background: none;display: block}
+.list_config li span:hover {background: rgba(255, 255, 255, 0.3)}
+.list_config li:before {display: none!important}
+.list_config li span:before {position: absolute;left: 5px}
+.is-mouseout .fp_config_fix {display: none}
+.btt_config_video {padding: 5px!Important}
+.box_change small {margin-left: 5px;background: red;padding: 2px 4px;border-radius: 5px;text-align: center}
+.list_config small {color: white!important;position: absolute;right: 10px;padding: 2px;line-height: normal;margin-top: 3px}
 /* Blog Topic No Media */
 .no_media .media_check {display: none!Important}
 .no_media .blog_view_topic {width: 100%;padding: 0}
@@ -646,7 +655,7 @@ body,html {overflow: hidden;}
 #header #logo a {font-size: 20px}
 #header #logo {height: inherit;margin-top: 5px}
 div[class*="col-md"] {display: block;width: 100%;padding: 0 5px}
-#main_body div[style="overflow:visible"],.last_topic .last_news:before,.forum_box_head_grid,i.blog_title_post,.breadcrumb a:before,.breadcrumb a:after,.breadcrumb li:last-child a:after,.breadcrumb_block .bor_forum_right,.box_like_media .col-md-2,div[style="overflow: visible;"],.breadcrumb li:nth-child(1),.breadcrumb li:nth-child(2){display: none}
+#main_body div[style="overflow:visible"],.last_topic .last_news:before,.forum_box_head_grid,i.blog_title_post,.breadcrumb a:before,.breadcrumb a:after,.breadcrumb li:last-child a:after,.breadcrumb_block .bor_forum_right,.box_like_media .col-md-2,div[style="overflow: visible;"],.breadcrumb li:nth-child(1),.breadcrumb li:nth-child(2),.fp_config_fix{display: none}
 .forum_box_img,.zoom_video{display: none!important}
 .col-md-12,.topic_body, .media_body,.box_thanker {padding: 0}
 .last_topic {border-bottom: 1px solid #ccc}
