@@ -478,6 +478,8 @@ blockquote cite a {color: white!important;}
 .btt_config_video {padding: 5px!Important}
 .box_change small {margin-left: 5px;background: red;padding: 2px 4px;border-radius: 5px;text-align: center}
 .list_config small {color: white!important;position: absolute;right: 10px;padding: 2px;line-height: normal;margin-top: 3px}
+#vd_google {background-repeat: round!important;background-size: cover!important;background-position: inherit!important;}
+.box_change.active {background: #45CCFF!important;}
 /* Blog Topic No Media */
 .no_media .media_check {display: none!Important}
 .no_media .blog_view_topic {width: 100%;padding: 0}
