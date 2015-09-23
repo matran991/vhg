@@ -1,10 +1,10 @@
 id_user = location.pathname.match(/\d+/)[0];
 submit_change = true;
 if (_userdata.user_id == id_user) {
-  $('.li[menu="wall_design"]').show().attr('onclick', 'tab_wall.call(this)');
+  $('li[menu="wall_design"]').show().attr('onclick', 'tab_wall.call(this)');
 } else {
   $(function() {
-    submit_design = false;
+    $('.wall_design').html('');
   });
 }
 
@@ -155,18 +155,18 @@ function style_add(br_c, br_p, cl_c, cl_p, k_c, k_p, br_c_i, br_p_i, music) {
 }
 
 function test_music() {
+  $('.music_wall .submit_icont').removeAttr('style');
+  $(this).css('background','darkmagenta');
   $('.music_frame').remove();
   var link = $('.wall_music').val();
   if (/nhaccuatui.com|mp3.zing.vn|youtube.com/.test(link) == true) {
     music_frame(link);
-    $('.test_wall_music').fadeOut(500);
-    $('.off_wall_music').fadeIn(500);
   }
 }
 
 function off_music() {
-  $('.test_wall_music').fadeIn(500);
-  $('.off_wall_music').fadeOut(500);
+  $('.music_wall .submit_icont').removeAttr('style');
+  $(this).css('background','darkmagenta');
   $('.music_frame').remove();
 }
 
@@ -246,7 +246,7 @@ $(function() {
   get_wall(id_user);
   $('.inbox_mess a').attr('href', '/privmsg?mode=post&u=' + id_user + '');
   var data_style = $('#field_id1 .field_uneditable').text();
-  if (typeof(style_wall) != "undefined") {
+  if (data_style.indexOf('style_wall') > -1) {
     eval(data_style);
     style_add(style_wall.br_c, style_wall.br_p, style_wall.cl_c, style_wall.cl_p, style_wall.k_c, style_wall.k_p, style_wall.br_c_i, style_wall.br_p_i, style_wall.music);
   }
