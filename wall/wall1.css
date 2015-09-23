@@ -1,0 +1,32 @@
+.wall_content #quickreply #editor,#quickreply .wysibb-body {height: 100px!important;min-height: 100px!important}
+.wall_content #quickreply {margin: 10px 0}
+.result_wall .wall_loading {padding: 10px 0;text-align: center;line-height: 80px;font-size: 20px;color: darkgreen;background: white}
+.result_wall .wall_loading i {margin-right: 10px}
+.wall_content #quickreply .wysibb {width: initial}
+.wall_content .wbb-bold,.wall_content .wbb-upimg {display: none!important}
+.wall_block_mess .wall_mess_left {text-align: center;padding: 5px}
+.wall_block_mess .wall_mess_left img {height: 50px;width: 50px}
+.wall_block_mess .col-md-3 {padding: 0;border-right: 10px solid #E9EAED;background: white}
+.wall_block_mess {line-height: 30px;background: #E9EAED;margin-top: 10px}
+.wall_time_right {background: darkgoldenrod;color: white;padding: 0 5px}
+.wall_block_mess .wall_content_right {background: white;padding: 5px}
+.wall_content #quickreply #editor,.wall_content #quickreply .wysibb-body {padding: 0 10px!important}
+.wall_content .wysibb {width: 66.66666667%!important}
+.wall_content .wysibb-body {overflow: auto!important}
+.wall_design .line_design {margin-top: 10px}
+.wall_design .line_design .col-md-6,.wall_design .line_design .col-md-12 {background: white;padding: 10px 15px;border-right: 5px solid #E9EAED}
+.wall_design .line_design .col-md-6:last-child {border-left: 5px solid #E9EAED}
+.line_design input {margin-top: 5px}
+.submit_icont i {display: block;font-size: 40px;}
+.submit_icont {text-align: center;display: inline-block;width: initial;padding: 5px 17px;cursor: pointer;background: darkcyan;color: white;float: none;line-height: 30px;margin: 10px;}
+.music_wall .col-md-6:first-child {padding: 21px 15px;}
+.submit_icont:hover {background: darkmagenta;}
+.colorpicker {width: inherit;}
+.submit_design {text-align: center;}
+.music_wall .col-md-6:first-child div:last-child {margin-top: 20px;}
+.line_info {padding: 10px 0;margin: 5px 0;background: white;}
+.profile_list .forum_box_mod {background: #E9EAED;}
+.name_wall {margin-top: 10px;}
+.nav-pills>li>a {border-radius: 0;}
+.colorpicker-element {color: black;font-weight: bold;text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px 1px 0 #FFF;}
+#field_id1{display: none}
