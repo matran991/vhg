@@ -41,7 +41,7 @@ function music_frame(a){
 }
 function get_wall(id_user){
 	$.ajax({
-	  url: "http://localhost/wall/",
+	  url: ''+hosting+'/wall/',
 	  dataType: "script",
 		data: {
 			id_user: id_user
@@ -91,7 +91,7 @@ function get_wall(id_user){
 			$("#editor").bbcode('').htmlcode('');
 			$('.loading').fadeIn(500);
 			$.ajax({
-			  url: "http://localhost/wall/",
+			  url: ''+hosting+'/wall/',
 			  dataType: "script",
 				data: {
 					id:id,
