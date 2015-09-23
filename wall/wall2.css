@@ -30,3 +30,11 @@
 .nav-pills>li>a {border-radius: 0;}
 .colorpicker-element {color: black;font-weight: bold;text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px 1px 0 #FFF;}
 #field_id1{display: none}
+.result_wall {margin: 10px 0;}
+@media only screen and (max-device-width: 700px) {
+.wysibb {width: 100%!important;}
+.submit_post {margin: 10px 0;}
+.wall_block_mess .wall_mess_left img, .wall_time_right, .wall_message[class*="col-md"] {display: none;}
+.wall_block_mess .col-md-3 {border: 0!important;padding: 0 5px!important;background-color: transparent!important;}
+.wall_block_mess .wall_mess_left {padding: 0!important;background-color: darkgoldenrod;}
+}
