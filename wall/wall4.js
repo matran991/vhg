@@ -109,9 +109,9 @@ function tab_wall() {
 
 function background(a) {
   if (a.indexOf('#') > -1) {
-    return 'background-color : ' + a + '!important;';
+    return 'background-color : ' + a + '!important';
   } else if (/.jpg|.gif|.png/.test(a) == true) {
-    return 'background-image : url(' + a + ')!important;background-repeat: round';
+    return 'background-image : url(' + a + ')!important';
   } else {
     return false;
   }
@@ -141,7 +141,7 @@ function style_add(br_c, br_p, cl_c, cl_p, k_c, k_p, br_c_i, br_p_i, music) {
   // Nền chính
   var style = '#phpbb {' + br_c + ';' + br_c_i + '}';
   // Nền Phụ + Ảnh nền phụ
-  style += '.profile_list .forum_box_mod, .line_info, #tab_menu ul, .wall_block_mess .wall_content_right {' + br_p + ';' + br_p_i + '}.line_design,.submit_design .col-md-12,.wall_block_mess,#quickreply,#quickreply .submit_post {background-color: transparent!important;}.wall_block_mess .col-md-3 {' + br_p + ';' + br_p_i + ';border-color: ' + br_p_2 + '!important}';
+  style += '.profile_list .forum_box_mod, .line_info, #tab_menu ul, .wall_block_mess .wall_content_right {' + br_p + ';' + br_p_i + '}.line_design,.submit_design .col-md-12,.wall_block_mess,#quickreply,#quickreply .submit_post,.forum_box_list, .forum_box_list {background-color: transparent!important;}.wall_block_mess .col-md-3 {' + br_p + ';' + br_p_i + ';border-color: ' + br_p_2 + '!important}.wall_block_mess .col-md-3,.wall_design .line_design .col-md-12 {border-color: transparent!important}';
   // Màu Chữ Chính
   style += '#main_body a,.result_wall,.profile_list {' + cl_c + '}';
   // Màu chữ phụ
