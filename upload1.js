@@ -141,12 +141,12 @@
                 e.preventDefault();
             });
             ddObj.on('drop', function (e) {
-                $(this).css('border', '2px dotted #A5A5C7');
+                $(this).css('border', '2px dotted #000');
                 e.preventDefault();
                 obj.errorLog.html("");
                 var files = e.originalEvent.dataTransfer.files;
                 if (!s.multiple && files.length > 1) {
-                    if (s.showError) $("<div style='color:red;'>Tập tin: " + s.multiDragErrorStr + "</div>").appendTo(obj.errorLog);
+                    if (s.showError) $("<div class='alert alert-danger upload-alert'>Tập tin: " + s.multiDragErrorStr + "</div>").appendTo(obj.errorLog);
                     return;
                 }
                 if(s.onSelect(files) == false)
@@ -204,11 +204,11 @@
         function serializeAndUploadFiles(s, obj, files) {
             for (var i = 0; i < files.length; i++) {
                 if (!isFileTypeAllowed(obj, s, files[i].name)) {
-                    if (s.showError) $("<div style='color:red;'><b>" + files[i].name + "</b> " + s.extErrorStr + s.allowedTypes + "</div>").appendTo(obj.errorLog);
+                    if (s.showError) $("<div class='alert alert-danger upload-alert'>Tập tin: " + files[i].name + "" + s.extErrorStr + s.allowedTypes + "").appendTo(obj.errorLog);
                     continue;
                 }
                 if (s.maxFileSize != -1 && files[i].size > s.maxFileSize) {
-                    if (s.showError) $("<div style='color:red;'><b>" + files[i].name + "</b> " + s.sizeErrorStr + getSizeStr(s.maxFileSize) + "</div>").appendTo(obj.errorLog);
+                    if (s.showError) $("<div class='alert alert-danger upload-alert'>Tập tin: " + files[i].name + "" + s.sizeErrorStr + getSizeStr(s.maxFileSize) + "</div>").appendTo(obj.errorLog);
                     continue;
                 }
                 var ts = s;
@@ -288,7 +288,7 @@
                     var flist = [];
                     fileArray.push(filenameStr);
                     if (!isFileTypeAllowed(obj, s, filenameStr)) {
-                        if (s.showError) $("<div style='color:red;'><b>" + filenameStr + "</b> " + s.extErrorStr + s.allowedTypes + "</div>").appendTo(obj.errorLog);
+                        if (s.showError) $("<div class='alert alert-danger upload-alert'>Tập tin: " + filenameStr + " " + s.extErrorStr + s.allowedTypes + "</div>").appendTo(obj.errorLog);
                         return;
                     }
                     //fallback for browser without FileAPI
@@ -373,8 +373,8 @@
         function createProgressDiv(obj, s) {
             this.statusbar = $("<div class='ajax-file-upload-statusbar'></div>");
             this.filename = $("<div class='ajax-file-upload-filename'></div>").appendTo(this.statusbar);
-            this.progressDiv = $("<div class='ajax-file-upload-progress'>").appendTo(this.statusbar).hide();
-            this.progressbar = $("<div class='ajax-file-upload-bar " + obj.formGroup + "'></div>").appendTo(this.progressDiv);
+            this.progressDiv = $("<div class='ajax-file-upload-progress progress'>").appendTo(this.statusbar).hide();
+            this.progressbar = $("<div class='progress-bar progress-bar-success progress-bar-striped active ajax-file-upload-bar " + obj.formGroup + "'></div>").appendTo(this.progressDiv);
             this.abort = $("<div class='ajax-file-upload-red " + obj.formGroup + "'>" + s.abortStr + "</div>").appendTo(this.statusbar).hide();
             this.cancel = $("<div class='ajax-file-upload-red'>" + s.cancelStr + "</div>").appendTo(this.statusbar).hide();
             this.done = $("<div class='ajax-file-upload-green'>" + s.doneStr + "</div>").appendTo(this.statusbar).hide();
@@ -413,7 +413,7 @@
                         checkPendingUploads();
                         return true;
                     }
-                    pd.statusbar.append("<div style='color:red;'>" + s.uploadErrorStr + "</div>");
+                    pd.statusbar.append("<div class='alert alert-danger upload-alert'>" + s.uploadErrorStr + "</div>");
                     pd.cancel.show()
                     form.remove();
                     pd.cancel.click(function () {
