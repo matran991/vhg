@@ -414,7 +414,7 @@
                         checkPendingUploads();
                         return true;
                     }
-                    pd.statusbar.append("<div class='alert alert-danger upload-alert'>" + s.uploadErrorStr + "</div>");
+                    pd.statusbar.append("<div class='alert alert-danger upload-alert'>Bạn không được phép upload tập tin này.</div>");
                     pd.cancel.show()
                     form.remove();
                     pd.cancel.click(function () {
