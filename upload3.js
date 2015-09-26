@@ -204,11 +204,11 @@
         function serializeAndUploadFiles(s, obj, files) {
             for (var i = 0; i < files.length; i++) {
                 if (!isFileTypeAllowed(obj, s, files[i].name)) {
-                    if (s.showError) $("<div class='alert alert-danger upload-alert'>Tập tin: " + files[i].name + "" + s.extErrorStr + s.allowedTypes + "").appendTo(obj.errorLog);
+                    if (s.showError) $("<div class='alert alert-danger upload-alert'>Tập tin: " + files[i].name  + s.extErrorStr + s.allowedTypes).appendTo(obj.errorLog);
                     continue;
                 }
                 if (s.maxFileSize != -1 && files[i].size > s.maxFileSize) {
-                    if (s.showError) $("<div class='alert alert-danger upload-alert'>Tập tin: " + files[i].name + "" + s.sizeErrorStr + getSizeStr(s.maxFileSize) + "</div>").appendTo(obj.errorLog);
+                    if (s.showError) $("<div class='alert alert-danger upload-alert'>Tập tin: " + files[i].name + s.sizeErrorStr + getSizeStr(s.maxFileSize) + "</div>").appendTo(obj.errorLog);
                     continue;
                 }
                 var ts = s;
@@ -288,7 +288,7 @@
                     var flist = [];
                     fileArray.push(filenameStr);
                     if (!isFileTypeAllowed(obj, s, filenameStr)) {
-                        if (s.showError) $("<div class='alert alert-danger upload-alert'>Tập tin: " + filenameStr + " " + s.extErrorStr + s.allowedTypes + "</div>").appendTo(obj.errorLog);
+                        if (s.showError) $("<div class='alert alert-danger upload-alert'>Tập tin: " + filenameStr + s.extErrorStr + s.allowedTypes + "</div>").appendTo(obj.errorLog);
                         return;
                     }
                     //fallback for browser without FileAPI
@@ -534,3 +534,59 @@
 
 }(jQuery));
 
+function upload_config(){
+    var hosting_up = 'http://php-viethoagame.rhcloud.com';
+    var settings = {
+        url: hosting_up+"/upload.php",
+        dragDrop:true,
+        fileName: "myfile",
+        allowedTypes:"jpg,png,gif,bmp,jar,apk,zip,mp3,mp4,rar,7zip", 
+        returnType:"json",
+       onSuccess:function(files,data,xhr){
+            var file = (data)[0];
+            if(file.indexOf('File_Error') > -1){
+                $('#status').html('<div class="alert alert-danger upload-alert">Tập tin bạn up trùng tên với tập tin đã có sẵn trên hệ thống. Vui lòng đổi tên file để up lại.</div>');
+            }
+            else{
+                var file_name = file.replace(''+hosting_up+'/uploads/','');
+                if(/.jpg|.png|.gif|.bmp/gi.test(file) == true){
+                    var file_html = '<img src="'+file+'" />';
+                    var file_bbcode = '[img]'+file+'[/img]';
+                    var file_preview = '<img src="'+file.replace("/uploads/","/uploads/thumb/")+'" />';
+                }
+                else if(/.mp3|.mp4/gi.test(file) == true){
+                    var file_html = '<video src="'+file+'" width="480" height="240" controls="controls"></video>';
+                    var file_bbcode = '[table class=frame_default][tr][td]'+file+'[/td][/tr][/table]';
+                    var file_preview = file_html;
+                }
+                else{
+                    var file_html = '<a href="'+file+'">'+file_name+'</a>';
+                    var file_bbcode = '[url]'+file+'[/url]'; 
+                    var file_preview = '';
+                }
+                 var file_download = '<a href="'+file+'" download="download"><i class="fa fa-cloud-download"></i> '+file_name+'</a>';
+                 $('.ajax-file-upload,.ajax-upload-dragdrop').fadeOut(500);
+                 $('.up-complete').fadeIn(500);
+                 $('#file-preview').html(file_preview);
+                 $('#file-download').html(file_download);
+                 $('#file-html').val(file_html);
+                 $('#file-bbcode').val(file_bbcode);
+                 $('#file-url').val(file);
+            }
+        }
+    }
+    var uploadObj = $("#mulitplefileuploader").uploadFile(settings);
+}
+function upload_begin(){
+    $('.ajax-file-upload,.ajax-upload-dragdrop').fadeIn(500);
+    $('.up-complete').fadeOut(500);
+}
+function upload_close(){
+    $('#upload_pop').hide();
+    $('.wysibb-body').show();
+}
+function upload_copy(){
+    var a = $('#file-html').val();
+    $('.wysibb-body').append('<br>'+a+'');
+    upload_close();
+}
