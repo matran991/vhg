@@ -146,7 +146,7 @@
                 obj.errorLog.html("");
                 var files = e.originalEvent.dataTransfer.files;
                 if (!s.multiple && files.length > 1) {
-                    if (s.showError) $("<div class='alert alert-danger upload-alert'>Tập tin: " + s.multiDragErrorStr + "</div>").appendTo(obj.errorLog);
+                    if (s.showError) $("<div class='alert alert-danger upload-alert a3'>Tập tin: " + s.multiDragErrorStr + "</div>").appendTo(obj.errorLog);
                     return;
                 }
                 if(s.onSelect(files) == false)
@@ -204,11 +204,11 @@
         function serializeAndUploadFiles(s, obj, files) {
             for (var i = 0; i < files.length; i++) {
                 if (!isFileTypeAllowed(obj, s, files[i].name)) {
-                    if (s.showError) $("<div class='alert alert-danger upload-alert'>Tập tin: " + files[i].name  + s.extErrorStr + s.allowedTypes).appendTo(obj.errorLog);
+                    if (s.showError) $("<div class='alert alert-danger upload-alert a4'>Tập tin: " + files[i].name  + s.extErrorStr + s.allowedTypes).appendTo(obj.errorLog);
                     continue;
                 }
                 if (s.maxFileSize != -1 && files[i].size > s.maxFileSize) {
-                    if (s.showError) $("<div class='alert alert-danger upload-alert'>Tập tin: " + files[i].name + s.sizeErrorStr + getSizeStr(s.maxFileSize) + "</div>").appendTo(obj.errorLog);
+                    if (s.showError) $("<div class='alert alert-danger upload-alert a5'>Tập tin: " + files[i].name + s.sizeErrorStr + getSizeStr(s.maxFileSize) + "</div>").appendTo(obj.errorLog);
                     continue;
                 }
                 var ts = s;
@@ -288,7 +288,7 @@
                     var flist = [];
                     fileArray.push(filenameStr);
                     if (!isFileTypeAllowed(obj, s, filenameStr)) {
-                        if (s.showError) $("<div class='alert alert-danger upload-alert'>Tập tin: " + filenameStr + s.extErrorStr + s.allowedTypes + "</div>").appendTo(obj.errorLog);
+                        if (s.showError) $("<div class='alert alert-danger upload-alert a6'>Tập tin: " + filenameStr + s.extErrorStr + s.allowedTypes + "</div>").appendTo(obj.errorLog);
                         return;
                     }
                     //fallback for browser without FileAPI
@@ -414,7 +414,7 @@
                         checkPendingUploads();
                         return true;
                     }
-                    pd.statusbar.append("<div class='alert alert-danger upload-alert'>Bạn không được phép upload tập tin này.</div>");
+                    pd.statusbar.append("<div class='alert alert-danger upload-alert a1'>Bạn không được phép upload tập tin này.</div>");
                     pd.cancel.show()
                     form.remove();
                     pd.cancel.click(function () {
@@ -545,7 +545,7 @@ function upload_config(){
        onSuccess:function(files,data,xhr){
             var file = (data)[0];
             if(file.indexOf('File_Error') > -1){
-                $('#status').html('<div class="alert alert-danger upload-alert">Tập tin bạn up trùng tên với tập tin đã có sẵn trên hệ thống. Vui lòng đổi tên file để up lại.</div>');
+                $('#status').html('<div class="alert alert-danger upload-alert a2">Tập tin bạn up trùng tên với tập tin đã có sẵn trên hệ thống. Vui lòng đổi tên file để up lại.</div>');
             }
             else{
                 var file_name = file.replace(''+hosting_up+'/uploads/','');
@@ -564,7 +564,7 @@ function upload_config(){
                     var file_bbcode = '[url]'+file+'[/url]'; 
                     var file_preview = '';
                 }
-                 var file_download = '<a href="'+file+'" download="download"><i class="fa fa-cloud-download"></i> '+file_name+'</a>';
+                 var file_download = '<a class="alert alert-warning" href="'+file+'" download="download"><i class="fa fa-cloud-download"></i> '+file_name+'</a>';
                  $('.ajax-file-upload,.ajax-upload-dragdrop').fadeOut(500);
                  $('.up-complete').fadeIn(500);
                  $('#file-preview').html(file_preview);
