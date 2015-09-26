@@ -81,7 +81,7 @@
         var uploadLabel = $('<div>' + $(this).html() + '</div>');
         $(uploadLabel).addClass(s.uploadButtonClass);
 
-        //wait form ajax Form plugin and initialize		
+        //wait form ajax Form plugin and initialize     
         (function checkAjaxFormLoaded() {
             if ($.fn.ajaxForm) {
 
@@ -150,7 +150,7 @@
                     return;
                 }
                 if(s.onSelect(files) == false)
-                	return;
+                    return;
                 serializeAndUploadFiles(s, obj, files);
             });
 
@@ -228,11 +228,11 @@
 
                 var pd = new createProgressDiv(obj, s);
                 var fileNameStr="";
-            	if(s.showFileCounter)
-            		fileNameStr = obj.fileCounter + s.fileCounterStyle + files[i].name
-            	else
-            		fileNameStr = files[i].name;
-            		
+                if(s.showFileCounter)
+                    fileNameStr = obj.fileCounter + s.fileCounterStyle + files[i].name
+                else
+                    fileNameStr = files[i].name;
+                    
                 pd.filename.html(fileNameStr);
                 var form = $("<form style='display:block; position:absolute;left: 150px;' class='" + obj.formGroup + "' method='" + s.method + "' action='" + s.url + "' enctype='" + s.enctype + "'></form>");
                 form.appendTo('body');
@@ -282,7 +282,7 @@
                     }
                    
                     if(s.onSelect(this.files) == false)
-	                	return;
+                        return;
                 } else {
                     var filenameStr = $(this).val();
                     var flist = [];
@@ -294,7 +294,7 @@
                     //fallback for browser without FileAPI
                     flist.push({name:filenameStr,size:'NA'});
                     if(s.onSelect(flist) == false)
-	                	return;
+                        return;
 
                 }
                 uploadLabel.unbind("click");
@@ -310,10 +310,10 @@
                 } else {
                     var fileList = "";
                     for (var i = 0; i < fileArray.length; i++) {
-		            	if(s.showFileCounter)
-        		    		fileList += obj.fileCounter + s.fileCounterStyle + fileArray[i]+"<br>";
-            			else
-		            		fileList += fileArray[i]+"<br>";;
+                        if(s.showFileCounter)
+                            fileList += obj.fileCounter + s.fileCounterStyle + fileArray[i]+"<br>";
+                        else
+                            fileList += fileArray[i]+"<br>";;
                         obj.fileCounter++;
                     }
                     var pd = new createProgressDiv(obj, s);
@@ -325,29 +325,29 @@
 
             });
             
-	         form.css({'margin':0,'padding':0});
+             form.css({'margin':0,'padding':0});
             var uwidth=$(uploadLabel).width()+10;
             if(uwidth == 10)
-            	uwidth =120;
-            	
+                uwidth =120;
+                
             var uheight=uploadLabel.height()+10;
             if(uheight == 10)
-            	uheight = 35;
+                uheight = 35;
 
-			uploadLabel.css({position: 'relative',overflow:'hidden',cursor:'default'});
-			fileInput.css({position: 'absolute','cursor':'pointer',  
-							'top': '0px',
-							'width': uwidth,  
-							'height':uheight,
-							'left': '0px',
-							'z-index': '100',
-							'opacity': '0.0',
-							'filter':'alpha(opacity=0)',
-							'-ms-filter':"alpha(opacity=0)",
-							'-khtml-opacity':'0.0',
-							'-moz-opacity':'0.0'
-							});
-	         form.appendTo(uploadLabel);
+            uploadLabel.css({position: 'relative',overflow:'hidden',cursor:'default'});
+            fileInput.css({position: 'absolute','cursor':'pointer',  
+                            'top': '0px',
+                            'width': uwidth,  
+                            'height':uheight,
+                            'left': '0px',
+                            'z-index': '100',
+                            'opacity': '0.0',
+                            'filter':'alpha(opacity=0)',
+                            '-ms-filter':"alpha(opacity=0)",
+                            '-khtml-opacity':'0.0',
+                            '-moz-opacity':'0.0'
+                            });
+             form.appendTo(uploadLabel);
 
             //dont hide it, but move it to 
            /* form.css({
@@ -371,6 +371,7 @@
 
 
         function createProgressDiv(obj, s) {
+            $('.upload-alert').remove();
             this.statusbar = $("<div class='ajax-file-upload-statusbar'></div>");
             this.filename = $("<div class='ajax-file-upload-filename'></div>").appendTo(this.statusbar);
             this.progressDiv = $("<div class='ajax-file-upload-progress progress'>").appendTo(this.statusbar).hide();
@@ -438,27 +439,27 @@
                     } else pd.progressbar.width('1%'); //Fix for small files
                 },
                 uploadProgress: function (event, position, total, percentComplete) {
-		            //Fix for smaller file uploads in MAC
-                	if(percentComplete > 98) percentComplete =98; 
-                	
+                    //Fix for smaller file uploads in MAC
+                    if(percentComplete > 98) percentComplete =98; 
+                    
                     var percentVal = percentComplete + '%';
                     if (percentComplete > 1) pd.progressbar.width(percentVal)
                     if(s.showProgress) 
                     {
-                    	pd.progressbar.html(percentVal);
-                    	pd.progressbar.css('text-align', 'center');
+                        pd.progressbar.html(percentVal);
+                        pd.progressbar.css('text-align', 'center');
                     }
-	                
+                    
                 },
                 success: function (data, message, xhr) {
                     obj.responses.push(data);
                     pd.progressbar.width('100%')
                     if(s.showProgress)
                     { 
-                    	pd.progressbar.html('100%');
-                    	pd.progressbar.css('text-align', 'center');
-                    }	
-	                
+                        pd.progressbar.html('100%');
+                        pd.progressbar.css('text-align', 'center');
+                    }   
+                    
                     pd.abort.hide();
                     s.onSuccess.call(this, fileArray, data, xhr);
                     if (s.showStatusAfterSuccess) {
@@ -473,15 +474,15 @@
                         }
                         if(s.showDelete)
                         {
-                        	pd.del.show();
-                        	 pd.del.click(function () {
-                        		if(s.deleteCallback) s.deleteCallback.call(this, data,pd);
+                            pd.del.show();
+                             pd.del.click(function () {
+                                if(s.deleteCallback) s.deleteCallback.call(this, data,pd);
                             });
                         }
                         else
                         {
-	                        pd.del.hide();
-	                    }
+                            pd.del.hide();
+                        }
                     } else {
                         pd.statusbar.hide("slow");
                         pd.statusbar.remove();
@@ -532,3 +533,4 @@
 
 
 }(jQuery));
+
