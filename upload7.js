@@ -204,7 +204,7 @@
         function serializeAndUploadFiles(s, obj, files) {
             for (var i = 0; i < files.length; i++) {
                 if (!isFileTypeAllowed(obj, s, files[i].name)) {
-                    if (s.showError) $("<div class='alert alert-danger upload-alert a4'>Tập tin: " + files[i].name  + s.extErrorStr + s.allowedTypes).appendTo(obj.errorLog);
+                    if (s.showError) $("<div class='alert alert-danger upload-alert a4'>" + files[i].name + s.extErrorStr + s.allowedTypes + "</div>").appendTo(obj.errorLog);
                     continue;
                 }
                 if (s.maxFileSize != -1 && files[i].size > s.maxFileSize) {
@@ -414,7 +414,7 @@
                         checkPendingUploads();
                         return true;
                     }
-                    pd.statusbar.append("<div class='alert alert-danger upload-alert a1'>Bạn không được phép upload tập tin này.</div>");
+                    pd.statusbar.append("<div class='alert alert-danger upload-alert a1'>" + s.uploadErrorStr + "</div>");
                     pd.cancel.show()
                     form.remove();
                     pd.cancel.click(function () {
