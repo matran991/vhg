@@ -28,7 +28,7 @@
             dynamicFormData: function () {
                 return {};
             },
-            maxFileSize: 5120000,
+            maxFileSize: 1120000,
             multiple: false,
             dragDrop: true,
             autoSubmit: true,
@@ -208,7 +208,7 @@
                     continue;
                 }
                 if (s.maxFileSize != -1 && files[i].size > s.maxFileSize) {
-                    if (s.showError) $("<div class='alert alert-danger upload-alert a5'>Tập tin: " + files[i].name + s.sizeErrorStr + getSizeStr(s.maxFileSize) + "</div>").appendTo(obj.errorLog);
+                    if (s.showError) $("<div class='alert alert-danger upload-alert a5'>Tập tin: " + files[i].name + s.sizeErrorStr  + "1 MB thôi.</div>").appendTo(obj.errorLog);
                     continue;
                 }
                 var ts = s;
@@ -540,7 +540,7 @@ function upload_config(){
         url: hosting_up+"/upload.php",
         dragDrop:true,
         fileName: "myfile",
-        allowedTypes:"jpg,png,gif,bmp,jar,apk,zip,mp3,mp4,rar,7zip", 
+        allowedTypes:"jpg,jpeg,png,gif,bmp,jar,zip,rar,7zip", 
         returnType:"json",
        onSuccess:function(files,data,xhr){
             var file = (data)[0];
@@ -553,11 +553,6 @@ function upload_config(){
                     var file_html = '<img src="'+file+'" />';
                     var file_bbcode = '[img]'+file+'[/img]';
                     var file_preview = '<img src="'+file.replace("/uploads/","/uploads/thumb/")+'" />';
-                }
-                else if(/.mp3|.mp4/gi.test(file) == true){
-                    var file_html = '<video src="'+file+'" width="480" height="240" controls="controls"></video>';
-                    var file_bbcode = '[table class=frame_default][tr][td]'+file+'[/td][/tr][/table]';
-                    var file_preview = file_html;
                 }
                 else{
                     var file_html = '<a href="'+file+'">'+file_name+'</a>';
@@ -577,16 +572,4 @@ function upload_config(){
     }
     var uploadObj = $("#mulitplefileuploader").uploadFile(settings);
 }
-function upload_begin(){
-    $('.ajax-file-upload,.ajax-upload-dragdrop').fadeIn(500);
-    $('.up-complete').fadeOut(500);
-}
-function upload_close(){
-    $('#upload_pop').hide();
-    $('.wysibb-body').show();
-}
-function upload_copy(){
-    var a = $('#file-html').val();
-    $('.wysibb-body').append('<br>'+a+'');
-    upload_close();
-}
+
