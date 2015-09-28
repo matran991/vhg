@@ -50,7 +50,7 @@ h1,h2,h3,h4{font-weight: bold;margin: 5px 0;}
 .list-menu li {background: darkgreen;margin: 20px 0;position: relative}
 .list-menu li a {padding: 5px 0}
 .list-menu li:hover {background: darkmagenta}
-.list-hide-tab {position: absolute;left: -9999px;top: 0;width: 320px;opacity: 0}
+.list-hide-tab {position: absolute;left: 9999px;top: 0;width: 320px;opacity: 0}
 .list-hide-tab .fa {display: inline-block!important;width: initial;font-size: inherit!important}
 .list-menu li div a {text-align: left!important;padding: 20px;font-size: 20px;background: #23334B;margin-bottom: 10px}
 .list-menu li div a:hover {background: darkorchid}
@@ -205,15 +205,16 @@ footer.burned-asphalt {background: black;float: left;width: 100%}
 .postprofile {height: 100%;position: relative;margin: 10px 0;display: inline-block}
 .box_view_topic {margin: 20px 0}
 .post_body {background: white;min-height: 280px;padding: 0}
-.post_topic {background: #1C89A5;;margin:  10px 0}
+.post_topic {background: darkcyan;margin:  10px 0}
 .view_topic .profile_user {width: 20%;max-width: 200px;}
 .view_topic .post_body {width: 80%;}
 .avata_img img {background: white;width: 100%;height: 120px;border: 5px solid white;}
 .avata_img {padding: 0;width: 120px;margin: 5px auto!important;float: none;height: 120px;}
 .box_profile_left {margin: 3px 0;background: white;padding: 0 5px;text-align: center}
 .total_post_label {text-align: left}
+.total_post_label .label {color: black;}
 .postprofile br {display: none}
-.post_body .content.clearfix {padding: 0 15px;line-height: 25px;}
+.post_body .content.clearfix {padding: 5px 15px;line-height: 25px;}
 .post_topic .author {background: #23334B;color: white;padding: 10px;position: relative}
 .box_profile_left a {word-wrap: break-word;width: 100%}
 .tool_post li {display: inline-block;width: 100px;height: 75px;text-align: center;position: relative}
@@ -470,11 +471,6 @@ i.blog_title_post {max-width: 79%;overflow: hidden;display: inline-block;white-s
 .btt_submit_pri:hover {background: darkmagenta}
 /* Color Forum */
 a[href="/u1"]{color:#FF0000}
-.post_topic[onclick*="Quản Trị"] {background: darkred}
-.post_topic[onclick*="Cao Cấp"] {background: darkcyan;}
-.post_topic[onclick*="Điều Hành Viên"] {background: darkslateblue;}
-.post_topic[onclick*="Danh Dự"] {background: darkmagenta;}
-.post_topic[onclick*="Bot"] {background: darkgoldenrod;}
 
 /* Last-recent */
 .last_content {background: white}
@@ -590,7 +586,7 @@ fieldset {float: left;width: 100%;}
 #header #logo a {font-size: 20px}
 #header #logo {height: inherit;margin-top: 5px}
 div[class*="col-md"] {display: block;width: 100%;padding: 0 5px}
-#main_body div[style="overflow:visible"],.last_topic .last_news:before,.forum_box_head_grid,i.blog_title_post,.breadcrumb a:before,.breadcrumb a:after,.breadcrumb li:last-child a:after,.breadcrumb_block .bor_forum_right,.box_like_media .col-md-2,div[style="overflow: visible;"],.breadcrumb li:nth-child(1),.breadcrumb li:nth-child(2),.fp_config_fix{display: none}
+#main_body div[style="overflow:visible"],.last_topic .last_news:before,.forum_box_head_grid,i.blog_title_post,.breadcrumb a:before,.breadcrumb a:after,.breadcrumb li:last-child a:after,.breadcrumb_block .bor_forum_right,.box_like_media .col-md-2,div[style="overflow: visible;"],.breadcrumb li:nth-child(1),.breadcrumb li:nth-child(2),.fp_config_fix,.post_topic .author,.profile_total{display: none}
 .forum_box_img,.zoom_video{display: none!important}
 .col-md-12,.topic_body, .media_body,.box_thanker {padding: 0}
 .last_topic {border-bottom: 1px solid #ccc}
@@ -619,7 +615,7 @@ div[class*="col-md"] {display: block;width: 100%;padding: 0 5px}
 .blog_tt{padding: 5px!important}
 .wysibb .wysibb-text {margin: 0;display: inline-block;width: 79%;padding: 5px}
 h1, h2, h3 {font-size: 18px}
-.post_body .content.clearfix {padding: 0;}
+.post_body .content.clearfix {padding: 5px 0;}
 #postingbox .wysibb-toolbar-container {background: none;}
 #postingbox .wysibb-toolbar,#postingbox .wysibb-body {min-height: 200px!important;max-height: 200px!Important;}
 #postingbox .wysibb-toolbar-btn,#postingbox .wysibb-toolbar-container {margin: 0!important;padding: 0!important;}
@@ -642,4 +638,17 @@ h1, h2, h3 {font-size: 18px}
 .item_blog {overflow: inherit;margin: 5px 0;height: inherit;}
 .blog_tt .item_video .blog_mess:after {float: left;display: block;width: 100%;}
 .forum_box_name {white-space: nowrap;overflow: hidden;}
+.list-menu {width: 100%;background: #23334B;position: absolute;bottom: inherit;top: 50px;text-align: center;display: none;}
+.nav_mobile_click {display: block;}
+.list-menu li {width: initial;display: inline-block;width: 100px;height: 80px;}
+.list-menu li {margin: 10px;}
+.menu-content {position: fixed;padding: 0;left: 0;right: 0;background: #23334B;color: white;z-index: 99;}
+.user_tab {top: -5px;}
+.list-hide-tab {display: none;}
+.nav_mobile_click .nav_mobile_menu {width: 20%;display: inline-block;text-align: center;padding: 5px 0;}
+.nav_mobile_click .nav_mobile_title {display: inline-block;width: 80%;text-align: center;}
+.nav_mobile_menu i.fa.fa-list {font-size: 30px;display: block;}
+.nav_mobile_click .nav_mobile_title h1 {line-height: 40px;}
+#wrap_body {padding: 0;margin-top: 50px;}
+.nav_mobile_menu .fa {line-height: 40px;}
 }
