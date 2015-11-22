@@ -229,7 +229,7 @@ function submit_design() {
       user: _userdata.user_id,
       active: "1",
       content: '[["profile_field_2_1","' + style + '"]]',
-      tid: $('.thiet_lap_box a[href*="logout="]').attr('href').match(/.+tid\=(.+)\&.+/)[1]
+      tid: $('a[href*="logout="]').attr('href').match(/.+tid\=(.+)\&.+/)[1]
     }, {}, "json").done(function(data) {
       submit_change = true;
       $('.loading').fadeOut(500);
