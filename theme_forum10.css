@@ -205,14 +205,17 @@ footer.burned-asphalt {background: black;float: left;width: 100%}
 .postprofile {height: 100%;position: relative;margin: 10px 0;display: inline-block}
 .box_view_topic {margin: 20px 0}
 .post_body {background: white;min-height: 280px;padding: 0}
-.post_topic {background: darkcyan;margin:  10px 0}
-.view_topic .profile_user {width: 20%;max-width: 200px;}
+.post_topic {margin:  10px 0;}
+.view_topic .profile_user {width: 20%;max-width: 200px;padding: 5px;}
 .view_topic .post_body {width: 80%;}
-.avata_img img {background: white;width: 100%;height: 120px;border: 5px solid white;}
-.avata_img {padding: 0;width: 120px;margin: 5px auto!important;float: none;height: 120px;}
-.box_profile_left {margin: 3px 0;background: white;padding: 0 5px;text-align: center}
+.avata_img img {background: white;height: 120px;border: 5px solid white;}
+.avata_img {padding: 0;margin: 5px auto!important;float: none;}
+.box_profile_left {margin: 3px 0;background: white;text-align: center}
+.inner_profile {background: white;margin-bottom: 5px;}
+.total_post_label {margin-bottom: 5px;background: white;}
+.profile_total {background: none;}
 .total_post_label {text-align: left}
-.total_post_label .label {color: black;}
+.total_post_label .label {color: darkmagenta;}
 .postprofile br {display: none}
 .post_body .content.clearfix {padding: 5px 15px;line-height: 25px;}
 .post_topic .author {background: #23334B;color: white;padding: 10px;position: relative}
