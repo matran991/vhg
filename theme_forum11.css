@@ -205,8 +205,8 @@ footer.burned-asphalt {background: black;float: left;width: 100%}
 .postprofile {height: 100%;position: relative;margin: 10px 0;display: inline-block}
 .box_view_topic {margin: 20px 0}
 .post_body {background: white;min-height: 280px;padding: 0}
-.post_topic {margin:  10px 0;}
-.view_topic .profile_user {width: 20%;max-width: 200px;padding: 5px;}
+.post_topic {background: rgba(49, 48, 48, 0.5);margin:  10px 0;}
+.view_topic .profile_user {width: 20%;max-width: 200px;padding: 0 10px;}
 .view_topic .post_body {width: 80%;}
 .avata_img img {background: white;height: 120px;border: 5px solid white;}
 .avata_img {padding: 0;margin: 5px auto!important;float: none;}
@@ -430,7 +430,6 @@ i.blog_title_post {max-width: 79%;overflow: hidden;display: inline-block;white-s
 .blog_message {padding: 0!important;margin-bottom: 0!important}
 #google_comments, #google_comments iframe,.yes_media .col-md-8.block_title {width: 100%!important}
 .yes_media .spoiler_content,.yes_media .btt_top{display:none}
-.yes_media, .yes_media .post_body {}
 .yes_media .box_forum {background: #F2F2F2}
 .yes_media #FB_comment {margin-top: 30px}
 .yes_media .topic_like {background: inherit}
